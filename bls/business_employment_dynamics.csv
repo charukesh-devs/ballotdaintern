@@ -1,0 +1,157 @@
+measure,year,quarter,value_thousands
+Contractions,2016,Q01,5706
+Contractions,2016,Q02,5820
+Contractions,2016,Q03,5718
+Contractions,2016,Q04,5806
+Contractions,2017,Q01,5599
+Contractions,2017,Q02,5844
+Contractions,2017,Q03,6065
+Contractions,2017,Q04,5593
+Contractions,2018,Q01,5616
+Contractions,2018,Q02,5907
+Contractions,2018,Q03,6083
+Contractions,2018,Q04,5665
+Contractions,2019,Q01,5727
+Contractions,2019,Q02,6039
+Contractions,2019,Q03,6049
+Contractions,2019,Q04,5748
+Contractions,2020,Q01,6415
+Contractions,2020,Q02,17291
+Contractions,2020,Q03,5462
+Contractions,2020,Q04,5413
+Contractions,2021,Q01,5405
+Contractions,2021,Q02,5948
+Contractions,2021,Q03,5932
+Contractions,2021,Q04,5340
+Contractions,2022,Q01,5576
+Contractions,2022,Q02,6433
+Contractions,2022,Q03,5984
+Contractions,2022,Q04,6104
+Contractions,2023,Q01,5720
+Contractions,2023,Q02,6308
+Contractions,2023,Q03,6231
+Contractions,2023,Q04,5990
+Contractions,2024,Q01,5775
+Contractions,2024,Q02,6183
+Contractions,2024,Q03,6065
+Contractions,2024,Q04,5964
+Contractions,2025,Q01,5850
+Contractions,2025,Q02,6336
+Contractions,2025,Q03,6142
+Expansions,2016,Q01,5875
+Expansions,2016,Q02,6070
+Expansions,2016,Q03,6250
+Expansions,2016,Q04,6007
+Expansions,2017,Q01,6090
+Expansions,2017,Q02,6265
+Expansions,2017,Q03,5975
+Expansions,2017,Q04,6344
+Expansions,2018,Q01,6135
+Expansions,2018,Q02,6286
+Expansions,2018,Q03,6113
+Expansions,2018,Q04,6283
+Expansions,2019,Q01,6088
+Expansions,2019,Q02,6267
+Expansions,2019,Q03,6011
+Expansions,2019,Q04,6350
+Expansions,2020,Q01,5713
+Expansions,2020,Q02,4439
+Expansions,2020,Q03,8805
+Expansions,2020,Q04,7098
+Expansions,2021,Q01,6784
+Expansions,2021,Q02,6650
+Expansions,2021,Q03,7184
+Expansions,2021,Q04,7706
+Expansions,2022,Q01,6977
+Expansions,2022,Q02,6616
+Expansions,2022,Q03,7184
+Expansions,2022,Q04,6448
+Expansions,2023,Q01,6612
+Expansions,2023,Q02,6524
+Expansions,2023,Q03,6113
+Expansions,2023,Q04,6247
+Expansions,2024,Q01,6217
+Expansions,2024,Q02,6078
+Expansions,2024,Q03,6101
+Expansions,2024,Q04,6142
+Expansions,2025,Q01,5859
+Expansions,2025,Q02,6058
+Expansions,2025,Q03,5878
+Gross Job Gains,2016,Q01,7163
+Gross Job Gains,2016,Q02,7443
+Gross Job Gains,2016,Q03,7710
+Gross Job Gains,2016,Q04,7413
+Gross Job Gains,2017,Q01,7434
+Gross Job Gains,2017,Q02,7639
+Gross Job Gains,2017,Q03,7321
+Gross Job Gains,2017,Q04,7772
+Gross Job Gains,2018,Q01,7494
+Gross Job Gains,2018,Q02,7688
+Gross Job Gains,2018,Q03,7485
+Gross Job Gains,2018,Q04,7719
+Gross Job Gains,2019,Q01,7453
+Gross Job Gains,2019,Q02,7654
+Gross Job Gains,2019,Q03,7385
+Gross Job Gains,2019,Q04,7838
+Gross Job Gains,2020,Q01,7034
+Gross Job Gains,2020,Q02,5731
+Gross Job Gains,2020,Q03,10853
+Gross Job Gains,2020,Q04,8785
+Gross Job Gains,2021,Q01,8328
+Gross Job Gains,2021,Q02,8204
+Gross Job Gains,2021,Q03,8868
+Gross Job Gains,2021,Q04,9563
+Gross Job Gains,2022,Q01,8558
+Gross Job Gains,2022,Q02,8341
+Gross Job Gains,2022,Q03,8845
+Gross Job Gains,2022,Q04,8107
+Gross Job Gains,2023,Q01,8182
+Gross Job Gains,2023,Q02,8132
+Gross Job Gains,2023,Q03,7699
+Gross Job Gains,2023,Q04,7884
+Gross Job Gains,2024,Q01,7748
+Gross Job Gains,2024,Q02,7639
+Gross Job Gains,2024,Q03,7665
+Gross Job Gains,2024,Q04,7802
+Gross Job Gains,2025,Q01,7448
+Gross Job Gains,2025,Q02,7585
+Gross Job Gains,2025,Q03,7475
+Gross Job Losses,2016,Q01,6914
+Gross Job Losses,2016,Q02,7125
+Gross Job Losses,2016,Q03,6962
+Gross Job Losses,2016,Q04,7105
+Gross Job Losses,2017,Q01,6783
+Gross Job Losses,2017,Q02,7113
+Gross Job Losses,2017,Q03,7360
+Gross Job Losses,2017,Q04,6889
+Gross Job Losses,2018,Q01,6811
+Gross Job Losses,2018,Q02,7190
+Gross Job Losses,2018,Q03,7399
+Gross Job Losses,2018,Q04,6996
+Gross Job Losses,2019,Q01,6981
+Gross Job Losses,2019,Q02,7395
+Gross Job Losses,2019,Q03,7313
+Gross Job Losses,2019,Q04,7076
+Gross Job Losses,2020,Q01,7895
+Gross Job Losses,2020,Q02,20210
+Gross Job Losses,2020,Q03,6830
+Gross Job Losses,2020,Q04,6763
+Gross Job Losses,2021,Q01,6556
+Gross Job Losses,2021,Q02,7206
+Gross Job Losses,2021,Q03,7381
+Gross Job Losses,2021,Q04,6678
+Gross Job Losses,2022,Q01,6997
+Gross Job Losses,2022,Q02,7952
+Gross Job Losses,2022,Q03,7483
+Gross Job Losses,2022,Q04,7619
+Gross Job Losses,2023,Q01,7156
+Gross Job Losses,2023,Q02,7774
+Gross Job Losses,2023,Q03,7753
+Gross Job Losses,2023,Q04,7491
+Gross Job Losses,2024,Q01,7183
+Gross Job Losses,2024,Q02,7716
+Gross Job Losses,2024,Q03,7607
+Gross Job Losses,2024,Q04,7496
+Gross Job Losses,2025,Q01,7238
+Gross Job Losses,2025,Q02,7906
+Gross Job Losses,2025,Q03,7634
