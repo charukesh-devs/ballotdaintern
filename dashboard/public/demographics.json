@@ -1,0 +1,1848 @@
+{
+  "metadata": {
+    "title": "U.S. Census Demographics Dashboard",
+    "sources": [
+      "U.S. Census Bureau PEP Population Estimates 2020-2023",
+      "U.S. Census Bureau ACS 1-Year Estimates 2023"
+    ],
+    "generated": "2026-07-24"
+  },
+  "states": {
+    "06": {
+      "name": "California",
+      "abbr": "CA",
+      "fips": "06",
+      "population": {
+        "2020": 79006400,
+        "2021": 78290120,
+        "2022": 78081232,
+        "2023": 77930386
+      },
+      "growth_pct": -1.4,
+      "births_2023": 828240,
+      "deaths_2023": 605408,
+      "intl_migration_2023": 301964,
+      "domestic_migration_2023": -676742,
+      "age": {
+        "total": 38965193,
+        "under_18": 8437329,
+        "18_to_24": 6250222,
+        "25_to_44": 10838681,
+        "45_to_64": 7990027,
+        "65_plus": 5448934
+      },
+      "race": {
+        "total": 38965193,
+        "white": 12962645,
+        "black": 2004832,
+        "hispanic": 15760437,
+        "asian": 6042726,
+        "aian": 102548,
+        "two_plus": 259508,
+        "other": 1699061
+      },
+      "income": 95521,
+      "population_rank": 1
+    },
+    "48": {
+      "name": "Texas",
+      "abbr": "TX",
+      "fips": "48",
+      "population": {
+        "2020": 58468722,
+        "2021": 59122572,
+        "2022": 60059696,
+        "2023": 61006602
+      },
+      "growth_pct": 4.3,
+      "births_2023": 780988,
+      "deaths_2023": 464482,
+      "intl_migration_2023": 257068,
+      "domestic_migration_2023": 373534,
+      "age": {
+        "total": 30503301,
+        "under_18": 7540257,
+        "18_to_24": 5074791,
+        "25_to_44": 8487773,
+        "45_to_64": 5802135,
+        "65_plus": 3598345
+      },
+      "race": {
+        "total": 30503301,
+        "white": 11817333,
+        "black": 3658953,
+        "hispanic": 12135688,
+        "asian": 1707260,
+        "aian": 45679,
+        "two_plus": 139867,
+        "other": 963386
+      },
+      "income": 75780,
+      "population_rank": 2
+    },
+    "12": {
+      "name": "Florida",
+      "abbr": "FL",
+      "fips": "12",
+      "population": {
+        "2020": 43182598,
+        "2021": 43661416,
+        "2022": 44491042,
+        "2023": 45221452
+      },
+      "growth_pct": 4.7,
+      "births_2023": 447156,
+      "deaths_2023": 462362,
+      "intl_migration_2023": 356864,
+      "domestic_migration_2023": 388876,
+      "age": {
+        "total": 22610726,
+        "under_18": 4379016,
+        "18_to_24": 3152075,
+        "25_to_44": 5706082,
+        "45_to_64": 5046039,
+        "65_plus": 4327514
+      },
+      "race": {
+        "total": 22610726,
+        "white": 11370630,
+        "black": 3247406,
+        "hispanic": 6196762,
+        "asian": 660711,
+        "aian": 22969,
+        "two_plus": 182205,
+        "other": 916069
+      },
+      "income": 73311,
+      "population_rank": 3
+    },
+    "36": {
+      "name": "New York",
+      "abbr": "NY",
+      "fips": "36",
+      "population": {
+        "2020": 40209420,
+        "2021": 39709052,
+        "2022": 39346400,
+        "2023": 39142432
+      },
+      "growth_pct": -2.7,
+      "births_2023": 414900,
+      "deaths_2023": 331828,
+      "intl_migration_2023": 147734,
+      "domestic_migration_2023": -433556,
+      "age": {
+        "total": 19571216,
+        "under_18": 3950749,
+        "18_to_24": 3065907,
+        "25_to_44": 5097428,
+        "45_to_64": 4295264,
+        "65_plus": 3161868
+      },
+      "race": {
+        "total": 19571216,
+        "white": 10323977,
+        "black": 2609429,
+        "hispanic": 3872146,
+        "asian": 1769413,
+        "aian": 38001,
+        "two_plus": 188996,
+        "other": 763314
+      },
+      "income": 82095,
+      "population_rank": 4
+    },
+    "42": {
+      "name": "Pennsylvania",
+      "abbr": "PA",
+      "fips": "42",
+      "population": {
+        "2020": 25990954,
+        "2021": 26027228,
+        "2022": 25944182,
+        "2023": 25923366
+      },
+      "growth_pct": -0.3,
+      "births_2023": 258978,
+      "deaths_2023": 281136,
+      "intl_migration_2023": 51552,
+      "domestic_migration_2023": -49650,
+      "age": {
+        "total": 12961683,
+        "under_18": 2624629,
+        "18_to_24": 1951940,
+        "25_to_44": 3252551,
+        "45_to_64": 2875690,
+        "65_plus": 2256873
+      },
+      "race": {
+        "total": 12961683,
+        "white": 9424491,
+        "black": 1314257,
+        "hispanic": 1151760,
+        "asian": 494634,
+        "aian": 8890,
+        "two_plus": 67784,
+        "other": 497438
+      },
+      "income": 73824,
+      "population_rank": 5
+    },
+    "17": {
+      "name": "Illinois",
+      "abbr": "IL",
+      "fips": "17",
+      "population": {
+        "2020": 25580714,
+        "2021": 25380682,
+        "2022": 25165030,
+        "2023": 25099378
+      },
+      "growth_pct": -1.9,
+      "births_2023": 254470,
+      "deaths_2023": 233564,
+      "intl_migration_2023": 80984,
+      "domestic_migration_2023": -167678,
+      "age": {
+        "total": 12549689,
+        "under_18": 2701627,
+        "18_to_24": 1959720,
+        "25_to_44": 3302340,
+        "45_to_64": 2682300,
+        "65_plus": 1903702
+      },
+      "race": {
+        "total": 12549689,
+        "white": 7260529,
+        "black": 1643638,
+        "hispanic": 2378186,
+        "asian": 744793,
+        "aian": 12385,
+        "two_plus": 48029,
+        "other": 458091
+      },
+      "income": 80306,
+      "population_rank": 6
+    },
+    "39": {
+      "name": "Ohio",
+      "abbr": "OH",
+      "fips": "39",
+      "population": {
+        "2020": 23596584,
+        "2021": 23530454,
+        "2022": 23519394,
+        "2023": 23571870
+      },
+      "growth_pct": -0.1,
+      "births_2023": 257652,
+      "deaths_2023": 262576,
+      "intl_migration_2023": 56162,
+      "domestic_migration_2023": 1274,
+      "age": {
+        "total": 11785935,
+        "under_18": 2570621,
+        "18_to_24": 1797014,
+        "25_to_44": 2951618,
+        "45_to_64": 2565612,
+        "65_plus": 1901070
+      },
+      "race": {
+        "total": 11785935,
+        "white": 8910967,
+        "black": 1389467,
+        "hispanic": 566230,
+        "asian": 300771,
+        "aian": 9053,
+        "two_plus": 52768,
+        "other": 552486
+      },
+      "income": 67769,
+      "population_rank": 7
+    },
+    "13": {
+      "name": "Georgia",
+      "abbr": "GA",
+      "fips": "13",
+      "population": {
+        "2020": 21464780,
+        "2021": 21580770,
+        "2022": 21826300,
+        "2023": 22058454
+      },
+      "growth_pct": 2.8,
+      "births_2023": 251328,
+      "deaths_2023": 195694,
+      "intl_migration_2023": 60238,
+      "domestic_migration_2023": 116412,
+      "age": {
+        "total": 11029227,
+        "under_18": 2534348,
+        "18_to_24": 1782178,
+        "25_to_44": 2952066,
+        "45_to_64": 2301031,
+        "65_plus": 1459604
+      },
+      "race": {
+        "total": 11029227,
+        "white": 5366591,
+        "black": 3358756,
+        "hispanic": 1222577,
+        "asian": 495256,
+        "aian": 15153,
+        "two_plus": 75521,
+        "other": 487107
+      },
+      "income": 74632,
+      "population_rank": 8
+    },
+    "37": {
+      "name": "North Carolina",
+      "abbr": "NC",
+      "fips": "37",
+      "population": {
+        "2020": 20907624,
+        "2021": 21134200,
+        "2022": 21391930,
+        "2023": 21670982
+      },
+      "growth_pct": 3.7,
+      "births_2023": 242296,
+      "deaths_2023": 216982,
+      "intl_migration_2023": 58896,
+      "domestic_migration_2023": 194528,
+      "age": {
+        "total": 10835491,
+        "under_18": 2322499,
+        "18_to_24": 1725998,
+        "25_to_44": 2801003,
+        "45_to_64": 2336385,
+        "65_plus": 1649606
+      },
+      "race": {
+        "total": 10835491,
+        "white": 6474378,
+        "black": 2152866,
+        "hispanic": 1236873,
+        "asian": 357550,
+        "aian": 90082,
+        "two_plus": 58065,
+        "other": 461010
+      },
+      "income": 70804,
+      "population_rank": 9
+    },
+    "26": {
+      "name": "Michigan",
+      "abbr": "MI",
+      "fips": "26",
+      "population": {
+        "2020": 20141254,
+        "2021": 20076234,
+        "2022": 20066562,
+        "2023": 20074522
+      },
+      "growth_pct": -0.3,
+      "births_2023": 203822,
+      "deaths_2023": 211882,
+      "intl_migration_2023": 45634,
+      "domestic_migration_2023": -30102,
+      "age": {
+        "total": 10037261,
+        "under_18": 2110471,
+        "18_to_24": 1552637,
+        "25_to_44": 2477160,
+        "45_to_64": 2230183,
+        "65_plus": 1666810
+      },
+      "race": {
+        "total": 10037261,
+        "white": 7261679,
+        "black": 1308859,
+        "hispanic": 598476,
+        "asian": 337521,
+        "aian": 34024,
+        "two_plus": 39453,
+        "other": 454981
+      },
+      "income": 69183,
+      "population_rank": 10
+    },
+    "34": {
+      "name": "New Jersey",
+      "abbr": "NJ",
+      "fips": "34",
+      "population": {
+        "2020": 18544784,
+        "2021": 18538350,
+        "2022": 18521634,
+        "2023": 18581682
+      },
+      "growth_pct": 0.2,
+      "births_2023": 204110,
+      "deaths_2023": 153126,
+      "intl_migration_2023": 98596,
+      "domestic_migration_2023": -89332,
+      "age": {
+        "total": 9290841,
+        "under_18": 2009165,
+        "18_to_24": 1338131,
+        "25_to_44": 2436609,
+        "45_to_64": 2092833,
+        "65_plus": 1414103
+      },
+      "race": {
+        "total": 9290841,
+        "white": 4702687,
+        "black": 1116399,
+        "hispanic": 2105350,
+        "asian": 940280,
+        "aian": 7852,
+        "two_plus": 77074,
+        "other": 339392
+      },
+      "income": 99781,
+      "population_rank": 11
+    },
+    "51": {
+      "name": "Virginia",
+      "abbr": "VA",
+      "fips": "51",
+      "population": {
+        "2020": 17274386,
+        "2021": 17314696,
+        "2022": 17358198,
+        "2023": 17431396
+      },
+      "growth_pct": 0.9,
+      "births_2023": 191338,
+      "deaths_2023": 159960,
+      "intl_migration_2023": 56234,
+      "domestic_migration_2023": -13970,
+      "age": {
+        "total": 8715698,
+        "under_18": 1872177,
+        "18_to_24": 1370939,
+        "25_to_44": 2326764,
+        "45_to_64": 1845929,
+        "65_plus": 1299889
+      },
+      "race": {
+        "total": 8715698,
+        "white": 5061648,
+        "black": 1575781,
+        "hispanic": 970049,
+        "asian": 600302,
+        "aian": 11529,
+        "two_plus": 52753,
+        "other": 437341
+      },
+      "income": 89931,
+      "population_rank": 12
+    },
+    "53": {
+      "name": "Washington",
+      "abbr": "WA",
+      "fips": "53",
+      "population": {
+        "2020": 15449132,
+        "2021": 15482866,
+        "2022": 15568954,
+        "2023": 15625760
+      },
+      "growth_pct": 1.1,
+      "births_2023": 165046,
+      "deaths_2023": 135326,
+      "intl_migration_2023": 57838,
+      "domestic_migration_2023": -30552,
+      "age": {
+        "total": 7812880,
+        "under_18": 1647192,
+        "18_to_24": 1208424,
+        "25_to_44": 2232879,
+        "45_to_64": 1568064,
+        "65_plus": 1156321
+      },
+      "race": {
+        "total": 7812880,
+        "white": 4877556,
+        "black": 304811,
+        "hispanic": 1141979,
+        "asian": 772796,
+        "aian": 62020,
+        "two_plus": 50211,
+        "other": 547545
+      },
+      "income": 94605,
+      "population_rank": 13
+    },
+    "04": {
+      "name": "Arizona",
+      "abbr": "AZ",
+      "fips": "04",
+      "population": {
+        "2020": 14373366,
+        "2021": 14544974,
+        "2022": 14731368,
+        "2023": 14862688
+      },
+      "growth_pct": 3.4,
+      "births_2023": 156988,
+      "deaths_2023": 141584,
+      "intl_migration_2023": 43270,
+      "domestic_migration_2023": 72358,
+      "age": {
+        "total": 7431344,
+        "under_18": 1580079,
+        "18_to_24": 1207294,
+        "25_to_44": 1887493,
+        "45_to_64": 1494417,
+        "65_plus": 1262061
+      },
+      "race": {
+        "total": 7431344,
+        "white": 3884570,
+        "black": 334932,
+        "hispanic": 2346808,
+        "asian": 259261,
+        "aian": 233411,
+        "two_plus": 35912,
+        "other": 322057
+      },
+      "income": 77315,
+      "population_rank": 14
+    },
+    "47": {
+      "name": "Tennessee",
+      "abbr": "TN",
+      "fips": "47",
+      "population": {
+        "2020": 13852182,
+        "2021": 13927418,
+        "2022": 14097952,
+        "2023": 14252978
+      },
+      "growth_pct": 2.9,
+      "births_2023": 164488,
+      "deaths_2023": 162432,
+      "intl_migration_2023": 26108,
+      "domestic_migration_2023": 126834,
+      "age": {
+        "total": 7126489,
+        "under_18": 1563360,
+        "18_to_24": 1112657,
+        "25_to_44": 1854105,
+        "45_to_64": 1518932,
+        "65_plus": 1077435
+      },
+      "race": {
+        "total": 7126489,
+        "white": 5063769,
+        "black": 1082344,
+        "hispanic": 533644,
+        "asian": 128645,
+        "aian": 6963,
+        "two_plus": 28482,
+        "other": 278839
+      },
+      "income": 67631,
+      "population_rank": 15
+    },
+    "25": {
+      "name": "Massachusetts",
+      "abbr": "MA",
+      "fips": "25",
+      "population": {
+        "2020": 13995426,
+        "2021": 13983902,
+        "2022": 13965480,
+        "2023": 14002798
+      },
+      "growth_pct": 0.1,
+      "births_2023": 136774,
+      "deaths_2023": 122808,
+      "intl_migration_2023": 101294,
+      "domestic_migration_2023": -78298,
+      "age": {
+        "total": 7001399,
+        "under_18": 1341439,
+        "18_to_24": 1157331,
+        "25_to_44": 1825833,
+        "45_to_64": 1558613,
+        "65_plus": 1118183
+      },
+      "race": {
+        "total": 7001399,
+        "white": 4615684,
+        "black": 456488,
+        "hispanic": 944383,
+        "asian": 512411,
+        "aian": 4509,
+        "two_plus": 97282,
+        "other": 368620
+      },
+      "income": 99858,
+      "population_rank": 16
+    },
+    "18": {
+      "name": "Indiana",
+      "abbr": "IN",
+      "fips": "18",
+      "population": {
+        "2020": 13578196,
+        "2021": 13627596,
+        "2022": 13664548,
+        "2023": 13724398
+      },
+      "growth_pct": 1.1,
+      "births_2023": 159174,
+      "deaths_2023": 144158,
+      "intl_migration_2023": 35738,
+      "domestic_migration_2023": 9198,
+      "age": {
+        "total": 6862199,
+        "under_18": 1580906,
+        "18_to_24": 1103506,
+        "25_to_44": 1730935,
+        "45_to_64": 1429267,
+        "65_plus": 1017585
+      },
+      "race": {
+        "total": 6862199,
+        "white": 5153536,
+        "black": 606982,
+        "hispanic": 597785,
+        "asian": 180254,
+        "aian": 5363,
+        "two_plus": 27349,
+        "other": 287151
+      },
+      "income": 69477,
+      "population_rank": 17
+    },
+    "29": {
+      "name": "Missouri",
+      "abbr": "MO",
+      "fips": "29",
+      "population": {
+        "2020": 12308852,
+        "2021": 12340786,
+        "2022": 12354336,
+        "2023": 12392312
+      },
+      "growth_pct": 0.7,
+      "births_2023": 136668,
+      "deaths_2023": 136778,
+      "intl_migration_2023": 15704,
+      "domestic_migration_2023": 22342,
+      "age": {
+        "total": 6196156,
+        "under_18": 1371339,
+        "18_to_24": 960468,
+        "25_to_44": 1570547,
+        "45_to_64": 1313465,
+        "65_plus": 980337
+      },
+      "race": {
+        "total": 6196156,
+        "white": 4738502,
+        "black": 661577,
+        "hispanic": 325288,
+        "asian": 126970,
+        "aian": 11404,
+        "two_plus": 24198,
+        "other": 298753
+      },
+      "income": 68545,
+      "population_rank": 18
+    },
+    "24": {
+      "name": "Maryland",
+      "abbr": "MD",
+      "fips": "24",
+      "population": {
+        "2020": 12347378,
+        "2021": 12350090,
+        "2022": 12327962,
+        "2023": 12360506
+      },
+      "growth_pct": 0.1,
+      "births_2023": 135938,
+      "deaths_2023": 107540,
+      "intl_migration_2023": 65954,
+      "domestic_migration_2023": -61810,
+      "age": {
+        "total": 6180253,
+        "under_18": 1358921,
+        "18_to_24": 894838,
+        "25_to_44": 1646808,
+        "45_to_64": 1357384,
+        "65_plus": 922302
+      },
+      "race": {
+        "total": 6180253,
+        "white": 2862997,
+        "black": 1783772,
+        "hispanic": 781336,
+        "asian": 407697,
+        "aian": 6657,
+        "two_plus": 44964,
+        "other": 290774
+      },
+      "income": 98678,
+      "population_rank": 19
+    },
+    "55": {
+      "name": "Wisconsin",
+      "abbr": "WI",
+      "fips": "55",
+      "population": {
+        "2020": 11793400,
+        "2021": 11759956,
+        "2022": 11781086,
+        "2023": 11821910
+      },
+      "growth_pct": 0.2,
+      "births_2023": 119678,
+      "deaths_2023": 117384,
+      "intl_migration_2023": 27306,
+      "domestic_migration_2023": 11296,
+      "age": {
+        "total": 5910955,
+        "under_18": 1244078,
+        "18_to_24": 915390,
+        "25_to_44": 1462157,
+        "45_to_64": 1316326,
+        "65_plus": 973004
+      },
+      "race": {
+        "total": 5910955,
+        "white": 4633612,
+        "black": 342786,
+        "hispanic": 478074,
+        "asian": 177732,
+        "aian": 35093,
+        "two_plus": 22938,
+        "other": 219071
+      },
+      "income": 74631,
+      "population_rank": 20
+    },
+    "08": {
+      "name": "Colorado",
+      "abbr": "CO",
+      "fips": "08",
+      "population": {
+        "2020": 11570438,
+        "2021": 11623192,
+        "2022": 11682078,
+        "2023": 11755220
+      },
+      "growth_pct": 1.6,
+      "births_2023": 124996,
+      "deaths_2023": 90198,
+      "intl_migration_2023": 23862,
+      "domestic_migration_2023": 14472,
+      "age": {
+        "total": 5877610,
+        "under_18": 1210680,
+        "18_to_24": 980471,
+        "25_to_44": 1710507,
+        "45_to_64": 1160876,
+        "65_plus": 815076
+      },
+      "race": {
+        "total": 5877610,
+        "white": 3789337,
+        "black": 216689,
+        "hispanic": 1336324,
+        "asian": 192812,
+        "aian": 19394,
+        "two_plus": 33537,
+        "other": 281430
+      },
+      "income": 92911,
+      "population_rank": 21
+    },
+    "27": {
+      "name": "Minnesota",
+      "abbr": "MN",
+      "fips": "27",
+      "population": {
+        "2020": 11421156,
+        "2021": 11435936,
+        "2022": 11428600,
+        "2023": 11475830
+      },
+      "growth_pct": 0.5,
+      "births_2023": 127508,
+      "deaths_2023": 99822,
+      "intl_migration_2023": 29150,
+      "domestic_migration_2023": -9372,
+      "age": {
+        "total": 5737915,
+        "under_18": 1294975,
+        "18_to_24": 860629,
+        "25_to_44": 1496012,
+        "45_to_64": 1201607,
+        "65_plus": 884692
+      },
+      "race": {
+        "total": 5737915,
+        "white": 4335436,
+        "black": 408103,
+        "hispanic": 366967,
+        "asian": 296774,
+        "aian": 41463,
+        "two_plus": 26655,
+        "other": 259045
+      },
+      "income": 85086,
+      "population_rank": 22
+    },
+    "45": {
+      "name": "South Carolina",
+      "abbr": "SC",
+      "fips": "45",
+      "population": {
+        "2020": 10264302,
+        "2021": 10387696,
+        "2022": 10565910,
+        "2023": 10747110
+      },
+      "growth_pct": 4.7,
+      "births_2023": 115162,
+      "deaths_2023": 117704,
+      "intl_migration_2023": 18582,
+      "domestic_migration_2023": 165124,
+      "age": {
+        "total": 5373555,
+        "under_18": 1142238,
+        "18_to_24": 814022,
+        "25_to_44": 1345666,
+        "45_to_64": 1169480,
+        "65_plus": 902149
+      },
+      "race": {
+        "total": 5373555,
+        "white": 3326978,
+        "black": 1300474,
+        "hispanic": 399963,
+        "asian": 92726,
+        "aian": 8894,
+        "two_plus": 25670,
+        "other": 214414
+      },
+      "income": 67804,
+      "population_rank": 23
+    },
+    "01": {
+      "name": "Alabama",
+      "abbr": "AL",
+      "fips": "01",
+      "population": {
+        "2020": 10063728,
+        "2021": 10100760,
+        "2022": 10147806,
+        "2023": 10216936
+      },
+      "growth_pct": 1.5,
+      "births_2023": 116502,
+      "deaths_2023": 119626,
+      "intl_migration_2023": 10768,
+      "domestic_migration_2023": 61488,
+      "age": {
+        "total": 5108468,
+        "under_18": 1129646,
+        "18_to_24": 793738,
+        "25_to_44": 1279906,
+        "45_to_64": 1102526,
+        "65_plus": 802652
+      },
+      "race": {
+        "total": 5108468,
+        "white": 3235585,
+        "black": 1293876,
+        "hispanic": 290906,
+        "asian": 76860,
+        "aian": 13101,
+        "two_plus": 14253,
+        "other": 181777
+      },
+      "income": 62212,
+      "population_rank": 24
+    },
+    "22": {
+      "name": "Louisiana",
+      "abbr": "LA",
+      "fips": "22",
+      "population": {
+        "2020": 9304044,
+        "2021": 9254094,
+        "2022": 9176046,
+        "2023": 9147498
+      },
+      "growth_pct": -1.7,
+      "births_2023": 112418,
+      "deaths_2023": 100188,
+      "intl_migration_2023": 18548,
+      "domestic_migration_2023": -59384,
+      "age": {
+        "total": 4573749,
+        "under_18": 1063436,
+        "18_to_24": 688121,
+        "25_to_44": 1191620,
+        "45_to_64": 946141,
+        "65_plus": 684431
+      },
+      "race": {
+        "total": 4573749,
+        "white": 2546513,
+        "black": 1378088,
+        "hispanic": 327004,
+        "asian": 78922,
+        "aian": 22123,
+        "two_plus": 27788,
+        "other": 189260
+      },
+      "income": 58229,
+      "population_rank": 25
+    },
+    "21": {
+      "name": "Kentucky",
+      "abbr": "KY",
+      "fips": "21",
+      "population": {
+        "2020": 9016310,
+        "2021": 9015200,
+        "2022": 9023126,
+        "2023": 9052308
+      },
+      "growth_pct": 0.4,
+      "births_2023": 104760,
+      "deaths_2023": 108770,
+      "intl_migration_2023": 15254,
+      "domestic_migration_2023": 17930,
+      "age": {
+        "total": 4526154,
+        "under_18": 1011737,
+        "18_to_24": 698239,
+        "25_to_44": 1145718,
+        "45_to_64": 975756,
+        "65_plus": 694704
+      },
+      "race": {
+        "total": 4526154,
+        "white": 3690578,
+        "black": 334155,
+        "hispanic": 219536,
+        "asian": 64157,
+        "aian": 5521,
+        "two_plus": 11606,
+        "other": 198518
+      },
+      "income": 61118,
+      "population_rank": 26
+    },
+    "41": {
+      "name": "Oregon",
+      "abbr": "OR",
+      "fips": "41",
+      "population": {
+        "2020": 8490088,
+        "2021": 8512930,
+        "2022": 8478758,
+        "2023": 8466716
+      },
+      "growth_pct": -0.3,
+      "births_2023": 78092,
+      "deaths_2023": 86570,
+      "intl_migration_2023": 8608,
+      "domestic_migration_2023": -12102,
+      "age": {
+        "total": 4233358,
+        "under_18": 829801,
+        "18_to_24": 631362,
+        "25_to_44": 1175824,
+        "45_to_64": 867324,
+        "65_plus": 729047
+      },
+      "race": {
+        "total": 4233358,
+        "white": 2997120,
+        "black": 82599,
+        "hispanic": 631563,
+        "asian": 191497,
+        "aian": 25980,
+        "two_plus": 26713,
+        "other": 262889
+      },
+      "income": 80160,
+      "population_rank": 27
+    },
+    "40": {
+      "name": "Oklahoma",
+      "abbr": "OK",
+      "fips": "40",
+      "population": {
+        "2020": 7930468,
+        "2021": 7983268,
+        "2022": 8038542,
+        "2023": 8107648
+      },
+      "growth_pct": 2.2,
+      "births_2023": 96146,
+      "deaths_2023": 91012,
+      "intl_migration_2023": 16760,
+      "domestic_migration_2023": 47174,
+      "age": {
+        "total": 4053824,
+        "under_18": 965744,
+        "18_to_24": 664057,
+        "25_to_44": 1050196,
+        "45_to_64": 788134,
+        "65_plus": 585693
+      },
+      "race": {
+        "total": 4053824,
+        "white": 2502615,
+        "black": 268504,
+        "hispanic": 523291,
+        "asian": 93824,
+        "aian": 268070,
+        "two_plus": 13535,
+        "other": 375355
+      },
+      "income": 62138,
+      "population_rank": 28
+    },
+    "09": {
+      "name": "Connecticut",
+      "abbr": "CT",
+      "fips": "09",
+      "population": {
+        "2020": 7155172,
+        "2021": 7207382,
+        "2022": 7217412,
+        "2023": 7234352
+      },
+      "growth_pct": 1.1,
+      "births_2023": 69914,
+      "deaths_2023": 65684,
+      "intl_migration_2023": 30528,
+      "domestic_migration_2023": -18032,
+      "age": {
+        "total": 3617176,
+        "under_18": 722624,
+        "18_to_24": 554517,
+        "25_to_44": 908803,
+        "45_to_64": 834499,
+        "65_plus": 596733
+      },
+      "race": {
+        "total": 3617176,
+        "white": 2219411,
+        "black": 359295,
+        "hispanic": 673249,
+        "asian": 174185,
+        "aian": 3066,
+        "two_plus": 32443,
+        "other": 153407
+      },
+      "income": 91665,
+      "population_rank": 29
+    },
+    "49": {
+      "name": "Utah",
+      "abbr": "UT",
+      "fips": "49",
+      "population": {
+        "2020": 6567964,
+        "2021": 6678568,
+        "2022": 6762472,
+        "2023": 6835468
+      },
+      "growth_pct": 4.1,
+      "births_2023": 91930,
+      "deaths_2023": 42338,
+      "intl_migration_2023": 20570,
+      "domestic_migration_2023": 2676,
+      "age": {
+        "total": 3417734,
+        "under_18": 933905,
+        "18_to_24": 660984,
+        "25_to_44": 921116,
+        "45_to_64": 545104,
+        "65_plus": 356625
+      },
+      "race": {
+        "total": 3417734,
+        "white": 2547877,
+        "black": 34936,
+        "hispanic": 546948,
+        "asian": 83241,
+        "aian": 23797,
+        "two_plus": 12297,
+        "other": 136548
+      },
+      "income": 93421,
+      "population_rank": 30
+    },
+    "19": {
+      "name": "Iowa",
+      "abbr": "IA",
+      "fips": "19",
+      "population": {
+        "2020": 6381808,
+        "2021": 6395888,
+        "2022": 6399386,
+        "2023": 6414008
+      },
+      "growth_pct": 0.5,
+      "births_2023": 73796,
+      "deaths_2023": 66238,
+      "intl_migration_2023": 14224,
+      "domestic_migration_2023": -7206,
+      "age": {
+        "total": 3207004,
+        "under_18": 725547,
+        "18_to_24": 512328,
+        "25_to_44": 793176,
+        "45_to_64": 656565,
+        "65_plus": 519388
+      },
+      "race": {
+        "total": 3207004,
+        "white": 2641989,
+        "black": 126172,
+        "hispanic": 234148,
+        "asian": 75201,
+        "aian": 5135,
+        "two_plus": 8224,
+        "other": 111710
+      },
+      "income": 71433,
+      "population_rank": 31
+    },
+    "32": {
+      "name": "Nevada",
+      "abbr": "NV",
+      "fips": "32",
+      "population": {
+        "2020": 6231680,
+        "2021": 6293264,
+        "2022": 6354842,
+        "2023": 6388352
+      },
+      "growth_pct": 2.5,
+      "births_2023": 66110,
+      "deaths_2023": 58644,
+      "intl_migration_2023": 8532,
+      "domestic_migration_2023": 17284,
+      "age": {
+        "total": 3194176,
+        "under_18": 684516,
+        "18_to_24": 471410,
+        "25_to_44": 883264,
+        "45_to_64": 673427,
+        "65_plus": 481559
+      },
+      "race": {
+        "total": 3194176,
+        "white": 1417771,
+        "black": 284224,
+        "hispanic": 956400,
+        "asian": 285434,
+        "aian": 18647,
+        "two_plus": 19210,
+        "other": 190727
+      },
+      "income": 76364,
+      "population_rank": 32
+    },
+    "05": {
+      "name": "Arkansas",
+      "abbr": "AR",
+      "fips": "05",
+      "population": {
+        "2020": 6028696,
+        "2021": 6056886,
+        "2022": 6092808,
+        "2023": 6135464
+      },
+      "growth_pct": 1.8,
+      "births_2023": 71132,
+      "deaths_2023": 72946,
+      "intl_migration_2023": 8192,
+      "domestic_migration_2023": 36212,
+      "age": {
+        "total": 3067732,
+        "under_18": 700988,
+        "18_to_24": 479690,
+        "25_to_44": 779354,
+        "45_to_64": 634400,
+        "65_plus": 473300
+      },
+      "race": {
+        "total": 3067732,
+        "white": 2058852,
+        "black": 439018,
+        "hispanic": 279899,
+        "asian": 50357,
+        "aian": 11620,
+        "two_plus": 7798,
+        "other": 206100
+      },
+      "income": 58700,
+      "population_rank": 33
+    },
+    "20": {
+      "name": "Kansas",
+      "abbr": "KS",
+      "fips": "20",
+      "population": {
+        "2020": 5876248,
+        "2021": 5875892,
+        "2022": 5873432,
+        "2023": 5881092
+      },
+      "growth_pct": 0.1,
+      "births_2023": 69536,
+      "deaths_2023": 60658,
+      "intl_migration_2023": 7864,
+      "domestic_migration_2023": -9148,
+      "age": {
+        "total": 2940547,
+        "under_18": 686764,
+        "18_to_24": 487474,
+        "25_to_44": 737679,
+        "45_to_64": 580449,
+        "65_plus": 448181
+      },
+      "race": {
+        "total": 2940547,
+        "white": 2139153,
+        "black": 153545,
+        "hispanic": 401676,
+        "asian": 76288,
+        "aian": 12733,
+        "two_plus": 10738,
+        "other": 142707
+      },
+      "income": 70333,
+      "population_rank": 34
+    },
+    "28": {
+      "name": "Mississippi",
+      "abbr": "MS",
+      "fips": "28",
+      "population": {
+        "2020": 5916818,
+        "2021": 5899164,
+        "2022": 5877856,
+        "2023": 5879380
+      },
+      "growth_pct": -0.6,
+      "births_2023": 69256,
+      "deaths_2023": 72064,
+      "intl_migration_2023": 9600,
+      "domestic_migration_2023": -5228,
+      "age": {
+        "total": 2939690,
+        "under_18": 675234,
+        "18_to_24": 457904,
+        "25_to_44": 746174,
+        "45_to_64": 612954,
+        "65_plus": 447424
+      },
+      "race": {
+        "total": 2939690,
+        "white": 1618950,
+        "black": 1044625,
+        "hispanic": 109884,
+        "asian": 27600,
+        "aian": 12555,
+        "two_plus": 13308,
+        "other": 111362
+      },
+      "income": 54203,
+      "population_rank": 35
+    },
+    "35": {
+      "name": "New Mexico",
+      "abbr": "NM",
+      "fips": "35",
+      "population": {
+        "2020": 4236976,
+        "2021": 4233900,
+        "2022": 4226952,
+        "2023": 4228742
+      },
+      "growth_pct": -0.2,
+      "births_2023": 41456,
+      "deaths_2023": 44688,
+      "intl_migration_2023": 7284,
+      "domestic_migration_2023": -2176,
+      "age": {
+        "total": 2114371,
+        "under_18": 448558,
+        "18_to_24": 328560,
+        "25_to_44": 537749,
+        "45_to_64": 426612,
+        "65_plus": 372892
+      },
+      "race": {
+        "total": 2114371,
+        "white": 759745,
+        "black": 36991,
+        "hispanic": 1027460,
+        "asian": 35923,
+        "aian": 174825,
+        "two_plus": 10674,
+        "other": 66462
+      },
+      "income": 62268,
+      "population_rank": 36
+    },
+    "31": {
+      "name": "Nebraska",
+      "abbr": "NE",
+      "fips": "31",
+      "population": {
+        "2020": 3926546,
+        "2021": 3928506,
+        "2022": 3936120,
+        "2023": 3956758
+      },
+      "growth_pct": 0.8,
+      "births_2023": 48390,
+      "deaths_2023": 36992,
+      "intl_migration_2023": 10882,
+      "domestic_migration_2023": -1668,
+      "age": {
+        "total": 1978379,
+        "under_18": 478594,
+        "18_to_24": 318188,
+        "25_to_44": 502689,
+        "45_to_64": 385369,
+        "65_plus": 293539
+      },
+      "race": {
+        "total": 1978379,
+        "white": 1486925,
+        "black": 85235,
+        "hispanic": 255448,
+        "asian": 47946,
+        "aian": 9800,
+        "two_plus": 6038,
+        "other": 86751
+      },
+      "income": 74590,
+      "population_rank": 37
+    },
+    "16": {
+      "name": "Idaho",
+      "abbr": "ID",
+      "fips": "16",
+      "population": {
+        "2020": 3698678,
+        "2021": 3809074,
+        "2022": 3877992,
+        "2023": 3929452
+      },
+      "growth_pct": 6.2,
+      "births_2023": 44912,
+      "deaths_2023": 33634,
+      "intl_migration_2023": 9328,
+      "domestic_migration_2023": 30778,
+      "age": {
+        "total": 1964726,
+        "under_18": 466391,
+        "18_to_24": 316372,
+        "25_to_44": 504834,
+        "45_to_64": 379634,
+        "65_plus": 297495
+      },
+      "race": {
+        "total": 1964726,
+        "white": 1539914,
+        "black": 15227,
+        "hispanic": 271657,
+        "asian": 25871,
+        "aian": 13613,
+        "two_plus": 14745,
+        "other": 80191
+      },
+      "income": 74942,
+      "population_rank": 38
+    },
+    "54": {
+      "name": "West Virginia",
+      "abbr": "WV",
+      "fips": "54",
+      "population": {
+        "2020": 3583124,
+        "2021": 3570498,
+        "2022": 3548070,
+        "2023": 3540142
+      },
+      "growth_pct": -1.2,
+      "births_2023": 34526,
+      "deaths_2023": 51858,
+      "intl_migration_2023": 2202,
+      "domestic_migration_2023": 7190,
+      "age": {
+        "total": 1770071,
+        "under_18": 351642,
+        "18_to_24": 258021,
+        "25_to_44": 429266,
+        "45_to_64": 396454,
+        "65_plus": 334688
+      },
+      "race": {
+        "total": 1770071,
+        "white": 1582949,
+        "black": 55910,
+        "hispanic": 37837,
+        "asian": 12482,
+        "aian": 1508,
+        "two_plus": 7304,
+        "other": 71888
+      },
+      "income": 55948,
+      "population_rank": 39
+    },
+    "15": {
+      "name": "Hawaii",
+      "abbr": "HI",
+      "fips": "15",
+      "population": {
+        "2020": 2902362,
+        "2021": 2893490,
+        "2022": 2878798,
+        "2023": 2870276
+      },
+      "growth_pct": -1.1,
+      "births_2023": 30334,
+      "deaths_2023": 25624,
+      "intl_migration_2023": 9254,
+      "domestic_migration_2023": -22386,
+      "age": {
+        "total": 1435138,
+        "under_18": 293887,
+        "18_to_24": 202961,
+        "25_to_44": 373796,
+        "45_to_64": 299562,
+        "65_plus": 264932
+      },
+      "race": {
+        "total": 1435138,
+        "white": 299815,
+        "black": 22479,
+        "hispanic": 145111,
+        "asian": 518063,
+        "aian": 1035,
+        "two_plus": 6768,
+        "other": 313768
+      },
+      "income": 95322,
+      "population_rank": 40
+    },
+    "33": {
+      "name": "New Hampshire",
+      "abbr": "NH",
+      "fips": "33",
+      "population": {
+        "2020": 2757404,
+        "2021": 2774988,
+        "2022": 2798006,
+        "2023": 2804108
+      },
+      "growth_pct": 1.7,
+      "births_2023": 24310,
+      "deaths_2023": 28528,
+      "intl_migration_2023": 1718,
+      "domestic_migration_2023": 8596,
+      "age": {
+        "total": 1402054,
+        "under_18": 250715,
+        "18_to_24": 204140,
+        "25_to_44": 349111,
+        "45_to_64": 352799,
+        "65_plus": 245289
+      },
+      "race": {
+        "total": 1402054,
+        "white": 1212427,
+        "black": 19642,
+        "hispanic": 65450,
+        "asian": 35910,
+        "aian": 1614,
+        "two_plus": 6610,
+        "other": 60238
+      },
+      "income": 96838,
+      "population_rank": 41
+    },
+    "23": {
+      "name": "Maine",
+      "abbr": "ME",
+      "fips": "23",
+      "population": {
+        "2020": 2729034,
+        "2021": 2757574,
+        "2022": 2778676,
+        "2023": 2791444
+      },
+      "growth_pct": 2.3,
+      "births_2023": 23890,
+      "deaths_2023": 33996,
+      "intl_migration_2023": 4418,
+      "domestic_migration_2023": 18432,
+      "age": {
+        "total": 1395722,
+        "under_18": 245778,
+        "18_to_24": 190288,
+        "25_to_44": 341153,
+        "45_to_64": 340973,
+        "65_plus": 277530
+      },
+      "race": {
+        "total": 1395722,
+        "white": 1249429,
+        "black": 24292,
+        "hispanic": 31184,
+        "asian": 15299,
+        "aian": 4716,
+        "two_plus": 3401,
+        "other": 66704
+      },
+      "income": 73733,
+      "population_rank": 42
+    },
+    "30": {
+      "name": "Montana",
+      "abbr": "MT",
+      "fips": "30",
+      "population": {
+        "2020": 2174422,
+        "2021": 2212732,
+        "2022": 2245756,
+        "2023": 2265624
+      },
+      "growth_pct": 4.2,
+      "births_2023": 22412,
+      "deaths_2023": 22754,
+      "intl_migration_2023": 1218,
+      "domestic_migration_2023": 18970,
+      "age": {
+        "total": 1132812,
+        "under_18": 235562,
+        "18_to_24": 170738,
+        "25_to_44": 289431,
+        "45_to_64": 234599,
+        "65_plus": 202482
+      },
+      "race": {
+        "total": 1132812,
+        "white": 943647,
+        "black": 4755,
+        "hispanic": 52520,
+        "asian": 8913,
+        "aian": 61134,
+        "two_plus": 4958,
+        "other": 56558
+      },
+      "income": 70804,
+      "population_rank": 43
+    },
+    "44": {
+      "name": "Rhode Island",
+      "abbr": "RI",
+      "fips": "44",
+      "population": {
+        "2020": 2192888,
+        "2021": 2194184,
+        "2022": 2187684,
+        "2023": 2191924
+      },
+      "growth_pct": -0.0,
+      "births_2023": 20012,
+      "deaths_2023": 20868,
+      "intl_migration_2023": 11554,
+      "domestic_migration_2023": -6448,
+      "age": {
+        "total": 1095962,
+        "under_18": 203257,
+        "18_to_24": 179659,
+        "25_to_44": 283567,
+        "45_to_64": 247317,
+        "65_plus": 182162
+      },
+      "race": {
+        "total": 1095962,
+        "white": 741744,
+        "black": 53194,
+        "hispanic": 197405,
+        "asian": 36275,
+        "aian": 1223,
+        "two_plus": 5620,
+        "other": 60434
+      },
+      "income": 84972,
+      "population_rank": 44
+    },
+    "10": {
+      "name": "Delaware",
+      "abbr": "DE",
+      "fips": "10",
+      "population": {
+        "2020": 1983724,
+        "2021": 2009762,
+        "2022": 2038918,
+        "2023": 2063780
+      },
+      "growth_pct": 4.0,
+      "births_2023": 21450,
+      "deaths_2023": 21794,
+      "intl_migration_2023": 4554,
+      "domestic_migration_2023": 20640,
+      "age": {
+        "total": 1031890,
+        "under_18": 211925,
+        "18_to_24": 146408,
+        "25_to_44": 249890,
+        "45_to_64": 233585,
+        "65_plus": 190082
+      },
+      "race": {
+        "total": 1031890,
+        "white": 598827,
+        "black": 223984,
+        "hispanic": 114623,
+        "asian": 44352,
+        "aian": 1127,
+        "two_plus": 4095,
+        "other": 44812
+      },
+      "income": 81361,
+      "population_rank": 45
+    },
+    "46": {
+      "name": "South Dakota",
+      "abbr": "SD",
+      "fips": "46",
+      "population": {
+        "2020": 1775704,
+        "2021": 1792598,
+        "2022": 1819738,
+        "2023": 1838636
+      },
+      "growth_pct": 3.5,
+      "births_2023": 22738,
+      "deaths_2023": 17112,
+      "intl_migration_2023": 3576,
+      "domestic_migration_2023": 9624,
+      "age": {
+        "total": 919318,
+        "under_18": 218807,
+        "18_to_24": 141891,
+        "25_to_44": 227300,
+        "45_to_64": 184422,
+        "65_plus": 146898
+      },
+      "race": {
+        "total": 919318,
+        "white": 729905,
+        "black": 21185,
+        "hispanic": 46519,
+        "asian": 13882,
+        "aian": 66719,
+        "two_plus": 2803,
+        "other": 38006
+      },
+      "income": 71810,
+      "population_rank": 46
+    },
+    "38": {
+      "name": "North Dakota",
+      "abbr": "ND",
+      "fips": "38",
+      "population": {
+        "2020": 1559126,
+        "2021": 1555964,
+        "2022": 1557824,
+        "2023": 1567852
+      },
+      "growth_pct": 0.6,
+      "births_2023": 19298,
+      "deaths_2023": 13890,
+      "intl_migration_2023": 4596,
+      "domestic_migration_2023": -18,
+      "age": {
+        "total": 783926,
+        "under_18": 179600,
+        "18_to_24": 144127,
+        "25_to_44": 200922,
+        "45_to_64": 142056,
+        "65_plus": 117221
+      },
+      "race": {
+        "total": 783926,
+        "white": 638612,
+        "black": 23404,
+        "hispanic": 38229,
+        "asian": 11485,
+        "aian": 33645,
+        "two_plus": 2138,
+        "other": 34749
+      },
+      "income": 76525,
+      "population_rank": 47
+    },
+    "02": {
+      "name": "Alaska",
+      "abbr": "AK",
+      "fips": "02",
+      "population": {
+        "2020": 1465928,
+        "2021": 1469846,
+        "2022": 1466552,
+        "2023": 1466812
+      },
+      "growth_pct": 0.1,
+      "births_2023": 18532,
+      "deaths_2023": 11162,
+      "intl_migration_2023": 4008,
+      "domestic_migration_2023": -11086,
+      "age": {
+        "total": 733406,
+        "under_18": 174366,
+        "18_to_24": 120475,
+        "25_to_44": 208529,
+        "45_to_64": 142285,
+        "65_plus": 87751
+      },
+      "race": {
+        "total": 733406,
+        "white": 422881,
+        "black": 20276,
+        "hispanic": 54860,
+        "asian": 42909,
+        "aian": 95480,
+        "two_plus": 4149,
+        "other": 82205
+      },
+      "income": 86631,
+      "population_rank": 48
+    },
+    "11": {
+      "name": "District of Columbia",
+      "abbr": "DC",
+      "fips": "11",
+      "population": {
+        "2020": 1341678,
+        "2021": 1338074,
+        "2022": 1341898,
+        "2023": 1357944
+      },
+      "growth_pct": 1.2,
+      "births_2023": 15254,
+      "deaths_2023": 10040,
+      "intl_migration_2023": 13938,
+      "domestic_migration_2023": -3018,
+      "age": {
+        "total": 678972,
+        "under_18": 126526,
+        "18_to_24": 139299,
+        "25_to_44": 226278,
+        "45_to_64": 108943,
+        "65_plus": 77926
+      },
+      "race": {
+        "total": 678972,
+        "white": 252213,
+        "black": 272706,
+        "hispanic": 81458,
+        "asian": 27977,
+        "aian": 668,
+        "two_plus": 4895,
+        "other": 38517
+      },
+      "income": 108210,
+      "population_rank": 49
+    },
+    "50": {
+      "name": "Vermont",
+      "abbr": "VT",
+      "fips": "50",
+      "population": {
+        "2020": 1285872,
+        "2021": 1294186,
+        "2022": 1294220,
+        "2023": 1294928
+      },
+      "growth_pct": 0.7,
+      "births_2023": 10144,
+      "deaths_2023": 13752,
+      "intl_migration_2023": 2624,
+      "domestic_migration_2023": 1688,
+      "age": {
+        "total": 647464,
+        "under_18": 114826,
+        "18_to_24": 97903,
+        "25_to_44": 157601,
+        "45_to_64": 151909,
+        "65_plus": 125225
+      },
+      "race": {
+        "total": 647464,
+        "white": 578026,
+        "black": 7593,
+        "hispanic": 16128,
+        "asian": 11029,
+        "aian": 1147,
+        "two_plus": 4275,
+        "other": 29124
+      },
+      "income": 81211,
+      "population_rank": 50
+    },
+    "56": {
+      "name": "Wyoming",
+      "abbr": "WY",
+      "fips": "56",
+      "population": {
+        "2020": 1155328,
+        "2021": 1159096,
+        "2022": 1163258,
+        "2023": 1168114
+      },
+      "growth_pct": 1.1,
+      "births_2023": 11764,
+      "deaths_2023": 11558,
+      "intl_migration_2023": 644,
+      "domestic_migration_2023": 4032,
+      "age": {
+        "total": 584057,
+        "under_18": 129965,
+        "18_to_24": 86613,
+        "25_to_44": 152907,
+        "45_to_64": 118849,
+        "65_plus": 95723
+      },
+      "race": {
+        "total": 584057,
+        "white": 474635,
+        "black": 3801,
+        "hispanic": 62799,
+        "asian": 4575,
+        "aian": 9334,
+        "two_plus": 3458,
+        "other": 25359
+      },
+      "income": 72415,
+      "population_rank": 51
+    }
+  }
+}
