@@ -1,85 +1,141 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import USMap from './components/USMap'
-import { modules, defaultModule } from './modules/registry'
+import StatePanel from './components/StatePanel'
+import ModuleTabs from './components/ModuleTabs'
+import SummaryCards from './components/SummaryCards'
+import StateRanking from './components/StateRanking'
+import TrendChart from './components/TrendChart'
+import modules from './modules/registry'
 import './App.css'
 
+const VIEW_LABELS = { map: 'Map', ranking: 'Ranking', trend: 'Trend' }
+
 function App() {
-  const [data, setData] = useState(null)
+  const [activeModuleId, setActiveModuleId] = useState(modules[0].id)
+  const [dataByModule, setDataByModule] = useState({})
   const [selectedState, setSelectedState] = useState(null)
   const [tooltip, setTooltip] = useState(null)
-  const [currentModuleId, setCurrentModuleId] = useState(defaultModule)
+  const [view, setView] = useState('map')
 
+  const activeModule = modules.find(m => m.id === activeModuleId)
+  const data = dataByModule[activeModuleId]
+
+  // Fetch each module's data lazily, the first time its tab is opened.
   useEffect(() => {
-    fetch('/demographics.json')
+    if (dataByModule[activeModuleId]) return
+    fetch(activeModule.dataUrl)
       .then(r => r.json())
-      .then(setData)
-  }, [])
+      .then(json => setDataByModule(prev => ({ ...prev, [activeModuleId]: json })))
+  }, [activeModuleId, activeModule, dataByModule])
+
+  const availableViews = activeModule.views && activeModule.views.length ? activeModule.views : ['map']
+
+  function handleModuleSelect(id) {
+    setActiveModuleId(id)
+    setSelectedState(null)
+    setTooltip(null)
+    setView('map')
+  }
+
+  const summaryCards = useMemo(() => {
+    if (!data || !activeModule.summary) return null
+    return activeModule.summary(data.states)
+  }, [data, activeModule])
+
+  const stateList = useMemo(() => {
+    if (!data) return []
+    return Object.values(data.states)
+  }, [data])
 
   if (!data) return (
     <div className="loading">
       <div className="loading-spinner" />
-      <span>Loading data...</span>
+      <span>Loading {activeModule.label.toLowerCase()} data...</span>
     </div>
   )
 
   const states = data.states
-  const currentModule = modules.find(m => m.id === currentModuleId) || modules[0]
 
   return (
     <div className="app">
       <header className="header">
         <div className="header-inner">
           <div className="header-badge">AMERICA250</div>
-          <h1>U.S. Data Dashboard</h1>
-          <p className="header-sub">Click any state to view its breakdown</p>
+          <h1>{activeModule.title}</h1>
+          <p className="header-sub">{activeModule.subtitle}</p>
         </div>
       </header>
 
-      <nav className="module-tabs">
-        {modules.map(m => (
-          <button
-            key={m.id}
-            className={`module-tab ${currentModule.id === m.id ? 'active' : ''}`}
-            onClick={() => { setCurrentModuleId(m.id); setSelectedState(null) }}
-          >
-            <span className="module-tab-icon">{m.icon}</span>
-            <span className="module-tab-name">{m.name}</span>
-          </button>
-        ))}
-      </nav>
+      <ModuleTabs modules={modules} activeId={activeModuleId} onSelect={handleModuleSelect} />
 
-      <div className="main-layout">
-        <div className={`map-section ${selectedState ? 'shifted' : ''}`}>
-          <USMap
-            states={states}
-            selectedState={selectedState}
-            onSelect={setSelectedState}
-            tooltip={tooltip}
-            setTooltip={setTooltip}
-            getMetric={currentModule.getMetric}
-            colorRange={currentModule.colorScale}
-            metricLabel={currentModule.metricLabel}
-          />
+      {summaryCards && <SummaryCards cards={summaryCards} />}
+
+      {availableViews.length > 1 && (
+        <div className="view-tabs">
+          {availableViews.map(v => (
+            <button
+              key={v}
+              className={`view-tab ${view === v ? 'active' : ''}`}
+              onClick={() => setView(v)}
+            >
+              {VIEW_LABELS[v] || v}
+            </button>
+          ))}
         </div>
-        <div className={`panel-section ${selectedState ? 'open' : ''}`}>
-          {selectedState && states[selectedState] ? (
-            <currentModule.StatePanel
-              state={states[selectedState]}
-              onClose={() => setSelectedState(null)}
+      )}
+
+      {view === 'map' && (
+        <div className="main-layout">
+          <div className={`map-section ${selectedState ? 'shifted' : ''}`}>
+            <USMap
+              states={states}
+              metric={activeModule.mapMetric}
+              selectedState={selectedState}
+              onSelect={setSelectedState}
+              tooltip={tooltip}
+              setTooltip={setTooltip}
             />
-          ) : (
-            <div className="panel-placeholder">
-              <div className="placeholder-icon">{'\u{1F5FA}\uFE0F'}</div>
-              <h3>Select a State</h3>
-              <p>Click any state on the map to view its {currentModule.description.toLowerCase()}</p>
-            </div>
-          )}
+          </div>
+          <div className={`panel-section ${selectedState ? 'open' : ''}`}>
+            {selectedState && states[selectedState] ? (
+              <StatePanel
+                state={states[selectedState]}
+                module={activeModule}
+                onClose={() => setSelectedState(null)}
+              />
+            ) : (
+              <div className="panel-placeholder">
+                <div className="placeholder-icon">🗺️</div>
+                <h3>Select a State</h3>
+                <p>Click any state on the map to view its {activeModule.label.toLowerCase()} breakdown</p>
+              </div>
+            )}
+          </div>
         </div>
-      </div>
+      )}
+
+      {view === 'ranking' && activeModule.ranking && (
+        <StateRanking
+          stateList={stateList}
+          columns={activeModule.ranking.columns}
+          onSelect={fips => { setSelectedState(fips); setView('map') }}
+        />
+      )}
+
+      {view === 'trend' && activeModule.trend && (
+        <TrendChart
+          stateList={stateList}
+          periods={activeModule.trend.periods}
+          getSeriesValue={activeModule.trend.getSeriesValue}
+          rankBy={activeModule.trend.rankBy}
+          title={activeModule.trend.title}
+          axisFormat={activeModule.trend.axisFormat}
+        />
+      )}
 
       <footer className="footer">
         <div className="footer-badge">AMERICA250</div>
-        <p>Data: U.S. Census Bureau &mdash; PEP 2020&ndash;2023 &amp; ACS 1-Year 2023</p>
+        <p>{activeModule.source}</p>
       </footer>
     </div>
   )

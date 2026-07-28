@@ -1,0 +1,1797 @@
+{
+  "metadata": {
+    "title": "State Economic Indicators (Sample Module)",
+    "sources": [
+      "SAMPLE DATA \u2014 for demonstrating the module template only. Swap in real U.S. Bureau of Labor Statistics (BLS) and Bureau of Economic Analysis (BEA) data via scripts/download_economy.py + clean_economy.py."
+    ],
+    "generated": "2026-07-28",
+    "sample_data": true
+  },
+  "states": {
+    "06": {
+      "name": "California",
+      "abbr": "CA",
+      "fips": "06",
+      "unemployment": {
+        "2021": 3.4,
+        "2022": 3.8,
+        "2023": 3.1,
+        "2024": 2.6
+      },
+      "labor_force_2024": 39617128,
+      "employed_2024": 38587083,
+      "gdp_millions_2024": 4541470,
+      "gdp_growth_pct": 1.9,
+      "sector_employment": {
+        "manufacturing": 3310620,
+        "healthcare": 5616126,
+        "retail": 4435438,
+        "government": 5475026,
+        "professional": 4595613,
+        "other": 15154260
+      },
+      "sector_employment_total": 38587083,
+      "trade_2024": {
+        "exports": 449272,
+        "imports": 631434
+      },
+      "cpi_regional": {
+        "2021": 102.0,
+        "2022": 108.2,
+        "2023": 112.2,
+        "2024": 115.4
+      },
+      "gdp_rank": 2
+    },
+    "48": {
+      "name": "Texas",
+      "abbr": "TX",
+      "fips": "48",
+      "unemployment": {
+        "2021": 5.9,
+        "2022": 6.0,
+        "2023": 5.9,
+        "2024": 5.4
+      },
+      "labor_force_2024": 29242219,
+      "employed_2024": 27663139,
+      "gdp_millions_2024": 5718542,
+      "gdp_growth_pct": 1.2,
+      "sector_employment": {
+        "manufacturing": 2809502,
+        "healthcare": 4863496,
+        "retail": 3151140,
+        "government": 4293089,
+        "professional": 3679660,
+        "other": 8866252
+      },
+      "sector_employment_total": 27663139,
+      "trade_2024": {
+        "exports": 631654,
+        "imports": 314752
+      },
+      "cpi_regional": {
+        "2021": 102.6,
+        "2022": 106.1,
+        "2023": 108.4,
+        "2024": 111.2
+      },
+      "gdp_rank": 1
+    },
+    "12": {
+      "name": "Florida",
+      "abbr": "FL",
+      "fips": "12",
+      "unemployment": {
+        "2021": 4.6,
+        "2022": 3.9,
+        "2023": 4.1,
+        "2024": 3.6
+      },
+      "labor_force_2024": 21528128,
+      "employed_2024": 20753115,
+      "gdp_millions_2024": 2534369,
+      "gdp_growth_pct": 3.1,
+      "sector_employment": {
+        "manufacturing": 1865748,
+        "healthcare": 3200418,
+        "retail": 2618094,
+        "government": 3027464,
+        "professional": 2743998,
+        "other": 7297393
+      },
+      "sector_employment_total": 20753115,
+      "trade_2024": {
+        "exports": 274881,
+        "imports": 361689
+      },
+      "cpi_regional": {
+        "2021": 103.9,
+        "2022": 107.2,
+        "2023": 109.4,
+        "2024": 112.5
+      },
+      "gdp_rank": 3
+    },
+    "36": {
+      "name": "New York",
+      "abbr": "NY",
+      "fips": "36",
+      "unemployment": {
+        "2021": 5.0,
+        "2022": 4.0,
+        "2023": 3.9,
+        "2024": 3.2
+      },
+      "labor_force_2024": 19025745,
+      "employed_2024": 18416921,
+      "gdp_millions_2024": 2332556,
+      "gdp_growth_pct": 2.2,
+      "sector_employment": {
+        "manufacturing": 1710605,
+        "healthcare": 3021482,
+        "retail": 2267642,
+        "government": 2500554,
+        "professional": 2192599,
+        "other": 6724039
+      },
+      "sector_employment_total": 18416921,
+      "trade_2024": {
+        "exports": 325983,
+        "imports": 247363
+      },
+      "cpi_regional": {
+        "2021": 102.2,
+        "2022": 104.5,
+        "2023": 106.9,
+        "2024": 110.7
+      },
+      "gdp_rank": 4
+    },
+    "42": {
+      "name": "Pennsylvania",
+      "abbr": "PA",
+      "fips": "42",
+      "unemployment": {
+        "2021": 4.4,
+        "2022": 5.0,
+        "2023": 4.6,
+        "2024": 4.1
+      },
+      "labor_force_2024": 13415984,
+      "employed_2024": 12865929,
+      "gdp_millions_2024": 2074916,
+      "gdp_growth_pct": 2.0,
+      "sector_employment": {
+        "manufacturing": 1196593,
+        "healthcare": 2145602,
+        "retail": 1250327,
+        "government": 1765979,
+        "professional": 1649351,
+        "other": 4858077
+      },
+      "sector_employment_total": 12865929,
+      "trade_2024": {
+        "exports": 280905,
+        "imports": 303651
+      },
+      "cpi_regional": {
+        "2021": 102.7,
+        "2022": 107.3,
+        "2023": 109.9,
+        "2024": 114.6
+      },
+      "gdp_rank": 5
+    },
+    "17": {
+      "name": "Illinois",
+      "abbr": "IL",
+      "fips": "17",
+      "unemployment": {
+        "2021": 4.8,
+        "2022": 4.2,
+        "2023": 4.1,
+        "2024": 3.3
+      },
+      "labor_force_2024": 13107676,
+      "employed_2024": 12675123,
+      "gdp_millions_2024": 1587168,
+      "gdp_growth_pct": -0.7,
+      "sector_employment": {
+        "manufacturing": 1430679,
+        "healthcare": 2258436,
+        "retail": 1532992,
+        "government": 1672046,
+        "professional": 1429235,
+        "other": 4351735
+      },
+      "sector_employment_total": 12675123,
+      "trade_2024": {
+        "exports": 202842,
+        "imports": 244685
+      },
+      "cpi_regional": {
+        "2021": 102.2,
+        "2022": 106.7,
+        "2023": 109.1,
+        "2024": 113.3
+      },
+      "gdp_rank": 8
+    },
+    "39": {
+      "name": "Ohio",
+      "abbr": "OH",
+      "fips": "39",
+      "unemployment": {
+        "2021": 4.1,
+        "2022": 3.9,
+        "2023": 3.3,
+        "2024": 3.3
+      },
+      "labor_force_2024": 12161908,
+      "employed_2024": 11760565,
+      "gdp_millions_2024": 1354301,
+      "gdp_growth_pct": 0.9,
+      "sector_employment": {
+        "manufacturing": 1350754,
+        "healthcare": 1966298,
+        "retail": 1269639,
+        "government": 1655161,
+        "professional": 1355042,
+        "other": 4163671
+      },
+      "sector_employment_total": 11760565,
+      "trade_2024": {
+        "exports": 84603,
+        "imports": 118081
+      },
+      "cpi_regional": {
+        "2021": 103.5,
+        "2022": 106.7,
+        "2023": 109.5,
+        "2024": 111.8
+      },
+      "gdp_rank": 11
+    },
+    "13": {
+      "name": "Georgia",
+      "abbr": "GA",
+      "fips": "13",
+      "unemployment": {
+        "2021": 5.0,
+        "2022": 3.6,
+        "2023": 3.6,
+        "2024": 3.7
+      },
+      "labor_force_2024": 11202743,
+      "employed_2024": 10788242,
+      "gdp_millions_2024": 1650833,
+      "gdp_growth_pct": 1.7,
+      "sector_employment": {
+        "manufacturing": 1170940,
+        "healthcare": 1885352,
+        "retail": 1076489,
+        "government": 1327721,
+        "professional": 1373462,
+        "other": 3954278
+      },
+      "sector_employment_total": 10788242,
+      "trade_2024": {
+        "exports": 135959,
+        "imports": 167349
+      },
+      "cpi_regional": {
+        "2021": 103.8,
+        "2022": 109.4,
+        "2023": 114.3,
+        "2024": 116.8
+      },
+      "gdp_rank": 6
+    },
+    "37": {
+      "name": "North Carolina",
+      "abbr": "NC",
+      "fips": "37",
+      "unemployment": {
+        "2021": 4.9,
+        "2022": 4.1,
+        "2023": 3.9,
+        "2024": 4.0
+      },
+      "labor_force_2024": 10708873,
+      "employed_2024": 10280518,
+      "gdp_millions_2024": 1491552,
+      "gdp_growth_pct": 3.8,
+      "sector_employment": {
+        "manufacturing": 1043573,
+        "healthcare": 1423114,
+        "retail": 1300242,
+        "government": 1584363,
+        "professional": 1524507,
+        "other": 3404719
+      },
+      "sector_employment_total": 10280518,
+      "trade_2024": {
+        "exports": 197835,
+        "imports": 213824
+      },
+      "cpi_regional": {
+        "2021": 102.4,
+        "2022": 107.0,
+        "2023": 109.7,
+        "2024": 113.0
+      },
+      "gdp_rank": 9
+    },
+    "26": {
+      "name": "Michigan",
+      "abbr": "MI",
+      "fips": "26",
+      "unemployment": {
+        "2021": 5.2,
+        "2022": 4.6,
+        "2023": 4.4,
+        "2024": 3.9
+      },
+      "labor_force_2024": 9505650,
+      "employed_2024": 9134930,
+      "gdp_millions_2024": 1641397,
+      "gdp_growth_pct": 0.0,
+      "sector_employment": {
+        "manufacturing": 857781,
+        "healthcare": 1667107,
+        "retail": 1028711,
+        "government": 1295079,
+        "professional": 1275885,
+        "other": 3010367
+      },
+      "sector_employment_total": 9134930,
+      "trade_2024": {
+        "exports": 75039,
+        "imports": 187545
+      },
+      "cpi_regional": {
+        "2021": 103.3,
+        "2022": 109.7,
+        "2023": 112.4,
+        "2024": 117.3
+      },
+      "gdp_rank": 7
+    },
+    "34": {
+      "name": "New Jersey",
+      "abbr": "NJ",
+      "fips": "34",
+      "unemployment": {
+        "2021": 4.5,
+        "2022": 3.5,
+        "2023": 3.6,
+        "2024": 3.4
+      },
+      "labor_force_2024": 8822707,
+      "employed_2024": 8522735,
+      "gdp_millions_2024": 1258046,
+      "gdp_growth_pct": 2.3,
+      "sector_employment": {
+        "manufacturing": 858099,
+        "healthcare": 1541472,
+        "retail": 854324,
+        "government": 1270570,
+        "professional": 1021098,
+        "other": 2977172
+      },
+      "sector_employment_total": 8522735,
+      "trade_2024": {
+        "exports": 100114,
+        "imports": 155854
+      },
+      "cpi_regional": {
+        "2021": 102.7,
+        "2022": 106.4,
+        "2023": 110.6,
+        "2024": 113.0
+      },
+      "gdp_rank": 13
+    },
+    "51": {
+      "name": "Virginia",
+      "abbr": "VA",
+      "fips": "51",
+      "unemployment": {
+        "2021": 6.7,
+        "2022": 5.8,
+        "2023": 6.2,
+        "2024": 5.4
+      },
+      "labor_force_2024": 8672070,
+      "employed_2024": 8203778,
+      "gdp_millions_2024": 965945,
+      "gdp_growth_pct": 3.6,
+      "sector_employment": {
+        "manufacturing": 870472,
+        "healthcare": 1356581,
+        "retail": 1034322,
+        "government": 1201583,
+        "professional": 909020,
+        "other": 2831800
+      },
+      "sector_employment_total": 8203778,
+      "trade_2024": {
+        "exports": 117566,
+        "imports": 80107
+      },
+      "cpi_regional": {
+        "2021": 103.7,
+        "2022": 110.6,
+        "2023": 113.2,
+        "2024": 115.8
+      },
+      "gdp_rank": 15
+    },
+    "53": {
+      "name": "Washington",
+      "abbr": "WA",
+      "fips": "53",
+      "unemployment": {
+        "2021": 5.1,
+        "2022": 4.9,
+        "2023": 4.5,
+        "2024": 4.5
+      },
+      "labor_force_2024": 7444458,
+      "employed_2024": 7109457,
+      "gdp_millions_2024": 1371424,
+      "gdp_growth_pct": -0.3,
+      "sector_employment": {
+        "manufacturing": 694646,
+        "healthcare": 1061304,
+        "retail": 665566,
+        "government": 1076279,
+        "professional": 962247,
+        "other": 2649415
+      },
+      "sector_employment_total": 7109457,
+      "trade_2024": {
+        "exports": 90782,
+        "imports": 180391
+      },
+      "cpi_regional": {
+        "2021": 103.4,
+        "2022": 107.7,
+        "2023": 109.8,
+        "2024": 112.2
+      },
+      "gdp_rank": 10
+    },
+    "04": {
+      "name": "Arizona",
+      "abbr": "AZ",
+      "fips": "04",
+      "unemployment": {
+        "2021": 6.5,
+        "2022": 5.7,
+        "2023": 5.3,
+        "2024": 5.4
+      },
+      "labor_force_2024": 7772983,
+      "employed_2024": 7353242,
+      "gdp_millions_2024": 1314650,
+      "gdp_growth_pct": 4.0,
+      "sector_employment": {
+        "manufacturing": 671368,
+        "healthcare": 1088114,
+        "retail": 712472,
+        "government": 1115964,
+        "professional": 1066082,
+        "other": 2699242
+      },
+      "sector_employment_total": 7353242,
+      "trade_2024": {
+        "exports": 106010,
+        "imports": 155487
+      },
+      "cpi_regional": {
+        "2021": 102.4,
+        "2022": 109.2,
+        "2023": 113.7,
+        "2024": 118.8
+      },
+      "gdp_rank": 12
+    },
+    "47": {
+      "name": "Tennessee",
+      "abbr": "TN",
+      "fips": "47",
+      "unemployment": {
+        "2021": 5.8,
+        "2022": 6.0,
+        "2023": 5.8,
+        "2024": 5.0
+      },
+      "labor_force_2024": 7392254,
+      "employed_2024": 7022641,
+      "gdp_millions_2024": 1211597,
+      "gdp_growth_pct": -0.2,
+      "sector_employment": {
+        "manufacturing": 780672,
+        "healthcare": 1244500,
+        "retail": 708165,
+        "government": 1076547,
+        "professional": 902071,
+        "other": 2310686
+      },
+      "sector_employment_total": 7022641,
+      "trade_2024": {
+        "exports": 85441,
+        "imports": 166580
+      },
+      "cpi_regional": {
+        "2021": 102.6,
+        "2022": 104.7,
+        "2023": 107.3,
+        "2024": 110.4
+      },
+      "gdp_rank": 14
+    },
+    "25": {
+      "name": "Massachusetts",
+      "abbr": "MA",
+      "fips": "25",
+      "unemployment": {
+        "2021": 6.2,
+        "2022": 6.3,
+        "2023": 6.0,
+        "2024": 5.7
+      },
+      "labor_force_2024": 7307517,
+      "employed_2024": 6890989,
+      "gdp_millions_2024": 789655,
+      "gdp_growth_pct": 4.3,
+      "sector_employment": {
+        "manufacturing": 640614,
+        "healthcare": 973031,
+        "retail": 743128,
+        "government": 1030884,
+        "professional": 845755,
+        "other": 2657577
+      },
+      "sector_employment_total": 6890989,
+      "trade_2024": {
+        "exports": 79456,
+        "imports": 83906
+      },
+      "cpi_regional": {
+        "2021": 103.0,
+        "2022": 108.0,
+        "2023": 110.8,
+        "2024": 115.0
+      },
+      "gdp_rank": 19
+    },
+    "18": {
+      "name": "Indiana",
+      "abbr": "IN",
+      "fips": "18",
+      "unemployment": {
+        "2021": 6.4,
+        "2022": 6.2,
+        "2023": 5.3,
+        "2024": 5.2
+      },
+      "labor_force_2024": 6451860,
+      "employed_2024": 6116363,
+      "gdp_millions_2024": 861261,
+      "gdp_growth_pct": 3.7,
+      "sector_employment": {
+        "manufacturing": 651959,
+        "healthcare": 919996,
+        "retail": 634306,
+        "government": 832758,
+        "professional": 771846,
+        "other": 2305498
+      },
+      "sector_employment_total": 6116363,
+      "trade_2024": {
+        "exports": 59914,
+        "imports": 55122
+      },
+      "cpi_regional": {
+        "2021": 103.1,
+        "2022": 110.0,
+        "2023": 114.0,
+        "2024": 118.9
+      },
+      "gdp_rank": 17
+    },
+    "29": {
+      "name": "Missouri",
+      "abbr": "MO",
+      "fips": "29",
+      "unemployment": {
+        "2021": 4.3,
+        "2022": 4.1,
+        "2023": 4.1,
+        "2024": 3.6
+      },
+      "labor_force_2024": 6282046,
+      "employed_2024": 6055892,
+      "gdp_millions_2024": 719299,
+      "gdp_growth_pct": 1.7,
+      "sector_employment": {
+        "manufacturing": 678474,
+        "healthcare": 1054992,
+        "retail": 600138,
+        "government": 742219,
+        "professional": 790915,
+        "other": 2189154
+      },
+      "sector_employment_total": 6055892,
+      "trade_2024": {
+        "exports": 74299,
+        "imports": 62486
+      },
+      "cpi_regional": {
+        "2021": 104.0,
+        "2022": 110.0,
+        "2023": 114.1,
+        "2024": 117.0
+      },
+      "gdp_rank": 21
+    },
+    "24": {
+      "name": "Maryland",
+      "abbr": "MD",
+      "fips": "24",
+      "unemployment": {
+        "2021": 3.6,
+        "2022": 3.5,
+        "2023": 3.2,
+        "2024": 3.0
+      },
+      "labor_force_2024": 5957119,
+      "employed_2024": 5778405,
+      "gdp_millions_2024": 880510,
+      "gdp_growth_pct": 0.5,
+      "sector_employment": {
+        "manufacturing": 604893,
+        "healthcare": 787401,
+        "retail": 683480,
+        "government": 874515,
+        "professional": 662534,
+        "other": 2165582
+      },
+      "sector_employment_total": 5778405,
+      "trade_2024": {
+        "exports": 72655,
+        "imports": 61061
+      },
+      "cpi_regional": {
+        "2021": 104.4,
+        "2022": 109.2,
+        "2023": 111.5,
+        "2024": 114.4
+      },
+      "gdp_rank": 16
+    },
+    "55": {
+      "name": "Wisconsin",
+      "abbr": "WI",
+      "fips": "55",
+      "unemployment": {
+        "2021": 5.4,
+        "2022": 5.1,
+        "2023": 4.7,
+        "2024": 4.2
+      },
+      "labor_force_2024": 6158035,
+      "employed_2024": 5899398,
+      "gdp_millions_2024": 847921,
+      "gdp_growth_pct": 3.6,
+      "sector_employment": {
+        "manufacturing": 598412,
+        "healthcare": 1056382,
+        "retail": 696369,
+        "government": 819641,
+        "professional": 711517,
+        "other": 2017077
+      },
+      "sector_employment_total": 5899398,
+      "trade_2024": {
+        "exports": 54881,
+        "imports": 101872
+      },
+      "cpi_regional": {
+        "2021": 103.9,
+        "2022": 108.7,
+        "2023": 112.6,
+        "2024": 115.6
+      },
+      "gdp_rank": 18
+    },
+    "08": {
+      "name": "Colorado",
+      "abbr": "CO",
+      "fips": "08",
+      "unemployment": {
+        "2021": 4.2,
+        "2022": 4.0,
+        "2023": 3.9,
+        "2024": 3.3
+      },
+      "labor_force_2024": 5579603,
+      "employed_2024": 5395476,
+      "gdp_millions_2024": 789447,
+      "gdp_growth_pct": 2.1,
+      "sector_employment": {
+        "manufacturing": 525914,
+        "healthcare": 787351,
+        "retail": 579284,
+        "government": 847107,
+        "professional": 719104,
+        "other": 1936716
+      },
+      "sector_employment_total": 5395476,
+      "trade_2024": {
+        "exports": 86486,
+        "imports": 113870
+      },
+      "cpi_regional": {
+        "2021": 103.9,
+        "2022": 108.0,
+        "2023": 110.1,
+        "2024": 113.3
+      },
+      "gdp_rank": 20
+    },
+    "27": {
+      "name": "Minnesota",
+      "abbr": "MN",
+      "fips": "27",
+      "unemployment": {
+        "2021": 6.5,
+        "2022": 6.0,
+        "2023": 5.3,
+        "2024": 5.1
+      },
+      "labor_force_2024": 5912445,
+      "employed_2024": 5610910,
+      "gdp_millions_2024": 566495,
+      "gdp_growth_pct": 1.0,
+      "sector_employment": {
+        "manufacturing": 591245,
+        "healthcare": 871976,
+        "retail": 555180,
+        "government": 777843,
+        "professional": 647934,
+        "other": 2166732
+      },
+      "sector_employment_total": 5610910,
+      "trade_2024": {
+        "exports": 57910,
+        "imports": 30005
+      },
+      "cpi_regional": {
+        "2021": 103.0,
+        "2022": 108.0,
+        "2023": 110.2,
+        "2024": 114.2
+      },
+      "gdp_rank": 27
+    },
+    "45": {
+      "name": "South Carolina",
+      "abbr": "SC",
+      "fips": "45",
+      "unemployment": {
+        "2021": 4.5,
+        "2022": 4.4,
+        "2023": 4.4,
+        "2024": 4.2
+      },
+      "labor_force_2024": 5138644,
+      "employed_2024": 4922821,
+      "gdp_millions_2024": 643287,
+      "gdp_growth_pct": -0.4,
+      "sector_employment": {
+        "manufacturing": 421302,
+        "healthcare": 796966,
+        "retail": 622722,
+        "government": 658173,
+        "professional": 668793,
+        "other": 1754865
+      },
+      "sector_employment_total": 4922821,
+      "trade_2024": {
+        "exports": 75987,
+        "imports": 78284
+      },
+      "cpi_regional": {
+        "2021": 103.9,
+        "2022": 110.9,
+        "2023": 113.7,
+        "2024": 116.0
+      },
+      "gdp_rank": 23
+    },
+    "01": {
+      "name": "Alabama",
+      "abbr": "AL",
+      "fips": "01",
+      "unemployment": {
+        "2021": 4.3,
+        "2022": 3.7,
+        "2023": 3.4,
+        "2024": 3.3
+      },
+      "labor_force_2024": 4895373,
+      "employed_2024": 4733826,
+      "gdp_millions_2024": 545411,
+      "gdp_growth_pct": 3.5,
+      "sector_employment": {
+        "manufacturing": 539380,
+        "healthcare": 668363,
+        "retail": 446624,
+        "government": 625349,
+        "professional": 648139,
+        "other": 1805971
+      },
+      "sector_employment_total": 4733826,
+      "trade_2024": {
+        "exports": 74076,
+        "imports": 51068
+      },
+      "cpi_regional": {
+        "2021": 103.8,
+        "2022": 106.3,
+        "2023": 110.2,
+        "2024": 114.2
+      },
+      "gdp_rank": 29
+    },
+    "22": {
+      "name": "Louisiana",
+      "abbr": "LA",
+      "fips": "22",
+      "unemployment": {
+        "2021": 6.3,
+        "2022": 5.6,
+        "2023": 5.2,
+        "2024": 4.8
+      },
+      "labor_force_2024": 4355253,
+      "employed_2024": 4146201,
+      "gdp_millions_2024": 656609,
+      "gdp_growth_pct": 1.0,
+      "sector_employment": {
+        "manufacturing": 458102,
+        "healthcare": 727542,
+        "retail": 402110,
+        "government": 660710,
+        "professional": 560930,
+        "other": 1336807
+      },
+      "sector_employment_total": 4146201,
+      "trade_2024": {
+        "exports": 80678,
+        "imports": 83917
+      },
+      "cpi_regional": {
+        "2021": 103.1,
+        "2022": 108.9,
+        "2023": 113.7,
+        "2024": 116.8
+      },
+      "gdp_rank": 22
+    },
+    "21": {
+      "name": "Kentucky",
+      "abbr": "KY",
+      "fips": "21",
+      "unemployment": {
+        "2021": 5.2,
+        "2022": 4.9,
+        "2023": 4.9,
+        "2024": 4.5
+      },
+      "labor_force_2024": 4693549,
+      "employed_2024": 4482339,
+      "gdp_millions_2024": 538265,
+      "gdp_growth_pct": 1.7,
+      "sector_employment": {
+        "manufacturing": 463070,
+        "healthcare": 691139,
+        "retail": 423344,
+        "government": 693597,
+        "professional": 527086,
+        "other": 1684103
+      },
+      "sector_employment_total": 4482339,
+      "trade_2024": {
+        "exports": 32948,
+        "imports": 74152
+      },
+      "cpi_regional": {
+        "2021": 102.9,
+        "2022": 109.4,
+        "2023": 113.5,
+        "2024": 116.6
+      },
+      "gdp_rank": 30
+    },
+    "41": {
+      "name": "Oregon",
+      "abbr": "OR",
+      "fips": "41",
+      "unemployment": {
+        "2021": 6.0,
+        "2022": 6.2,
+        "2023": 5.8,
+        "2024": 5.5
+      },
+      "labor_force_2024": 3984513,
+      "employed_2024": 3765365,
+      "gdp_millions_2024": 443432,
+      "gdp_growth_pct": 0.4,
+      "sector_employment": {
+        "manufacturing": 398201,
+        "healthcare": 567433,
+        "retail": 424324,
+        "government": 522922,
+        "professional": 494038,
+        "other": 1358447
+      },
+      "sector_employment_total": 3765365,
+      "trade_2024": {
+        "exports": 36605,
+        "imports": 58556
+      },
+      "cpi_regional": {
+        "2021": 102.8,
+        "2022": 108.5,
+        "2023": 111.4,
+        "2024": 114.3
+      },
+      "gdp_rank": 35
+    },
+    "40": {
+      "name": "Oklahoma",
+      "abbr": "OK",
+      "fips": "40",
+      "unemployment": {
+        "2021": 3.9,
+        "2022": 4.0,
+        "2023": 3.5,
+        "2024": 3.6
+      },
+      "labor_force_2024": 3869289,
+      "employed_2024": 3729995,
+      "gdp_millions_2024": 589085,
+      "gdp_growth_pct": 0.7,
+      "sector_employment": {
+        "manufacturing": 328298,
+        "healthcare": 542034,
+        "retail": 376755,
+        "government": 471981,
+        "professional": 414223,
+        "other": 1596704
+      },
+      "sector_employment_total": 3729995,
+      "trade_2024": {
+        "exports": 55028,
+        "imports": 47229
+      },
+      "cpi_regional": {
+        "2021": 104.4,
+        "2022": 109.4,
+        "2023": 113.5,
+        "2024": 116.1
+      },
+      "gdp_rank": 26
+    },
+    "09": {
+      "name": "Connecticut",
+      "abbr": "CT",
+      "fips": "09",
+      "unemployment": {
+        "2021": 5.5,
+        "2022": 4.7,
+        "2023": 4.1,
+        "2024": 4.1
+      },
+      "labor_force_2024": 3777111,
+      "employed_2024": 3622249,
+      "gdp_millions_2024": 626780,
+      "gdp_growth_pct": 1.3,
+      "sector_employment": {
+        "manufacturing": 315941,
+        "healthcare": 602066,
+        "retail": 345088,
+        "government": 453746,
+        "professional": 479770,
+        "other": 1425638
+      },
+      "sector_employment_total": 3622249,
+      "trade_2024": {
+        "exports": 44115,
+        "imports": 99865
+      },
+      "cpi_regional": {
+        "2021": 102.3,
+        "2022": 108.3,
+        "2023": 112.1,
+        "2024": 116.5
+      },
+      "gdp_rank": 25
+    },
+    "49": {
+      "name": "Utah",
+      "abbr": "UT",
+      "fips": "49",
+      "unemployment": {
+        "2021": 5.1,
+        "2022": 5.4,
+        "2023": 4.5,
+        "2024": 4.4
+      },
+      "labor_force_2024": 3305231,
+      "employed_2024": 3159801,
+      "gdp_millions_2024": 632532,
+      "gdp_growth_pct": 0.3,
+      "sector_employment": {
+        "manufacturing": 288587,
+        "healthcare": 529900,
+        "retail": 311818,
+        "government": 399083,
+        "professional": 358408,
+        "other": 1272005
+      },
+      "sector_employment_total": 3159801,
+      "trade_2024": {
+        "exports": 25471,
+        "imports": 62972
+      },
+      "cpi_regional": {
+        "2021": 103.5,
+        "2022": 107.1,
+        "2023": 109.8,
+        "2024": 114.0
+      },
+      "gdp_rank": 24
+    },
+    "19": {
+      "name": "Iowa",
+      "abbr": "IA",
+      "fips": "19",
+      "unemployment": {
+        "2021": 5.5,
+        "2022": 5.0,
+        "2023": 4.7,
+        "2024": 4.1
+      },
+      "labor_force_2024": 3285122,
+      "employed_2024": 3150432,
+      "gdp_millions_2024": 503107,
+      "gdp_growth_pct": 4.0,
+      "sector_employment": {
+        "manufacturing": 345914,
+        "healthcare": 439257,
+        "retail": 311815,
+        "government": 415604,
+        "professional": 440145,
+        "other": 1197697
+      },
+      "sector_employment_total": 3150432,
+      "trade_2024": {
+        "exports": 48761,
+        "imports": 41128
+      },
+      "cpi_regional": {
+        "2021": 102.3,
+        "2022": 107.9,
+        "2023": 111.9,
+        "2024": 116.8
+      },
+      "gdp_rank": 33
+    },
+    "32": {
+      "name": "Nevada",
+      "abbr": "NV",
+      "fips": "32",
+      "unemployment": {
+        "2021": 4.4,
+        "2022": 4.6,
+        "2023": 4.1,
+        "2024": 4.3
+      },
+      "labor_force_2024": 3194357,
+      "employed_2024": 3057000,
+      "gdp_millions_2024": 479346,
+      "gdp_growth_pct": 4.2,
+      "sector_employment": {
+        "manufacturing": 351516,
+        "healthcare": 514400,
+        "retail": 313018,
+        "government": 368949,
+        "professional": 427963,
+        "other": 1081154
+      },
+      "sector_employment_total": 3057000,
+      "trade_2024": {
+        "exports": 41727,
+        "imports": 58320
+      },
+      "cpi_regional": {
+        "2021": 104.3,
+        "2022": 107.3,
+        "2023": 111.0,
+        "2024": 115.0
+      },
+      "gdp_rank": 34
+    },
+    "05": {
+      "name": "Arkansas",
+      "abbr": "AR",
+      "fips": "05",
+      "unemployment": {
+        "2021": 3.8,
+        "2022": 4.0,
+        "2023": 3.4,
+        "2024": 3.3
+      },
+      "labor_force_2024": 3064686,
+      "employed_2024": 2963551,
+      "gdp_millions_2024": 529108,
+      "gdp_growth_pct": 2.1,
+      "sector_employment": {
+        "manufacturing": 292339,
+        "healthcare": 447783,
+        "retail": 308707,
+        "government": 473421,
+        "professional": 374186,
+        "other": 1067115
+      },
+      "sector_employment_total": 2963551,
+      "trade_2024": {
+        "exports": 48392,
+        "imports": 83966
+      },
+      "cpi_regional": {
+        "2021": 103.6,
+        "2022": 108.5,
+        "2023": 111.8,
+        "2024": 114.6
+      },
+      "gdp_rank": 31
+    },
+    "20": {
+      "name": "Kansas",
+      "abbr": "KS",
+      "fips": "20",
+      "unemployment": {
+        "2021": 6.1,
+        "2022": 5.3,
+        "2023": 5.3,
+        "2024": 4.6
+      },
+      "labor_force_2024": 2891773,
+      "employed_2024": 2758751,
+      "gdp_millions_2024": 551281,
+      "gdp_growth_pct": 2.4,
+      "sector_employment": {
+        "manufacturing": 254299,
+        "healthcare": 396163,
+        "retail": 308091,
+        "government": 392279,
+        "professional": 314870,
+        "other": 1093049
+      },
+      "sector_employment_total": 2758751,
+      "trade_2024": {
+        "exports": 76752,
+        "imports": 82925
+      },
+      "cpi_regional": {
+        "2021": 103.2,
+        "2022": 105.8,
+        "2023": 110.1,
+        "2024": 113.7
+      },
+      "gdp_rank": 28
+    },
+    "28": {
+      "name": "Mississippi",
+      "abbr": "MS",
+      "fips": "28",
+      "unemployment": {
+        "2021": 5.1,
+        "2022": 5.0,
+        "2023": 4.4,
+        "2024": 4.2
+      },
+      "labor_force_2024": 3016100,
+      "employed_2024": 2889424,
+      "gdp_millions_2024": 525195,
+      "gdp_growth_pct": 3.8,
+      "sector_employment": {
+        "manufacturing": 269547,
+        "healthcare": 502529,
+        "retail": 309726,
+        "government": 457218,
+        "professional": 376497,
+        "other": 973907
+      },
+      "sector_employment_total": 2889424,
+      "trade_2024": {
+        "exports": 64103,
+        "imports": 42600
+      },
+      "cpi_regional": {
+        "2021": 102.7,
+        "2022": 107.8,
+        "2023": 112.7,
+        "2024": 116.3
+      },
+      "gdp_rank": 32
+    },
+    "35": {
+      "name": "New Mexico",
+      "abbr": "NM",
+      "fips": "35",
+      "unemployment": {
+        "2021": 5.1,
+        "2022": 4.9,
+        "2023": 4.3,
+        "2024": 4.3
+      },
+      "labor_force_2024": 2025211,
+      "employed_2024": 1938127,
+      "gdp_millions_2024": 249400,
+      "gdp_growth_pct": 3.3,
+      "sector_employment": {
+        "manufacturing": 167279,
+        "healthcare": 332865,
+        "retail": 226320,
+        "government": 296687,
+        "professional": 243346,
+        "other": 671630
+      },
+      "sector_employment_total": 1938127,
+      "trade_2024": {
+        "exports": 26528,
+        "imports": 34986
+      },
+      "cpi_regional": {
+        "2021": 104.5,
+        "2022": 109.1,
+        "2023": 111.4,
+        "2024": 115.0
+      },
+      "gdp_rank": 39
+    },
+    "31": {
+      "name": "Nebraska",
+      "abbr": "NE",
+      "fips": "31",
+      "unemployment": {
+        "2021": 6.5,
+        "2022": 5.8,
+        "2023": 5.5,
+        "2024": 4.9
+      },
+      "labor_force_2024": 1999788,
+      "employed_2024": 1901798,
+      "gdp_millions_2024": 277234,
+      "gdp_growth_pct": 4.3,
+      "sector_employment": {
+        "manufacturing": 180969,
+        "healthcare": 321879,
+        "retail": 218601,
+        "government": 294349,
+        "professional": 273367,
+        "other": 612633
+      },
+      "sector_employment_total": 1901798,
+      "trade_2024": {
+        "exports": 34913,
+        "imports": 25450
+      },
+      "cpi_regional": {
+        "2021": 102.8,
+        "2022": 108.5,
+        "2023": 112.8,
+        "2024": 117.5
+      },
+      "gdp_rank": 37
+    },
+    "16": {
+      "name": "Idaho",
+      "abbr": "ID",
+      "fips": "16",
+      "unemployment": {
+        "2021": 4.4,
+        "2022": 4.1,
+        "2023": 3.0,
+        "2024": 3.2
+      },
+      "labor_force_2024": 1855306,
+      "employed_2024": 1795936,
+      "gdp_millions_2024": 270554,
+      "gdp_growth_pct": 2.9,
+      "sector_employment": {
+        "manufacturing": 201329,
+        "healthcare": 248212,
+        "retail": 215104,
+        "government": 235845,
+        "professional": 224705,
+        "other": 670741
+      },
+      "sector_employment_total": 1795936,
+      "trade_2024": {
+        "exports": 14761,
+        "imports": 29336
+      },
+      "cpi_regional": {
+        "2021": 103.4,
+        "2022": 109.6,
+        "2023": 112.2,
+        "2024": 114.7
+      },
+      "gdp_rank": 38
+    },
+    "54": {
+      "name": "West Virginia",
+      "abbr": "WV",
+      "fips": "54",
+      "unemployment": {
+        "2021": 5.4,
+        "2022": 4.9,
+        "2023": 4.6,
+        "2024": 4.7
+      },
+      "labor_force_2024": 1848840,
+      "employed_2024": 1761945,
+      "gdp_millions_2024": 319876,
+      "gdp_growth_pct": 2.8,
+      "sector_employment": {
+        "manufacturing": 158116,
+        "healthcare": 276983,
+        "retail": 184834,
+        "government": 253153,
+        "professional": 238600,
+        "other": 650259
+      },
+      "sector_employment_total": 1761945,
+      "trade_2024": {
+        "exports": 26368,
+        "imports": 24794
+      },
+      "cpi_regional": {
+        "2021": 104.1,
+        "2022": 107.2,
+        "2023": 110.4,
+        "2024": 114.0
+      },
+      "gdp_rank": 36
+    },
+    "15": {
+      "name": "Hawaii",
+      "abbr": "HI",
+      "fips": "15",
+      "unemployment": {
+        "2021": 5.7,
+        "2022": 5.1,
+        "2023": 4.6,
+        "2024": 4.5
+      },
+      "labor_force_2024": 1389880,
+      "employed_2024": 1327335,
+      "gdp_millions_2024": 238231,
+      "gdp_growth_pct": -0.5,
+      "sector_employment": {
+        "manufacturing": 136971,
+        "healthcare": 212165,
+        "retail": 163710,
+        "government": 173908,
+        "professional": 188024,
+        "other": 452557
+      },
+      "sector_employment_total": 1327335,
+      "trade_2024": {
+        "exports": 23991,
+        "imports": 21144
+      },
+      "cpi_regional": {
+        "2021": 103.6,
+        "2022": 108.9,
+        "2023": 112.9,
+        "2024": 117.2
+      },
+      "gdp_rank": 41
+    },
+    "33": {
+      "name": "New Hampshire",
+      "abbr": "NH",
+      "fips": "33",
+      "unemployment": {
+        "2021": 6.4,
+        "2022": 5.7,
+        "2023": 5.4,
+        "2024": 4.8
+      },
+      "labor_force_2024": 1428836,
+      "employed_2024": 1360252,
+      "gdp_millions_2024": 173491,
+      "gdp_growth_pct": 3.2,
+      "sector_employment": {
+        "manufacturing": 122789,
+        "healthcare": 193623,
+        "retail": 151397,
+        "government": 217372,
+        "professional": 178469,
+        "other": 496602
+      },
+      "sector_employment_total": 1360252,
+      "trade_2024": {
+        "exports": 22788,
+        "imports": 24523
+      },
+      "cpi_regional": {
+        "2021": 102.6,
+        "2022": 108.9,
+        "2023": 112.4,
+        "2024": 116.9
+      },
+      "gdp_rank": 44
+    },
+    "23": {
+      "name": "Maine",
+      "abbr": "ME",
+      "fips": "23",
+      "unemployment": {
+        "2021": 4.6,
+        "2022": 4.4,
+        "2023": 4.3,
+        "2024": 4.0
+      },
+      "labor_force_2024": 1437017,
+      "employed_2024": 1379536,
+      "gdp_millions_2024": 239549,
+      "gdp_growth_pct": 1.1,
+      "sector_employment": {
+        "manufacturing": 149984,
+        "healthcare": 188539,
+        "retail": 153414,
+        "government": 190515,
+        "professional": 188638,
+        "other": 508446
+      },
+      "sector_employment_total": 1379536,
+      "trade_2024": {
+        "exports": 25688,
+        "imports": 27381
+      },
+      "cpi_regional": {
+        "2021": 104.1,
+        "2022": 111.0,
+        "2023": 113.6,
+        "2024": 116.5
+      },
+      "gdp_rank": 40
+    },
+    "30": {
+      "name": "Montana",
+      "abbr": "MT",
+      "fips": "30",
+      "unemployment": {
+        "2021": 6.5,
+        "2022": 5.4,
+        "2023": 5.9,
+        "2024": 5.1
+      },
+      "labor_force_2024": 1068245,
+      "employed_2024": 1013765,
+      "gdp_millions_2024": 123634,
+      "gdp_growth_pct": 4.2,
+      "sector_employment": {
+        "manufacturing": 95427,
+        "healthcare": 161844,
+        "retail": 98039,
+        "government": 158416,
+        "professional": 117385,
+        "other": 382654
+      },
+      "sector_employment_total": 1013765,
+      "trade_2024": {
+        "exports": 10554,
+        "imports": 15300
+      },
+      "cpi_regional": {
+        "2021": 103.9,
+        "2022": 110.8,
+        "2023": 114.2,
+        "2024": 118.6
+      },
+      "gdp_rank": 46
+    },
+    "44": {
+      "name": "Rhode Island",
+      "abbr": "RI",
+      "fips": "44",
+      "unemployment": {
+        "2021": 4.5,
+        "2022": 4.8,
+        "2023": 4.0,
+        "2024": 4.2
+      },
+      "labor_force_2024": 1050526,
+      "employed_2024": 1006404,
+      "gdp_millions_2024": 193341,
+      "gdp_growth_pct": -0.3,
+      "sector_employment": {
+        "manufacturing": 106246,
+        "healthcare": 163173,
+        "retail": 126574,
+        "government": 134923,
+        "professional": 126835,
+        "other": 348653
+      },
+      "sector_employment_total": 1006404,
+      "trade_2024": {
+        "exports": 11403,
+        "imports": 12265
+      },
+      "cpi_regional": {
+        "2021": 104.1,
+        "2022": 108.6,
+        "2023": 112.5,
+        "2024": 116.6
+      },
+      "gdp_rank": 42
+    },
+    "10": {
+      "name": "Delaware",
+      "abbr": "DE",
+      "fips": "10",
+      "unemployment": {
+        "2021": 4.0,
+        "2022": 3.3,
+        "2023": 3.2,
+        "2024": 2.7
+      },
+      "labor_force_2024": 1043919,
+      "employed_2024": 1015733,
+      "gdp_millions_2024": 183420,
+      "gdp_growth_pct": 0.9,
+      "sector_employment": {
+        "manufacturing": 90834,
+        "healthcare": 182045,
+        "retail": 95066,
+        "government": 157493,
+        "professional": 117970,
+        "other": 372325
+      },
+      "sector_employment_total": 1015733,
+      "trade_2024": {
+        "exports": 9721,
+        "imports": 14228
+      },
+      "cpi_regional": {
+        "2021": 102.4,
+        "2022": 107.9,
+        "2023": 110.1,
+        "2024": 112.3
+      },
+      "gdp_rank": 43
+    },
+    "46": {
+      "name": "South Dakota",
+      "abbr": "SD",
+      "fips": "46",
+      "unemployment": {
+        "2021": 4.0,
+        "2022": 3.9,
+        "2023": 3.9,
+        "2024": 3.6
+      },
+      "labor_force_2024": 951309,
+      "employed_2024": 917062,
+      "gdp_millions_2024": 132606,
+      "gdp_growth_pct": -0.2,
+      "sector_employment": {
+        "manufacturing": 91812,
+        "healthcare": 166337,
+        "retail": 87058,
+        "government": 139298,
+        "professional": 132343,
+        "other": 300214
+      },
+      "sector_employment_total": 917062,
+      "trade_2024": {
+        "exports": 12219,
+        "imports": 13312
+      },
+      "cpi_regional": {
+        "2021": 104.4,
+        "2022": 106.8,
+        "2023": 110.2,
+        "2024": 113.5
+      },
+      "gdp_rank": 45
+    },
+    "38": {
+      "name": "North Dakota",
+      "abbr": "ND",
+      "fips": "38",
+      "unemployment": {
+        "2021": 5.3,
+        "2022": 4.5,
+        "2023": 4.2,
+        "2024": 4.2
+      },
+      "labor_force_2024": 801432,
+      "employed_2024": 767772,
+      "gdp_millions_2024": 99220,
+      "gdp_growth_pct": 4.5,
+      "sector_employment": {
+        "manufacturing": 77481,
+        "healthcare": 121138,
+        "retail": 87126,
+        "government": 94563,
+        "professional": 105852,
+        "other": 281612
+      },
+      "sector_employment_total": 767772,
+      "trade_2024": {
+        "exports": 12430,
+        "imports": 12065
+      },
+      "cpi_regional": {
+        "2021": 103.9,
+        "2022": 109.7,
+        "2023": 112.5,
+        "2024": 116.1
+      },
+      "gdp_rank": 47
+    },
+    "02": {
+      "name": "Alaska",
+      "abbr": "AK",
+      "fips": "02",
+      "unemployment": {
+        "2021": 4.6,
+        "2022": 4.0,
+        "2023": 4.0,
+        "2024": 4.0
+      },
+      "labor_force_2024": 709511,
+      "employed_2024": 681131,
+      "gdp_millions_2024": 75035,
+      "gdp_growth_pct": 3.6,
+      "sector_employment": {
+        "manufacturing": 59801,
+        "healthcare": 95791,
+        "retail": 80292,
+        "government": 104277,
+        "professional": 90044,
+        "other": 250926
+      },
+      "sector_employment_total": 681131,
+      "trade_2024": {
+        "exports": 7402,
+        "imports": 8387
+      },
+      "cpi_regional": {
+        "2021": 102.8,
+        "2022": 105.5,
+        "2023": 108.6,
+        "2024": 112.5
+      },
+      "gdp_rank": 49
+    },
+    "11": {
+      "name": "District of Columbia",
+      "abbr": "DC",
+      "fips": "11",
+      "unemployment": {
+        "2021": 6.6,
+        "2022": 5.8,
+        "2023": 5.3,
+        "2024": 5.0
+      },
+      "labor_force_2024": 699364,
+      "employed_2024": 664396,
+      "gdp_millions_2024": 72088,
+      "gdp_growth_pct": 3.7,
+      "sector_employment": {
+        "manufacturing": 63800,
+        "healthcare": 114678,
+        "retail": 74708,
+        "government": 101588,
+        "professional": 95315,
+        "other": 214307
+      },
+      "sector_employment_total": 664396,
+      "trade_2024": {
+        "exports": 9909,
+        "imports": 10094
+      },
+      "cpi_regional": {
+        "2021": 103.5,
+        "2022": 108.9,
+        "2023": 111.2,
+        "2024": 116.0
+      },
+      "gdp_rank": 50
+    },
+    "50": {
+      "name": "Vermont",
+      "abbr": "VT",
+      "fips": "50",
+      "unemployment": {
+        "2021": 4.3,
+        "2022": 3.9,
+        "2023": 3.9,
+        "2024": 3.5
+      },
+      "labor_force_2024": 673062,
+      "employed_2024": 649505,
+      "gdp_millions_2024": 70791,
+      "gdp_growth_pct": 2.6,
+      "sector_employment": {
+        "manufacturing": 55805,
+        "healthcare": 111594,
+        "retail": 65340,
+        "government": 88744,
+        "professional": 80405,
+        "other": 247617
+      },
+      "sector_employment_total": 649505,
+      "trade_2024": {
+        "exports": 5451,
+        "imports": 9159
+      },
+      "cpi_regional": {
+        "2021": 103.9,
+        "2022": 109.0,
+        "2023": 111.4,
+        "2024": 113.8
+      },
+      "gdp_rank": 51
+    },
+    "56": {
+      "name": "Wyoming",
+      "abbr": "WY",
+      "fips": "56",
+      "unemployment": {
+        "2021": 5.5,
+        "2022": 5.2,
+        "2023": 4.6,
+        "2024": 4.2
+      },
+      "labor_force_2024": 560046,
+      "employed_2024": 536524,
+      "gdp_millions_2024": 79672,
+      "gdp_growth_pct": 0.7,
+      "sector_employment": {
+        "manufacturing": 56525,
+        "healthcare": 85500,
+        "retail": 61977,
+        "government": 64870,
+        "professional": 67557,
+        "other": 200095
+      },
+      "sector_employment_total": 536524,
+      "trade_2024": {
+        "exports": 7962,
+        "imports": 4051
+      },
+      "cpi_regional": {
+        "2021": 102.8,
+        "2022": 105.9,
+        "2023": 108.4,
+        "2024": 111.2
+      },
+      "gdp_rank": 48
+    }
+  }
+}
