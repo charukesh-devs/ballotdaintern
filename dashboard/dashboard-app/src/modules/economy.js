@@ -1,29 +1,7 @@
-// Economy module — state-level employment, GDP, trade & CPI.
-//
-// This module is intentionally a SAMPLE: public/economy.json contains
-// synthetic placeholder numbers, not real BLS/BEA data (see its metadata).
-// It exists to prove the template works for a dataset with a completely
-// different shape than demographics.js — swap the data pipeline in
-// scripts/download_economy.py + clean_economy.py to make it real.
+// Economy module — real BEA/BLS data extracted from economy_employment_workbook.xlsx
 
-const SECTOR_LABELS = {
-  manufacturing: 'Manufacturing',
-  healthcare: 'Healthcare',
-  retail: 'Retail',
-  government: 'Government',
-  professional: 'Professional Services',
-  other: 'Other',
-}
-
-const SECTOR_COLORS = {
-  manufacturing: '#1a5bd6',
-  healthcare: '#0f9d6c',
-  retail: '#f5b02e',
-  government: '#8e44ad',
-  professional: '#378add',
-  other: '#555550',
-}
-
+const money = v => `$${v.toLocaleString()}`
+const billions = v => `$${(v / 1000).toFixed(1)}B`
 const pct = v => `${v}%`
 
 export default {
@@ -34,49 +12,67 @@ export default {
 
   dataUrl: '/economy.json',
 
-  title: 'State Economic Indicators',
-  subtitle: 'Click any state to view employment, GDP, trade & prices — sample data',
-  source: 'Sample data for template demo — swap in BLS/BEA via scripts/download_economy.py',
+  title: 'U.S. State Economic Indicators',
+  subtitle: 'Click any state to view GDP, income & unemployment breakdown',
+  source: 'Data: U.S. Bureau of Economic Analysis (BEA) & Bureau of Labor Statistics (BLS)',
 
+  // Map coloring: GDP by state (higher = darker)
   mapMetric: {
-    getValue: state => state.unemployment['2024'],
-    format: v => `${v}%`,
-    label: 'Unemployment Rate',
-    // Low-is-good metric, so invert the scale (light = low unemployment).
-    colors: ['#0c447c', '#1a5bd6', '#378add', '#6baed6', '#94c8eb', '#c5dff5', '#e6f1fb'],
+    getValue: state => state.gdp_latest,
+    format: v => `$${(v / 1000).toFixed(1)}B`,
+    label: 'GDP',
+    colors: ['#e8f5e9', '#c8e6c9', '#a5d6a7', '#81c784', '#66bb6a', '#4caf50', '#2e7d32'],
   },
 
   summary(states) {
     const list = Object.values(states)
-    const totalGdp = list.reduce((s, x) => s + x.gdp_millions_2024, 0)
-    const avgUnemployment = (list.reduce((s, x) => s + x.unemployment['2024'], 0) / list.length).toFixed(1)
-    const totalLaborForce = list.reduce((s, x) => s + x.labor_force_2024, 0)
-    const avgGdpGrowth = (list.reduce((s, x) => s + x.gdp_growth_pct, 0) / list.length).toFixed(1)
+    const totalGdp = list.reduce((s, x) => s + (x.gdp_latest || 0), 0)
+    const avgUnemployment = (list.reduce((s, x) => {
+      const vals = Object.values(x.unemployment || {})
+      return s + (vals.length ? vals[vals.length - 1] : 0)
+    }, 0) / list.length).toFixed(1)
+    const avgGrowth = (list.reduce((s, x) => s + (x.gdp_growth_pct || 0), 0) / list.length).toFixed(1)
+    const avgPerCapita = Math.round(list.reduce((s, x) => s + (x.per_capita_income_latest || 0), 0) / list.length)
     return [
       { label: 'Total GDP (2024)', value: `$${(totalGdp / 1_000_000).toFixed(1)}T`, sub: 'Sum of state GDP' },
-      { label: 'Avg. Unemployment', value: `${avgUnemployment}%`, sub: 'National average' },
-      { label: 'Labor Force', value: `${(totalLaborForce / 1_000_000).toFixed(0)}M`, sub: 'All 50 states + DC' },
-      { label: 'Avg. GDP Growth', value: `${avgGdpGrowth}%`, sub: 'Year over year' },
+      { label: 'Avg. Unemployment', value: `${avgUnemployment}%`, sub: 'Latest available year' },
+      { label: 'Avg. GDP Growth', value: `${avgGrowth}%`, sub: 'Year over year' },
+      { label: 'Avg. Per Capita Income', value: `$${avgPerCapita.toLocaleString()}`, sub: 'Personal income per capita' },
     ]
   },
 
   panel: {
     hero: {
-      getValue: state => state.unemployment['2024'],
-      format: v => `${v}%`,
-      label: 'Unemployment Rate (2024)',
+      getValue: state => state.gdp_latest,
+      format: v => `$${(v / 1000).toFixed(1)}B`,
+      label: 'GDP (2024)',
     },
     badge: {
-      getValue: state => -(state.unemployment['2024'] - state.unemployment['2021']).toFixed(1),
-      suffix: 'pts vs. 2021',
+      getValue: state => state.gdp_growth_pct,
+      suffix: '% growth',
     },
     rankBadge: { getValue: state => state.gdp_rank },
     quickStats: [
       { label: 'GDP Rank', getValue: state => state.gdp_rank, format: v => `#${v}`, accent: 'gold' },
-      { label: 'GDP (2024)', getValue: state => state.gdp_millions_2024, format: v => `$${(v / 1000).toFixed(1)}B` },
-      { label: 'Labor Force', getValue: state => state.labor_force_2024, format: v => v.toLocaleString() },
+      { label: 'Per Capita Income', getValue: state => state.per_capita_income_latest, format: money },
+      {
+        label: 'Unemployment',
+        getValue: state => {
+          const vals = Object.values(state.unemployment || {})
+          return vals.length ? vals[vals.length - 1] : 0
+        },
+        format: pct,
+      },
     ],
     sections: [
+      {
+        title: 'GDP by Year ($M)',
+        type: 'timeseries',
+        getSeries: state => state.gdp_millions,
+        color: '#2e7d32',
+        valueFormat: v => `$${(v / 1000).toFixed(0)}B`,
+        axisFormat: v => `$${(v / 1000).toFixed(0)}B`,
+      },
       {
         title: 'Unemployment Rate',
         type: 'timeseries',
@@ -86,47 +82,47 @@ export default {
         axisFormat: v => `${v}%`,
       },
       {
-        title: 'Trade (2024, $M)',
-        type: 'flow',
-        getRows: state => [
-          { label: 'Exports', value: state.trade_2024.exports },
-          { label: 'Imports', value: -state.trade_2024.imports },
-        ],
-        netLabel: 'Trade Balance',
-        format: v => `$${Math.abs(v).toLocaleString()}M`,
-      },
-      {
-        title: 'Regional CPI',
+        title: 'Per Capita Income ($)',
         type: 'timeseries',
-        getSeries: state => state.cpi_regional,
+        getSeries: state => state.per_capita_income,
         color: '#d64545',
-        valueFormat: v => v.toFixed(1),
-        axisFormat: v => v.toFixed(0),
+        valueFormat: v => `$${v.toLocaleString()}`,
+        axisFormat: v => `$${(v / 1000).toFixed(0)}K`,
       },
       {
-        title: 'Employment by Sector',
-        type: 'categories',
-        getGroups: state => Object.keys(SECTOR_LABELS).map(key => ({
-          key,
-          label: SECTOR_LABELS[key],
-          value: state.sector_employment[key],
-          color: SECTOR_COLORS[key],
-        })),
-        getTotal: state => state.sector_employment_total,
+        title: 'Personal Income ($M)',
+        type: 'timeseries',
+        getSeries: state => state.personal_income_millions,
+        color: '#8e44ad',
+        valueFormat: v => `$${(v / 1000).toFixed(1)}B`,
+        axisFormat: v => `$${(v / 1000).toFixed(0)}B`,
       },
     ],
   },
 
-  views: ['map', 'ranking'],
+  views: ['map', 'ranking', 'trend'],
 
   ranking: {
     columns: [
       { key: 'rank', label: '#', getValue: s => s.gdp_rank },
       { key: 'name', label: 'State', getValue: s => s.name, format: (v, s) => `${s.abbr} — ${v}` },
-      { key: 'gdp', label: 'GDP (2024)', getValue: s => s.gdp_millions_2024, format: v => `$${(v / 1000).toFixed(1)}B` },
+      { key: 'gdp', label: 'GDP (2024)', getValue: s => s.gdp_latest, format: billions },
       { key: 'growth', label: 'GDP Growth', getValue: s => s.gdp_growth_pct, format: pct },
-      { key: 'unemployment', label: 'Unemployment', getValue: s => s.unemployment['2024'], format: pct },
-      { key: 'labor', label: 'Labor Force', getValue: s => s.labor_force_2024, format: v => v.toLocaleString() },
+      { key: 'percapita', label: 'Per Capita Income', getValue: s => s.per_capita_income_latest, format: money },
+      {
+        key: 'unemployment', label: 'Unemployment', getValue: s => {
+          const vals = Object.values(s.unemployment || {})
+          return vals.length ? vals[vals.length - 1] : 0
+        }, format: pct,
+      },
     ],
+  },
+
+  trend: {
+    title: 'GDP Trend — Top 10 States (2021–2025)',
+    periods: ['2021', '2022', '2023', '2024', '2025'],
+    getSeriesValue: (state, period) => state.gdp_millions?.[period] || 0,
+    rankBy: state => state.gdp_latest,
+    axisFormat: v => `$${(v / 1000).toFixed(0)}B`,
   },
 }
