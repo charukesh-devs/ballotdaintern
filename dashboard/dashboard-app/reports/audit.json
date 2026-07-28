@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-07-28T05:31:51.353Z",
-  "elapsed": "1.9s",
+  "timestamp": "2026-07-28T05:46:14.130Z",
+  "elapsed": "0.6s",
   "overallPass": false,
   "results": [
     {
       "name": "Repository Health",
       "script": "verify_repository.mjs",
-      "passed": true,
+      "passed": false,
       "elapsed": "0.1s",
-      "output": "=== Repository Health Check ===\n\n--- .gitignore ---\n  ok  Covers: raw/\n  ok  Covers: processed/\n  ok  Covers: node_modules/\n  ok  Covers: dist/\n  ok  Covers: logs/\n\n--- package.json ---\n  info  Name: dashboard-app\n  info  Scripts: dev, build, lint, preview, verify, verify:quick\n  ok  node_modules installed (61 packages)\n\n--- Secrets Scan ---\n  ok  No secrets found in source files\n\n--- Directory Structure ---\n  ok  scripts/ (8 entries)\n  ok  raw/ (8 entries)\n  ok  processed/ (2 entries)\n  ok  logs/ (8 entries)\n  ok  core/ (0 entries)\n  ok  dashboard/ (4 entries)\n\n--- Dashboard ---\n  ok  src/modules/ (3 entries)\n  ok  src/components/ (11 entries)\n  ok  verify/ (9 entries)\n  ok  templates/ (4 entries)\n  ok  public/ (5 entries)\n\n--- Summary ---\nIssues: 0\nREPOSITORY HEALTHY\n"
+      "output": "=== Repository Health Check ===\n\n--- .gitignore ---\n  ok  Covers: raw/\n  ok  Covers: processed/\n  ok  Covers: node_modules/\n  ok  Covers: dist/\n  ok  Covers: logs/\n\n--- package.json ---\n  info  Name: dashboard-app\n  info  Scripts: dev, build, lint, preview, verify, verify:quick\n  WARN  node_modules not installed - run: npm install\n\n--- Secrets Scan ---\n\n--- Directory Structure ---\n  ok  scripts/ (7 entries)\n  info  raw/ (not found - will be created as needed)\n  info  processed/ (not found - will be created as needed)\n  info  logs/ (not found - will be created as needed)\n  info  core/ (not found - will be created as needed)\n  ok  dashboard/ (4 entries)\n\n--- Dashboard ---\n  ok  src/modules/ (5 entries)\n  ok  src/components/ (11 entries)\n  ok  verify/ (9 entries)\n  ok  templates/ (4 entries)\n  ok  public/ (5 entries)\n\n--- Summary ---\nIssues: 1\n1 ISSUE(S) FOUND\n\n"
     },
     {
       "name": "Raw Data Integrity",
       "script": "verify_raw_data.mjs",
       "passed": true,
-      "elapsed": "0.4s",
-      "output": "=== Raw Data Verification ===\n\n\n--- Summary ---\nFiles checked: 69\nTotal size: 350.1 MB\nDuplicate groups: None\nIssues: 0\n\nALL CHECKS PASSED\n"
+      "elapsed": "0.1s",
+      "output": "=== Raw Data Verification ===\n\nNo raw/ directory found. Skipping.\n"
     },
     {
       "name": "Module Metadata",
@@ -35,8 +35,8 @@
       "name": "Checksums",
       "script": "verify_checksums.mjs",
       "passed": true,
-      "elapsed": "0.7s",
-      "output": "=== Checksum Generation & Verification ===\n\nGenerated checksums:\n  acs/ACS20231YR_Table_Shells.txt\n    SHA-256: e25ee815917f1b660d0b2c2a86d814ee3c18add086e0d6ac94f35c7ecbfb4711\n    Size: 6.87 MB\n  acs/acsdt1y2023-b01001.dat\n    SHA-256: efb771950eef0eaa221d231b979b9aa8e664679a5fe0718d5eab1cf653ea301b\n    Size: 3.79 MB\n  acs/acsdt1y2023-b01002.dat\n    SHA-256: b574c75119e57186752b7b7edbe4bd16fd7dc265a5a906de720366f7757c7363\n    Size: 341.7 KB\n  acs/acsdt1y2023-b02001.dat\n    SHA-256: 3b8441120ce4cd1e4ad2db31dafb3d99af562cea8f0530867e4f30303fa8a914\n    Size: 947.6 KB\n  acs/acsdt1y2023-b03001.dat\n    SHA-256: bab465e19ddb5cc2f37566de4121b628b857d5bf8b3dfe29bb44a3e3878ceceb\n    Size: 461.8 KB\n  acs/acsdt1y2023-b03002.dat\n    SHA-256: 6b105eebede5fbc71bd2fb477db9774c0ef30bc7ce474e47d10854854f57f9e2\n    Size: 1.52 MB\n  acs/acsdt1y2023-b07003.dat\n    SHA-256: 0e763b6d0d2e7b56b1bae935068b32f2532c4f4c7b4e00aee3a8f489a53e6019\n    Size: 1.52 MB\n  acs/acsdt1y2023-b11001.dat\n    SHA-256: 2b163b7bb1f7d1cb966f021dd6d54183e978d6308b0caca1f984340eefce90a7\n    Size: 892.1 KB\n  acs/acsdt1y2023-b11003.dat\n    SHA-256: fce93b12768ed554fa0c7546ca0c8bfb204d4fd9e4316e7e29b382ca38b824c5\n    Size: 1.61 MB\n  acs/acsdt1y2023-b15003.dat\n    SHA-256: 6e3c7262a3ad24b8fab39ec87eff3cc1a3646403db8a49cb4ac3ac2390790078\n    Size: 1.77 MB\n  acs/acsdt1y2023-b16001.dat\n    SHA-256: 24964edc0d2f1232f714b99151fea7caa923bfb4de8941c801303c98bb067461\n    Size: 967.7 KB\n  acs/acsdt1y2023-b18101.dat\n    SHA-256: afe75fbdcedee4dc9686415ed53693c0f847f3f3777f3f4b0959632ff97bc52b\n    Size: 3.10 MB\n  acs/acsdt1y2023-b19001.dat\n    SHA-256: c29b619cc65424fe4af911389c070db47422333491d4f54df0e56002549ca3cf\n    Size: 1.41 MB\n  acs/acsdt1y2023-b19013.dat\n    SHA-256: 20530c33c93443062505a438df45917d61195bb07462a69701b4cce793cd556d\n    Size: 217.1 KB\n  acs/acsdt1y2023-b21001.dat\n    SHA-256: 4b1b1001a3f4bf9c42468be997f5c15e6aad4efd200f76461608bab068651a28\n    Size: 3.07 MB\n  acs/acsdt1y2023-b25001.dat\n    SHA-256: f723ca4"
+      "elapsed": "0.1s",
+      "output": "=== Checksum Generation & Verification ===\n\nNo raw/ directory found. Skipping.\n"
     },
     {
       "name": "Data Sources",
@@ -49,8 +49,8 @@
       "name": "Duplicate Detection",
       "script": "verify_duplicates.mjs",
       "passed": true,
-      "elapsed": "0.4s",
-      "output": "=== Duplicate File Detection ===\n\n--- Summary ---\nDuplicate groups: 0\nNo duplicates found\nReport: reports/duplicate_files.csv\n"
+      "elapsed": "0.1s",
+      "output": "=== Duplicate File Detection ===\n\nNo raw/ directory found. Skipping.\n"
     },
     {
       "name": "Download Scripts",
