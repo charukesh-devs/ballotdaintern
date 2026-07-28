@@ -30,6 +30,7 @@ export default {
   id: 'economy',
   label: 'Economy',
   icon: '📈',
+  owner: 'Vignesh',
 
   dataUrl: '/economy.json',
 

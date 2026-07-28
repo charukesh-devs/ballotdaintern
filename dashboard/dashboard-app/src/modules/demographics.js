@@ -29,6 +29,7 @@ export default {
   id: 'demographics',
   label: 'Demographics',
   icon: '🧑\u200d🤝\u200d🧑',
+  owner: 'Sai',
 
   // Where the per-state JSON lives (fetched at runtime from /public).
   dataUrl: '/demographics.json',
