@@ -139,6 +139,46 @@ body {
   font-size: 0.82rem;
 }
 
+/* ── Module Tabs ── */
+.module-tabs {
+  display: flex;
+  gap: 0;
+  background: #fff;
+  border-bottom: 1px solid #e8e5e0;
+  padding: 0 1.5rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  flex-shrink: 0;
+  animation: fadeInUp .4s var(--ease-spring) .05s both;
+}
+
+.module-tab {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--bd-ink-soft);
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.module-tab:hover { color: var(--bd-ink); }
+
+.module-tab.active {
+  color: var(--bd-blue-deep);
+  border-bottom-color: var(--bd-gold);
+  font-weight: 600;
+}
+
+.module-tab-icon { font-size: 0.9rem; }
+.module-tab-name { font-family: var(--font-display); }
+
 /* ── Main Layout ── */
 .main-layout {
   flex: 1;
