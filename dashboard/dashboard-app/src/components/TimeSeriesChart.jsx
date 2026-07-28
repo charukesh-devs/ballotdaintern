@@ -1,11 +1,24 @@
 import { useRef, useEffect } from 'react'
 import * as d3 from 'd3'
 
-export default function PopulationGrowthChart({ population, name }) {
+/**
+ * Generic animated line/area chart for a { periodLabel: value } series.
+ * Used for anything trended over time (population by year, CPI by month,
+ * unemployment rate by quarter, etc.) — any module can pass its own
+ * series and formatting without a new component.
+ *
+ * props:
+ *   series: { [period: string]: number }   e.g. { '2020': 79006400, ... }
+ *   name: string                            unique-ish key, used for the gradient id
+ *   color: string                           line/area color (defaults to gold)
+ *   valueFormat: (v) => string              point label formatter
+ *   axisFormat: (v) => string               y-axis tick formatter
+ */
+export default function TimeSeriesChart({ series, name, color = '#d99511', valueFormat, axisFormat }) {
   const svgRef = useRef(null)
 
   useEffect(() => {
-    if (!svgRef.current || !population) return
+    if (!svgRef.current || !series) return
 
     const svg = d3.select(svgRef.current)
     svg.selectAll('*').remove()
@@ -18,24 +31,27 @@ export default function PopulationGrowthChart({ population, name }) {
 
     svg.attr('viewBox', `0 0 ${width} ${height}`)
 
-    const entries = Object.entries(population)
-    const years = entries.map(d => d[0])
+    const entries = Object.entries(series)
+    const periods = entries.map(d => d[0])
     const values = entries.map(d => d[1])
 
-    const x = d3.scalePoint().domain(years).range([0, innerW]).padding(0.15)
+    const fmtValue = valueFormat || (v => v.toLocaleString())
+    const fmtAxis = axisFormat || fmtValue
+
+    const x = d3.scalePoint().domain(periods).range([0, innerW]).padding(0.15)
     const y = d3.scaleLinear()
       .domain([d3.min(values) * 0.985, d3.max(values) * 1.015])
       .range([innerH, 0])
 
     const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`)
 
-    const gradId = `pop-grad-${(name || '').replace(/\s/g, '')}`
+    const gradId = `ts-grad-${(name || 'series').replace(/[^a-zA-Z0-9]/g, '')}`
     const defs = svg.append('defs')
     const gradient = defs.append('linearGradient')
       .attr('id', gradId)
       .attr('x1', '0').attr('y1', '0').attr('x2', '0').attr('y2', '1')
-    gradient.append('stop').attr('offset', '0%').attr('stop-color', '#d99511').attr('stop-opacity', 0.25)
-    gradient.append('stop').attr('offset', '100%').attr('stop-color', '#d99511').attr('stop-opacity', 0.02)
+    gradient.append('stop').attr('offset', '0%').attr('stop-color', color).attr('stop-opacity', 0.25)
+    gradient.append('stop').attr('offset', '100%').attr('stop-color', color).attr('stop-opacity', 0.02)
 
     const area = d3.area()
       .x(d => x(d[0]))
@@ -57,7 +73,7 @@ export default function PopulationGrowthChart({ population, name }) {
     const linePath = g.append('path')
       .datum(entries)
       .attr('fill', 'none')
-      .attr('stroke', '#d99511')
+      .attr('stroke', color)
       .attr('stroke-width', 2.5)
       .attr('d', line)
 
@@ -80,13 +96,13 @@ export default function PopulationGrowthChart({ population, name }) {
         .attr('opacity', 1)
     }
 
-    entries.forEach(([yr, val]) => {
+    entries.forEach(([period, val]) => {
       g.append('circle')
-        .attr('cx', x(yr))
+        .attr('cx', x(period))
         .attr('cy', y(val))
         .attr('r', 3.5)
         .attr('fill', '#fff')
-        .attr('stroke', '#d99511')
+        .attr('stroke', color)
         .attr('stroke-width', 2)
         .attr('opacity', 0)
         .transition()
@@ -95,14 +111,14 @@ export default function PopulationGrowthChart({ population, name }) {
         .attr('opacity', 1)
 
       g.append('text')
-        .attr('x', x(yr))
+        .attr('x', x(period))
         .attr('y', y(val) - 10)
         .attr('text-anchor', 'middle')
         .attr('font-size', '9px')
         .attr('font-weight', '600')
         .attr('font-family', "'Lexend', sans-serif")
         .attr('fill', '#555550')
-        .text((val / 1_000_000).toFixed(1) + 'M')
+        .text(fmtValue(val))
         .attr('opacity', 0)
         .transition()
         .duration(300)
@@ -119,14 +135,14 @@ export default function PopulationGrowthChart({ population, name }) {
       .attr('fill', '#555550')
 
     g.append('g')
-      .call(d3.axisLeft(y).ticks(4).tickFormat(d => (d / 1_000_000).toFixed(0) + 'M').tickSize(0).tickPadding(6))
+      .call(d3.axisLeft(y).ticks(4).tickFormat(fmtAxis).tickSize(0).tickPadding(6))
       .select('.domain').remove()
       .selectAll('text')
       .attr('font-family', "'Source Sans 3', sans-serif")
       .attr('fill', '#555550')
       .style('font-variant-numeric', 'tabular-nums')
 
-  }, [population, name])
+  }, [series, name, color, valueFormat, axisFormat])
 
   return <svg ref={svgRef} style={{ width: '100%', height: 'auto', maxHeight: 'clamp(140px, 26vw, 210px)' }} />
 }

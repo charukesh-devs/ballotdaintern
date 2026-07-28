@@ -139,6 +139,262 @@ body {
   font-size: 0.82rem;
 }
 
+/* ── Module Tabs ── */
+.module-tabs {
+  display: flex;
+  gap: 0.4rem;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.9rem 1.5rem 0;
+  flex-shrink: 0;
+}
+
+.module-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--bd-ink-soft);
+  background: #fff;
+  border: 1px solid #e8e5e0;
+  border-radius: var(--radius-pill);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s var(--ease-spring);
+}
+
+.module-tab:hover { border-color: var(--bd-blue-bright); color: var(--bd-blue); }
+
+.module-tab.active {
+  background: linear-gradient(135deg, var(--bd-navy) 0%, var(--bd-navy-2) 100%);
+  color: #fff;
+  border-color: var(--bd-navy);
+}
+
+.module-tab-icon { font-size: 0.95rem; }
+
+/* ── View Tabs (map / ranking / trend within a module) ── */
+.view-tabs {
+  display: flex;
+  gap: 0.3rem;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem 0;
+  flex-shrink: 0;
+}
+
+.view-tab {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--bd-ink-soft);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 0.35rem 0.15rem;
+  margin-right: 0.75rem;
+  cursor: pointer;
+}
+
+.view-tab:hover { color: var(--bd-blue); }
+
+.view-tab.active {
+  color: var(--bd-blue);
+  border-bottom-color: var(--bd-gold);
+}
+
+/* ── Summary / Stat Cards ── */
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.9rem;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 0;
+  flex-shrink: 0;
+}
+
+.stat-card {
+  background: #fff;
+  border: 1px solid #e8e5e0;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  padding: 0.9rem 1.1rem;
+  animation: fadeInUp .4s var(--ease-spring) both;
+}
+
+.stat-card-label {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--bd-ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.stat-card-value {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--bd-navy);
+  margin-top: 0.15rem;
+}
+
+.stat-card-sub {
+  font-size: 0.72rem;
+  color: var(--bd-ink-soft);
+  margin-top: 0.1rem;
+}
+
+/* ── Ranking Table ── */
+.ranking-section {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  flex: 1;
+}
+
+.ranking-card {
+  background: #fff;
+  border: 1px solid #e8e5e0;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 1.25rem 1.5rem;
+  animation: fadeInUp .4s var(--ease-spring) both;
+}
+
+.ranking-card h3 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--bd-navy);
+  margin-bottom: 0.9rem;
+}
+
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.ranking-table th {
+  text-align: left;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--bd-ink-soft);
+  padding: 0.5rem 0.75rem;
+  border-bottom: 2px solid #e8e5e0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ranking-table th:hover { color: var(--bd-blue); }
+.ranking-table th.sorted { color: var(--bd-blue); }
+
+.ranking-table td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #f0efec;
+  white-space: nowrap;
+}
+
+.ranking-table tr { cursor: pointer; }
+.ranking-table tbody tr:hover { background: var(--bd-sky); }
+
+.ranking-table .abbr-badge {
+  display: inline-block;
+  background: var(--bd-sky);
+  color: var(--bd-blue-deep);
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+/* ── Trend Chart ── */
+.trend-section {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  flex: 1;
+}
+
+.trend-card {
+  background: #fff;
+  border: 1px solid #e8e5e0;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 1.25rem 1.5rem;
+  animation: fadeInUp .4s var(--ease-spring) both;
+}
+
+.trend-card h3 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--bd-navy);
+  margin-bottom: 0.75rem;
+}
+
+/* ── Period Scrubber (optional, opt-in per module) ── */
+.a250-scrub {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem 0;
+}
+
+.a250-scrub-inner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #fff;
+  border: 1px solid #e8e5e0;
+  border-radius: var(--radius-pill);
+  padding: 0.5rem 1rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.a250-scrub-label {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--bd-ink-soft);
+}
+
+.a250-scrub-input { flex: 1; accent-color: var(--bd-gold-deep); }
+
+.a250-scrub-years {
+  display: flex;
+  gap: 0.6rem;
+  font-size: 0.72rem;
+  color: var(--bd-ink-soft);
+}
+
+.a250-scrub-year.active { color: var(--bd-blue); font-weight: 700; }
+
+.a250-scrub-play {
+  background: var(--bd-navy);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+
 /* ── Main Layout ── */
 .main-layout {
   flex: 1;

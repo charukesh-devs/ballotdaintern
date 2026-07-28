@@ -13,16 +13,18 @@
       "abbr": "CA",
       "fips": "06",
       "population": {
-        "2020": 79006400,
-        "2021": 78290120,
-        "2022": 78081232,
-        "2023": 77930386
+        "2020": 39503200,
+        "2021": 39145060,
+        "2022": 39040616,
+        "2023": 38965193
       },
       "growth_pct": -1.4,
-      "births_2023": 828240,
-      "deaths_2023": 605408,
-      "intl_migration_2023": 301964,
-      "domestic_migration_2023": -676742,
+      "births_2023": 414120,
+      "deaths_2023": 302704,
+      "natural_change_2023": 111416,
+      "intl_migration_2023": 150982,
+      "domestic_migration_2023": -338371,
+      "net_migration_2023": -187389,
       "age": {
         "total": 38965193,
         "under_18": 8437329,
@@ -38,8 +40,10 @@
         "hispanic": 15760437,
         "asian": 6042726,
         "aian": 102548,
-        "two_plus": 259508,
-        "other": 1699061
+        "nhpi": 133436,
+        "some_other": 259508,
+        "two_plus": 1699061,
+        "other": 0
       },
       "income": 95521,
       "population_rank": 1
@@ -49,16 +53,18 @@
       "abbr": "TX",
       "fips": "48",
       "population": {
-        "2020": 58468722,
-        "2021": 59122572,
-        "2022": 60059696,
-        "2023": 61006602
+        "2020": 29234361,
+        "2021": 29561286,
+        "2022": 30029848,
+        "2023": 30503301
       },
       "growth_pct": 4.3,
-      "births_2023": 780988,
-      "deaths_2023": 464482,
-      "intl_migration_2023": 257068,
-      "domestic_migration_2023": 373534,
+      "births_2023": 390494,
+      "deaths_2023": 232241,
+      "natural_change_2023": 158253,
+      "intl_migration_2023": 128534,
+      "domestic_migration_2023": 186767,
+      "net_migration_2023": 315301,
       "age": {
         "total": 30503301,
         "under_18": 7540257,
@@ -74,8 +80,10 @@
         "hispanic": 12135688,
         "asian": 1707260,
         "aian": 45679,
-        "two_plus": 139867,
-        "other": 963386
+        "nhpi": 35135,
+        "some_other": 139867,
+        "two_plus": 963386,
+        "other": 0
       },
       "income": 75780,
       "population_rank": 2
@@ -85,16 +93,18 @@
       "abbr": "FL",
       "fips": "12",
       "population": {
-        "2020": 43182598,
-        "2021": 43661416,
-        "2022": 44491042,
-        "2023": 45221452
+        "2020": 21591299,
+        "2021": 21830708,
+        "2022": 22245521,
+        "2023": 22610726
       },
       "growth_pct": 4.7,
-      "births_2023": 447156,
-      "deaths_2023": 462362,
-      "intl_migration_2023": 356864,
-      "domestic_migration_2023": 388876,
+      "births_2023": 223578,
+      "deaths_2023": 231181,
+      "natural_change_2023": -7603,
+      "intl_migration_2023": 178432,
+      "domestic_migration_2023": 194438,
+      "net_migration_2023": 372870,
       "age": {
         "total": 22610726,
         "under_18": 4379016,
@@ -110,8 +120,10 @@
         "hispanic": 6196762,
         "asian": 660711,
         "aian": 22969,
-        "two_plus": 182205,
-        "other": 916069
+        "nhpi": 13974,
+        "some_other": 182205,
+        "two_plus": 916069,
+        "other": 0
       },
       "income": 73311,
       "population_rank": 3
@@ -121,16 +133,18 @@
       "abbr": "NY",
       "fips": "36",
       "population": {
-        "2020": 40209420,
-        "2021": 39709052,
-        "2022": 39346400,
-        "2023": 39142432
+        "2020": 20104710,
+        "2021": 19854526,
+        "2022": 19673200,
+        "2023": 19571216
       },
       "growth_pct": -2.7,
-      "births_2023": 414900,
-      "deaths_2023": 331828,
-      "intl_migration_2023": 147734,
-      "domestic_migration_2023": -433556,
+      "births_2023": 207450,
+      "deaths_2023": 165914,
+      "natural_change_2023": 41536,
+      "intl_migration_2023": 73867,
+      "domestic_migration_2023": -216778,
+      "net_migration_2023": -142911,
       "age": {
         "total": 19571216,
         "under_18": 3950749,
@@ -146,8 +160,10 @@
         "hispanic": 3872146,
         "asian": 1769413,
         "aian": 38001,
-        "two_plus": 188996,
-        "other": 763314
+        "nhpi": 5940,
+        "some_other": 188996,
+        "two_plus": 763314,
+        "other": 0
       },
       "income": 82095,
       "population_rank": 4
@@ -157,16 +173,18 @@
       "abbr": "PA",
       "fips": "42",
       "population": {
-        "2020": 25990954,
-        "2021": 26027228,
-        "2022": 25944182,
-        "2023": 25923366
+        "2020": 12995477,
+        "2021": 13013614,
+        "2022": 12972091,
+        "2023": 12961683
       },
       "growth_pct": -0.3,
-      "births_2023": 258978,
-      "deaths_2023": 281136,
-      "intl_migration_2023": 51552,
-      "domestic_migration_2023": -49650,
+      "births_2023": 129489,
+      "deaths_2023": 140568,
+      "natural_change_2023": -11079,
+      "intl_migration_2023": 25776,
+      "domestic_migration_2023": -24825,
+      "net_migration_2023": 951,
       "age": {
         "total": 12961683,
         "under_18": 2624629,
@@ -182,8 +200,10 @@
         "hispanic": 1151760,
         "asian": 494634,
         "aian": 8890,
-        "two_plus": 67784,
-        "other": 497438
+        "nhpi": 2429,
+        "some_other": 67784,
+        "two_plus": 497438,
+        "other": 0
       },
       "income": 73824,
       "population_rank": 5
@@ -193,16 +213,18 @@
       "abbr": "IL",
       "fips": "17",
       "population": {
-        "2020": 25580714,
-        "2021": 25380682,
-        "2022": 25165030,
-        "2023": 25099378
+        "2020": 12790357,
+        "2021": 12690341,
+        "2022": 12582515,
+        "2023": 12549689
       },
       "growth_pct": -1.9,
-      "births_2023": 254470,
-      "deaths_2023": 233564,
-      "intl_migration_2023": 80984,
-      "domestic_migration_2023": -167678,
+      "births_2023": 127235,
+      "deaths_2023": 116782,
+      "natural_change_2023": 10453,
+      "intl_migration_2023": 40492,
+      "domestic_migration_2023": -83839,
+      "net_migration_2023": -43347,
       "age": {
         "total": 12549689,
         "under_18": 2701627,
@@ -218,8 +240,10 @@
         "hispanic": 2378186,
         "asian": 744793,
         "aian": 12385,
-        "two_plus": 48029,
-        "other": 458091
+        "nhpi": 4038,
+        "some_other": 48029,
+        "two_plus": 458091,
+        "other": 0
       },
       "income": 80306,
       "population_rank": 6
@@ -229,16 +253,18 @@
       "abbr": "OH",
       "fips": "39",
       "population": {
-        "2020": 23596584,
-        "2021": 23530454,
-        "2022": 23519394,
-        "2023": 23571870
+        "2020": 11798292,
+        "2021": 11765227,
+        "2022": 11759697,
+        "2023": 11785935
       },
       "growth_pct": -0.1,
-      "births_2023": 257652,
-      "deaths_2023": 262576,
-      "intl_migration_2023": 56162,
-      "domestic_migration_2023": 1274,
+      "births_2023": 128826,
+      "deaths_2023": 131288,
+      "natural_change_2023": -2462,
+      "intl_migration_2023": 28081,
+      "domestic_migration_2023": 637,
+      "net_migration_2023": 28718,
       "age": {
         "total": 11785935,
         "under_18": 2570621,
@@ -254,8 +280,10 @@
         "hispanic": 566230,
         "asian": 300771,
         "aian": 9053,
-        "two_plus": 52768,
-        "other": 552486
+        "nhpi": 4193,
+        "some_other": 52768,
+        "two_plus": 552486,
+        "other": 0
       },
       "income": 67769,
       "population_rank": 7
@@ -265,16 +293,18 @@
       "abbr": "GA",
       "fips": "13",
       "population": {
-        "2020": 21464780,
-        "2021": 21580770,
-        "2022": 21826300,
-        "2023": 22058454
+        "2020": 10732390,
+        "2021": 10790385,
+        "2022": 10913150,
+        "2023": 11029227
       },
       "growth_pct": 2.8,
-      "births_2023": 251328,
-      "deaths_2023": 195694,
-      "intl_migration_2023": 60238,
-      "domestic_migration_2023": 116412,
+      "births_2023": 125664,
+      "deaths_2023": 97847,
+      "natural_change_2023": 27817,
+      "intl_migration_2023": 30119,
+      "domestic_migration_2023": 58206,
+      "net_migration_2023": 88325,
       "age": {
         "total": 11029227,
         "under_18": 2534348,
@@ -290,8 +320,10 @@
         "hispanic": 1222577,
         "asian": 495256,
         "aian": 15153,
-        "two_plus": 75521,
-        "other": 487107
+        "nhpi": 8266,
+        "some_other": 75521,
+        "two_plus": 487107,
+        "other": 0
       },
       "income": 74632,
       "population_rank": 8
@@ -301,16 +333,18 @@
       "abbr": "NC",
       "fips": "37",
       "population": {
-        "2020": 20907624,
-        "2021": 21134200,
-        "2022": 21391930,
-        "2023": 21670982
+        "2020": 10453812,
+        "2021": 10567100,
+        "2022": 10695965,
+        "2023": 10835491
       },
       "growth_pct": 3.7,
-      "births_2023": 242296,
-      "deaths_2023": 216982,
-      "intl_migration_2023": 58896,
-      "domestic_migration_2023": 194528,
+      "births_2023": 121148,
+      "deaths_2023": 108491,
+      "natural_change_2023": 12657,
+      "intl_migration_2023": 29448,
+      "domestic_migration_2023": 97264,
+      "net_migration_2023": 126712,
       "age": {
         "total": 10835491,
         "under_18": 2322499,
@@ -326,8 +360,10 @@
         "hispanic": 1236873,
         "asian": 357550,
         "aian": 90082,
-        "two_plus": 58065,
-        "other": 461010
+        "nhpi": 4667,
+        "some_other": 58065,
+        "two_plus": 461010,
+        "other": 0
       },
       "income": 70804,
       "population_rank": 9
@@ -337,16 +373,18 @@
       "abbr": "MI",
       "fips": "26",
       "population": {
-        "2020": 20141254,
-        "2021": 20076234,
-        "2022": 20066562,
-        "2023": 20074522
+        "2020": 10070627,
+        "2021": 10038117,
+        "2022": 10033281,
+        "2023": 10037261
       },
       "growth_pct": -0.3,
-      "births_2023": 203822,
-      "deaths_2023": 211882,
-      "intl_migration_2023": 45634,
-      "domestic_migration_2023": -30102,
+      "births_2023": 101911,
+      "deaths_2023": 105941,
+      "natural_change_2023": -4030,
+      "intl_migration_2023": 22817,
+      "domestic_migration_2023": -15051,
+      "net_migration_2023": 7766,
       "age": {
         "total": 10037261,
         "under_18": 2110471,
@@ -362,8 +400,10 @@
         "hispanic": 598476,
         "asian": 337521,
         "aian": 34024,
-        "two_plus": 39453,
-        "other": 454981
+        "nhpi": 2268,
+        "some_other": 39453,
+        "two_plus": 454981,
+        "other": 0
       },
       "income": 69183,
       "population_rank": 10
@@ -373,16 +413,18 @@
       "abbr": "NJ",
       "fips": "34",
       "population": {
-        "2020": 18544784,
-        "2021": 18538350,
-        "2022": 18521634,
-        "2023": 18581682
+        "2020": 9272392,
+        "2021": 9269175,
+        "2022": 9260817,
+        "2023": 9290841
       },
       "growth_pct": 0.2,
-      "births_2023": 204110,
-      "deaths_2023": 153126,
-      "intl_migration_2023": 98596,
-      "domestic_migration_2023": -89332,
+      "births_2023": 102055,
+      "deaths_2023": 76563,
+      "natural_change_2023": 25492,
+      "intl_migration_2023": 49298,
+      "domestic_migration_2023": -44666,
+      "net_migration_2023": 4632,
       "age": {
         "total": 9290841,
         "under_18": 2009165,
@@ -398,8 +440,10 @@
         "hispanic": 2105350,
         "asian": 940280,
         "aian": 7852,
-        "two_plus": 77074,
-        "other": 339392
+        "nhpi": 1807,
+        "some_other": 77074,
+        "two_plus": 339392,
+        "other": 0
       },
       "income": 99781,
       "population_rank": 11
@@ -409,16 +453,18 @@
       "abbr": "VA",
       "fips": "51",
       "population": {
-        "2020": 17274386,
-        "2021": 17314696,
-        "2022": 17358198,
-        "2023": 17431396
+        "2020": 8637193,
+        "2021": 8657348,
+        "2022": 8679099,
+        "2023": 8715698
       },
       "growth_pct": 0.9,
-      "births_2023": 191338,
-      "deaths_2023": 159960,
-      "intl_migration_2023": 56234,
-      "domestic_migration_2023": -13970,
+      "births_2023": 95669,
+      "deaths_2023": 79980,
+      "natural_change_2023": 15689,
+      "intl_migration_2023": 28117,
+      "domestic_migration_2023": -6985,
+      "net_migration_2023": 21132,
       "age": {
         "total": 8715698,
         "under_18": 1872177,
@@ -434,8 +480,10 @@
         "hispanic": 970049,
         "asian": 600302,
         "aian": 11529,
-        "two_plus": 52753,
-        "other": 437341
+        "nhpi": 6295,
+        "some_other": 52753,
+        "two_plus": 437341,
+        "other": 0
       },
       "income": 89931,
       "population_rank": 12
@@ -445,16 +493,18 @@
       "abbr": "WA",
       "fips": "53",
       "population": {
-        "2020": 15449132,
-        "2021": 15482866,
-        "2022": 15568954,
-        "2023": 15625760
+        "2020": 7724566,
+        "2021": 7741433,
+        "2022": 7784477,
+        "2023": 7812880
       },
       "growth_pct": 1.1,
-      "births_2023": 165046,
-      "deaths_2023": 135326,
-      "intl_migration_2023": 57838,
-      "domestic_migration_2023": -30552,
+      "births_2023": 82523,
+      "deaths_2023": 67663,
+      "natural_change_2023": 14860,
+      "intl_migration_2023": 28919,
+      "domestic_migration_2023": -15276,
+      "net_migration_2023": 13643,
       "age": {
         "total": 7812880,
         "under_18": 1647192,
@@ -470,8 +520,10 @@
         "hispanic": 1141979,
         "asian": 772796,
         "aian": 62020,
-        "two_plus": 50211,
-        "other": 547545
+        "nhpi": 55962,
+        "some_other": 50211,
+        "two_plus": 547545,
+        "other": 0
       },
       "income": 94605,
       "population_rank": 13
@@ -481,16 +533,18 @@
       "abbr": "AZ",
       "fips": "04",
       "population": {
-        "2020": 14373366,
-        "2021": 14544974,
-        "2022": 14731368,
-        "2023": 14862688
+        "2020": 7186683,
+        "2021": 7272487,
+        "2022": 7365684,
+        "2023": 7431344
       },
       "growth_pct": 3.4,
-      "births_2023": 156988,
-      "deaths_2023": 141584,
-      "intl_migration_2023": 43270,
-      "domestic_migration_2023": 72358,
+      "births_2023": 78494,
+      "deaths_2023": 70792,
+      "natural_change_2023": 7702,
+      "intl_migration_2023": 21635,
+      "domestic_migration_2023": 36179,
+      "net_migration_2023": 57814,
       "age": {
         "total": 7431344,
         "under_18": 1580079,
@@ -506,8 +560,10 @@
         "hispanic": 2346808,
         "asian": 259261,
         "aian": 233411,
-        "two_plus": 35912,
-        "other": 322057
+        "nhpi": 14393,
+        "some_other": 35912,
+        "two_plus": 322057,
+        "other": 0
       },
       "income": 77315,
       "population_rank": 14
@@ -517,16 +573,18 @@
       "abbr": "TN",
       "fips": "47",
       "population": {
-        "2020": 13852182,
-        "2021": 13927418,
-        "2022": 14097952,
-        "2023": 14252978
+        "2020": 6926091,
+        "2021": 6963709,
+        "2022": 7048976,
+        "2023": 7126489
       },
       "growth_pct": 2.9,
-      "births_2023": 164488,
-      "deaths_2023": 162432,
-      "intl_migration_2023": 26108,
-      "domestic_migration_2023": 126834,
+      "births_2023": 82244,
+      "deaths_2023": 81216,
+      "natural_change_2023": 1028,
+      "intl_migration_2023": 13054,
+      "domestic_migration_2023": 63417,
+      "net_migration_2023": 76471,
       "age": {
         "total": 7126489,
         "under_18": 1563360,
@@ -542,8 +600,10 @@
         "hispanic": 533644,
         "asian": 128645,
         "aian": 6963,
-        "two_plus": 28482,
-        "other": 278839
+        "nhpi": 3803,
+        "some_other": 28482,
+        "two_plus": 278839,
+        "other": 0
       },
       "income": 67631,
       "population_rank": 15
@@ -553,16 +613,18 @@
       "abbr": "MA",
       "fips": "25",
       "population": {
-        "2020": 13995426,
-        "2021": 13983902,
-        "2022": 13965480,
-        "2023": 14002798
+        "2020": 6997713,
+        "2021": 6991951,
+        "2022": 6982740,
+        "2023": 7001399
       },
       "growth_pct": 0.1,
-      "births_2023": 136774,
-      "deaths_2023": 122808,
-      "intl_migration_2023": 101294,
-      "domestic_migration_2023": -78298,
+      "births_2023": 68387,
+      "deaths_2023": 61404,
+      "natural_change_2023": 6983,
+      "intl_migration_2023": 50647,
+      "domestic_migration_2023": -39149,
+      "net_migration_2023": 11498,
       "age": {
         "total": 7001399,
         "under_18": 1341439,
@@ -578,8 +640,10 @@
         "hispanic": 944383,
         "asian": 512411,
         "aian": 4509,
-        "two_plus": 97282,
-        "other": 368620
+        "nhpi": 2022,
+        "some_other": 97282,
+        "two_plus": 368620,
+        "other": 0
       },
       "income": 99858,
       "population_rank": 16
@@ -589,16 +653,18 @@
       "abbr": "IN",
       "fips": "18",
       "population": {
-        "2020": 13578196,
-        "2021": 13627596,
-        "2022": 13664548,
-        "2023": 13724398
+        "2020": 6789098,
+        "2021": 6813798,
+        "2022": 6832274,
+        "2023": 6862199
       },
       "growth_pct": 1.1,
-      "births_2023": 159174,
-      "deaths_2023": 144158,
-      "intl_migration_2023": 35738,
-      "domestic_migration_2023": 9198,
+      "births_2023": 79587,
+      "deaths_2023": 72079,
+      "natural_change_2023": 7508,
+      "intl_migration_2023": 17869,
+      "domestic_migration_2023": 4599,
+      "net_migration_2023": 22468,
       "age": {
         "total": 6862199,
         "under_18": 1580906,
@@ -614,8 +680,10 @@
         "hispanic": 597785,
         "asian": 180254,
         "aian": 5363,
-        "two_plus": 27349,
-        "other": 287151
+        "nhpi": 3779,
+        "some_other": 27349,
+        "two_plus": 287151,
+        "other": 0
       },
       "income": 69477,
       "population_rank": 17
@@ -625,16 +693,18 @@
       "abbr": "MO",
       "fips": "29",
       "population": {
-        "2020": 12308852,
-        "2021": 12340786,
-        "2022": 12354336,
-        "2023": 12392312
+        "2020": 6154426,
+        "2021": 6170393,
+        "2022": 6177168,
+        "2023": 6196156
       },
       "growth_pct": 0.7,
-      "births_2023": 136668,
-      "deaths_2023": 136778,
-      "intl_migration_2023": 15704,
-      "domestic_migration_2023": 22342,
+      "births_2023": 68334,
+      "deaths_2023": 68389,
+      "natural_change_2023": -55,
+      "intl_migration_2023": 7852,
+      "domestic_migration_2023": 11171,
+      "net_migration_2023": 19023,
       "age": {
         "total": 6196156,
         "under_18": 1371339,
@@ -650,8 +720,10 @@
         "hispanic": 325288,
         "asian": 126970,
         "aian": 11404,
-        "two_plus": 24198,
-        "other": 298753
+        "nhpi": 9464,
+        "some_other": 24198,
+        "two_plus": 298753,
+        "other": 0
       },
       "income": 68545,
       "population_rank": 18
@@ -661,16 +733,18 @@
       "abbr": "MD",
       "fips": "24",
       "population": {
-        "2020": 12347378,
-        "2021": 12350090,
-        "2022": 12327962,
-        "2023": 12360506
+        "2020": 6173689,
+        "2021": 6175045,
+        "2022": 6163981,
+        "2023": 6180253
       },
       "growth_pct": 0.1,
-      "births_2023": 135938,
-      "deaths_2023": 107540,
-      "intl_migration_2023": 65954,
-      "domestic_migration_2023": -61810,
+      "births_2023": 67969,
+      "deaths_2023": 53770,
+      "natural_change_2023": 14199,
+      "intl_migration_2023": 32977,
+      "domestic_migration_2023": -30905,
+      "net_migration_2023": 2072,
       "age": {
         "total": 6180253,
         "under_18": 1358921,
@@ -686,8 +760,10 @@
         "hispanic": 781336,
         "asian": 407697,
         "aian": 6657,
-        "two_plus": 44964,
-        "other": 290774
+        "nhpi": 2056,
+        "some_other": 44964,
+        "two_plus": 290774,
+        "other": 0
       },
       "income": 98678,
       "population_rank": 19
@@ -697,16 +773,18 @@
       "abbr": "WI",
       "fips": "55",
       "population": {
-        "2020": 11793400,
-        "2021": 11759956,
-        "2022": 11781086,
-        "2023": 11821910
+        "2020": 5896700,
+        "2021": 5879978,
+        "2022": 5890543,
+        "2023": 5910955
       },
       "growth_pct": 0.2,
-      "births_2023": 119678,
-      "deaths_2023": 117384,
-      "intl_migration_2023": 27306,
-      "domestic_migration_2023": 11296,
+      "births_2023": 59839,
+      "deaths_2023": 58692,
+      "natural_change_2023": 1147,
+      "intl_migration_2023": 13653,
+      "domestic_migration_2023": 5648,
+      "net_migration_2023": 19301,
       "age": {
         "total": 5910955,
         "under_18": 1244078,
@@ -722,8 +800,10 @@
         "hispanic": 478074,
         "asian": 177732,
         "aian": 35093,
-        "two_plus": 22938,
-        "other": 219071
+        "nhpi": 1649,
+        "some_other": 22938,
+        "two_plus": 219071,
+        "other": 0
       },
       "income": 74631,
       "population_rank": 20
@@ -733,16 +813,18 @@
       "abbr": "CO",
       "fips": "08",
       "population": {
-        "2020": 11570438,
-        "2021": 11623192,
-        "2022": 11682078,
-        "2023": 11755220
+        "2020": 5785219,
+        "2021": 5811596,
+        "2022": 5841039,
+        "2023": 5877610
       },
       "growth_pct": 1.6,
-      "births_2023": 124996,
-      "deaths_2023": 90198,
-      "intl_migration_2023": 23862,
-      "domestic_migration_2023": 14472,
+      "births_2023": 62498,
+      "deaths_2023": 45099,
+      "natural_change_2023": 17399,
+      "intl_migration_2023": 11931,
+      "domestic_migration_2023": 7236,
+      "net_migration_2023": 19167,
       "age": {
         "total": 5877610,
         "under_18": 1210680,
@@ -758,8 +840,10 @@
         "hispanic": 1336324,
         "asian": 192812,
         "aian": 19394,
-        "two_plus": 33537,
-        "other": 281430
+        "nhpi": 8087,
+        "some_other": 33537,
+        "two_plus": 281430,
+        "other": 0
       },
       "income": 92911,
       "population_rank": 21
@@ -769,16 +853,18 @@
       "abbr": "MN",
       "fips": "27",
       "population": {
-        "2020": 11421156,
-        "2021": 11435936,
-        "2022": 11428600,
-        "2023": 11475830
+        "2020": 5710578,
+        "2021": 5717968,
+        "2022": 5714300,
+        "2023": 5737915
       },
       "growth_pct": 0.5,
-      "births_2023": 127508,
-      "deaths_2023": 99822,
-      "intl_migration_2023": 29150,
-      "domestic_migration_2023": -9372,
+      "births_2023": 63754,
+      "deaths_2023": 49911,
+      "natural_change_2023": 13843,
+      "intl_migration_2023": 14575,
+      "domestic_migration_2023": -4686,
+      "net_migration_2023": 9889,
       "age": {
         "total": 5737915,
         "under_18": 1294975,
@@ -794,8 +880,10 @@
         "hispanic": 366967,
         "asian": 296774,
         "aian": 41463,
-        "two_plus": 26655,
-        "other": 259045
+        "nhpi": 3472,
+        "some_other": 26655,
+        "two_plus": 259045,
+        "other": 0
       },
       "income": 85086,
       "population_rank": 22
@@ -805,16 +893,18 @@
       "abbr": "SC",
       "fips": "45",
       "population": {
-        "2020": 10264302,
-        "2021": 10387696,
-        "2022": 10565910,
-        "2023": 10747110
+        "2020": 5132151,
+        "2021": 5193848,
+        "2022": 5282955,
+        "2023": 5373555
       },
       "growth_pct": 4.7,
-      "births_2023": 115162,
-      "deaths_2023": 117704,
-      "intl_migration_2023": 18582,
-      "domestic_migration_2023": 165124,
+      "births_2023": 57581,
+      "deaths_2023": 58852,
+      "natural_change_2023": -1271,
+      "intl_migration_2023": 9291,
+      "domestic_migration_2023": 82562,
+      "net_migration_2023": 91853,
       "age": {
         "total": 5373555,
         "under_18": 1142238,
@@ -830,8 +920,10 @@
         "hispanic": 399963,
         "asian": 92726,
         "aian": 8894,
-        "two_plus": 25670,
-        "other": 214414
+        "nhpi": 4436,
+        "some_other": 25670,
+        "two_plus": 214414,
+        "other": 0
       },
       "income": 67804,
       "population_rank": 23
@@ -841,16 +933,18 @@
       "abbr": "AL",
       "fips": "01",
       "population": {
-        "2020": 10063728,
-        "2021": 10100760,
-        "2022": 10147806,
-        "2023": 10216936
+        "2020": 5031864,
+        "2021": 5050380,
+        "2022": 5073903,
+        "2023": 5108468
       },
       "growth_pct": 1.5,
-      "births_2023": 116502,
-      "deaths_2023": 119626,
-      "intl_migration_2023": 10768,
-      "domestic_migration_2023": 61488,
+      "births_2023": 58251,
+      "deaths_2023": 59813,
+      "natural_change_2023": -1562,
+      "intl_migration_2023": 5384,
+      "domestic_migration_2023": 30744,
+      "net_migration_2023": 36128,
       "age": {
         "total": 5108468,
         "under_18": 1129646,
@@ -866,8 +960,10 @@
         "hispanic": 290906,
         "asian": 76860,
         "aian": 13101,
-        "two_plus": 14253,
-        "other": 181777
+        "nhpi": 2110,
+        "some_other": 14253,
+        "two_plus": 181777,
+        "other": 0
       },
       "income": 62212,
       "population_rank": 24
@@ -877,16 +973,18 @@
       "abbr": "LA",
       "fips": "22",
       "population": {
-        "2020": 9304044,
-        "2021": 9254094,
-        "2022": 9176046,
-        "2023": 9147498
+        "2020": 4652022,
+        "2021": 4627047,
+        "2022": 4588023,
+        "2023": 4573749
       },
       "growth_pct": -1.7,
-      "births_2023": 112418,
-      "deaths_2023": 100188,
-      "intl_migration_2023": 18548,
-      "domestic_migration_2023": -59384,
+      "births_2023": 56209,
+      "deaths_2023": 50094,
+      "natural_change_2023": 6115,
+      "intl_migration_2023": 9274,
+      "domestic_migration_2023": -29692,
+      "net_migration_2023": -20418,
       "age": {
         "total": 4573749,
         "under_18": 1063436,
@@ -902,8 +1000,10 @@
         "hispanic": 327004,
         "asian": 78922,
         "aian": 22123,
-        "two_plus": 27788,
-        "other": 189260
+        "nhpi": 4051,
+        "some_other": 27788,
+        "two_plus": 189260,
+        "other": 0
       },
       "income": 58229,
       "population_rank": 25
@@ -913,16 +1013,18 @@
       "abbr": "KY",
       "fips": "21",
       "population": {
-        "2020": 9016310,
-        "2021": 9015200,
-        "2022": 9023126,
-        "2023": 9052308
+        "2020": 4508155,
+        "2021": 4507600,
+        "2022": 4511563,
+        "2023": 4526154
       },
       "growth_pct": 0.4,
-      "births_2023": 104760,
-      "deaths_2023": 108770,
-      "intl_migration_2023": 15254,
-      "domestic_migration_2023": 17930,
+      "births_2023": 52380,
+      "deaths_2023": 54385,
+      "natural_change_2023": -2005,
+      "intl_migration_2023": 7627,
+      "domestic_migration_2023": 8965,
+      "net_migration_2023": 16592,
       "age": {
         "total": 4526154,
         "under_18": 1011737,
@@ -938,8 +1040,10 @@
         "hispanic": 219536,
         "asian": 64157,
         "aian": 5521,
-        "two_plus": 11606,
-        "other": 198518
+        "nhpi": 2083,
+        "some_other": 11606,
+        "two_plus": 198518,
+        "other": 0
       },
       "income": 61118,
       "population_rank": 26
@@ -949,16 +1053,18 @@
       "abbr": "OR",
       "fips": "41",
       "population": {
-        "2020": 8490088,
-        "2021": 8512930,
-        "2022": 8478758,
-        "2023": 8466716
+        "2020": 4245044,
+        "2021": 4256465,
+        "2022": 4239379,
+        "2023": 4233358
       },
       "growth_pct": -0.3,
-      "births_2023": 78092,
-      "deaths_2023": 86570,
-      "intl_migration_2023": 8608,
-      "domestic_migration_2023": -12102,
+      "births_2023": 39046,
+      "deaths_2023": 43285,
+      "natural_change_2023": -4239,
+      "intl_migration_2023": 4304,
+      "domestic_migration_2023": -6051,
+      "net_migration_2023": -1747,
       "age": {
         "total": 4233358,
         "under_18": 829801,
@@ -974,8 +1080,10 @@
         "hispanic": 631563,
         "asian": 191497,
         "aian": 25980,
-        "two_plus": 26713,
-        "other": 262889
+        "nhpi": 14997,
+        "some_other": 26713,
+        "two_plus": 262889,
+        "other": 0
       },
       "income": 80160,
       "population_rank": 27
@@ -985,16 +1093,18 @@
       "abbr": "OK",
       "fips": "40",
       "population": {
-        "2020": 7930468,
-        "2021": 7983268,
-        "2022": 8038542,
-        "2023": 8107648
+        "2020": 3965234,
+        "2021": 3991634,
+        "2022": 4019271,
+        "2023": 4053824
       },
       "growth_pct": 2.2,
-      "births_2023": 96146,
-      "deaths_2023": 91012,
-      "intl_migration_2023": 16760,
-      "domestic_migration_2023": 47174,
+      "births_2023": 48073,
+      "deaths_2023": 45506,
+      "natural_change_2023": 2567,
+      "intl_migration_2023": 8380,
+      "domestic_migration_2023": 23587,
+      "net_migration_2023": 31967,
       "age": {
         "total": 4053824,
         "under_18": 965744,
@@ -1010,8 +1120,10 @@
         "hispanic": 523291,
         "asian": 93824,
         "aian": 268070,
-        "two_plus": 13535,
-        "other": 375355
+        "nhpi": 8630,
+        "some_other": 13535,
+        "two_plus": 375355,
+        "other": 0
       },
       "income": 62138,
       "population_rank": 28
@@ -1021,16 +1133,18 @@
       "abbr": "CT",
       "fips": "09",
       "population": {
-        "2020": 7155172,
-        "2021": 7207382,
-        "2022": 7217412,
-        "2023": 7234352
+        "2020": 3577586,
+        "2021": 3603691,
+        "2022": 3608706,
+        "2023": 3617176
       },
       "growth_pct": 1.1,
-      "births_2023": 69914,
-      "deaths_2023": 65684,
-      "intl_migration_2023": 30528,
-      "domestic_migration_2023": -18032,
+      "births_2023": 34957,
+      "deaths_2023": 32842,
+      "natural_change_2023": 2115,
+      "intl_migration_2023": 15264,
+      "domestic_migration_2023": -9016,
+      "net_migration_2023": 6248,
       "age": {
         "total": 3617176,
         "under_18": 722624,
@@ -1046,8 +1160,10 @@
         "hispanic": 673249,
         "asian": 174185,
         "aian": 3066,
-        "two_plus": 32443,
-        "other": 153407
+        "nhpi": 2120,
+        "some_other": 32443,
+        "two_plus": 153407,
+        "other": 0
       },
       "income": 91665,
       "population_rank": 29
@@ -1057,16 +1173,18 @@
       "abbr": "UT",
       "fips": "49",
       "population": {
-        "2020": 6567964,
-        "2021": 6678568,
-        "2022": 6762472,
-        "2023": 6835468
+        "2020": 3283982,
+        "2021": 3339284,
+        "2022": 3381236,
+        "2023": 3417734
       },
       "growth_pct": 4.1,
-      "births_2023": 91930,
-      "deaths_2023": 42338,
-      "intl_migration_2023": 20570,
-      "domestic_migration_2023": 2676,
+      "births_2023": 45965,
+      "deaths_2023": 21169,
+      "natural_change_2023": 24796,
+      "intl_migration_2023": 10285,
+      "domestic_migration_2023": 1338,
+      "net_migration_2023": 11623,
       "age": {
         "total": 3417734,
         "under_18": 933905,
@@ -1082,8 +1200,10 @@
         "hispanic": 546948,
         "asian": 83241,
         "aian": 23797,
-        "two_plus": 12297,
-        "other": 136548
+        "nhpi": 32090,
+        "some_other": 12297,
+        "two_plus": 136548,
+        "other": 0
       },
       "income": 93421,
       "population_rank": 30
@@ -1093,16 +1213,18 @@
       "abbr": "IA",
       "fips": "19",
       "population": {
-        "2020": 6381808,
-        "2021": 6395888,
-        "2022": 6399386,
-        "2023": 6414008
+        "2020": 3190904,
+        "2021": 3197944,
+        "2022": 3199693,
+        "2023": 3207004
       },
       "growth_pct": 0.5,
-      "births_2023": 73796,
-      "deaths_2023": 66238,
-      "intl_migration_2023": 14224,
-      "domestic_migration_2023": -7206,
+      "births_2023": 36898,
+      "deaths_2023": 33119,
+      "natural_change_2023": 3779,
+      "intl_migration_2023": 7112,
+      "domestic_migration_2023": -3603,
+      "net_migration_2023": 3509,
       "age": {
         "total": 3207004,
         "under_18": 725547,
@@ -1118,8 +1240,10 @@
         "hispanic": 234148,
         "asian": 75201,
         "aian": 5135,
-        "two_plus": 8224,
-        "other": 111710
+        "nhpi": 4425,
+        "some_other": 8224,
+        "two_plus": 111710,
+        "other": 0
       },
       "income": 71433,
       "population_rank": 31
@@ -1129,16 +1253,18 @@
       "abbr": "NV",
       "fips": "32",
       "population": {
-        "2020": 6231680,
-        "2021": 6293264,
-        "2022": 6354842,
-        "2023": 6388352
+        "2020": 3115840,
+        "2021": 3146632,
+        "2022": 3177421,
+        "2023": 3194176
       },
       "growth_pct": 2.5,
-      "births_2023": 66110,
-      "deaths_2023": 58644,
-      "intl_migration_2023": 8532,
-      "domestic_migration_2023": 17284,
+      "births_2023": 33055,
+      "deaths_2023": 29322,
+      "natural_change_2023": 3733,
+      "intl_migration_2023": 4266,
+      "domestic_migration_2023": 8642,
+      "net_migration_2023": 12908,
       "age": {
         "total": 3194176,
         "under_18": 684516,
@@ -1154,8 +1280,10 @@
         "hispanic": 956400,
         "asian": 285434,
         "aian": 18647,
-        "two_plus": 19210,
-        "other": 190727
+        "nhpi": 21763,
+        "some_other": 19210,
+        "two_plus": 190727,
+        "other": 0
       },
       "income": 76364,
       "population_rank": 32
@@ -1165,16 +1293,18 @@
       "abbr": "AR",
       "fips": "05",
       "population": {
-        "2020": 6028696,
-        "2021": 6056886,
-        "2022": 6092808,
-        "2023": 6135464
+        "2020": 3014348,
+        "2021": 3028443,
+        "2022": 3046404,
+        "2023": 3067732
       },
       "growth_pct": 1.8,
-      "births_2023": 71132,
-      "deaths_2023": 72946,
-      "intl_migration_2023": 8192,
-      "domestic_migration_2023": 36212,
+      "births_2023": 35566,
+      "deaths_2023": 36473,
+      "natural_change_2023": -907,
+      "intl_migration_2023": 4096,
+      "domestic_migration_2023": 18106,
+      "net_migration_2023": 22202,
       "age": {
         "total": 3067732,
         "under_18": 700988,
@@ -1190,8 +1320,10 @@
         "hispanic": 279899,
         "asian": 50357,
         "aian": 11620,
-        "two_plus": 7798,
-        "other": 206100
+        "nhpi": 14088,
+        "some_other": 7798,
+        "two_plus": 206100,
+        "other": 0
       },
       "income": 58700,
       "population_rank": 33
@@ -1201,16 +1333,18 @@
       "abbr": "KS",
       "fips": "20",
       "population": {
-        "2020": 5876248,
-        "2021": 5875892,
-        "2022": 5873432,
-        "2023": 5881092
+        "2020": 2938124,
+        "2021": 2937946,
+        "2022": 2936716,
+        "2023": 2940546
       },
       "growth_pct": 0.1,
-      "births_2023": 69536,
-      "deaths_2023": 60658,
-      "intl_migration_2023": 7864,
-      "domestic_migration_2023": -9148,
+      "births_2023": 34768,
+      "deaths_2023": 30329,
+      "natural_change_2023": 4439,
+      "intl_migration_2023": 3932,
+      "domestic_migration_2023": -4574,
+      "net_migration_2023": -642,
       "age": {
         "total": 2940547,
         "under_18": 686764,
@@ -1226,8 +1360,10 @@
         "hispanic": 401676,
         "asian": 76288,
         "aian": 12733,
-        "two_plus": 10738,
-        "other": 142707
+        "nhpi": 3707,
+        "some_other": 10738,
+        "two_plus": 142707,
+        "other": 0
       },
       "income": 70333,
       "population_rank": 34
@@ -1237,16 +1373,18 @@
       "abbr": "MS",
       "fips": "28",
       "population": {
-        "2020": 5916818,
-        "2021": 5899164,
-        "2022": 5877856,
-        "2023": 5879380
+        "2020": 2958409,
+        "2021": 2949582,
+        "2022": 2938928,
+        "2023": 2939690
       },
       "growth_pct": -0.6,
-      "births_2023": 69256,
-      "deaths_2023": 72064,
-      "intl_migration_2023": 9600,
-      "domestic_migration_2023": -5228,
+      "births_2023": 34628,
+      "deaths_2023": 36032,
+      "natural_change_2023": -1404,
+      "intl_migration_2023": 4800,
+      "domestic_migration_2023": -2614,
+      "net_migration_2023": 2186,
       "age": {
         "total": 2939690,
         "under_18": 675234,
@@ -1262,8 +1400,10 @@
         "hispanic": 109884,
         "asian": 27600,
         "aian": 12555,
-        "two_plus": 13308,
-        "other": 111362
+        "nhpi": 1406,
+        "some_other": 13308,
+        "two_plus": 111362,
+        "other": 0
       },
       "income": 54203,
       "population_rank": 35
@@ -1273,16 +1413,18 @@
       "abbr": "NM",
       "fips": "35",
       "population": {
-        "2020": 4236976,
-        "2021": 4233900,
-        "2022": 4226952,
-        "2023": 4228742
+        "2020": 2118488,
+        "2021": 2116950,
+        "2022": 2113476,
+        "2023": 2114371
       },
       "growth_pct": -0.2,
-      "births_2023": 41456,
-      "deaths_2023": 44688,
-      "intl_migration_2023": 7284,
-      "domestic_migration_2023": -2176,
+      "births_2023": 20728,
+      "deaths_2023": 22344,
+      "natural_change_2023": -1616,
+      "intl_migration_2023": 3642,
+      "domestic_migration_2023": -1088,
+      "net_migration_2023": 2554,
       "age": {
         "total": 2114371,
         "under_18": 448558,
@@ -1298,8 +1440,10 @@
         "hispanic": 1027460,
         "asian": 35923,
         "aian": 174825,
-        "two_plus": 10674,
-        "other": 66462
+        "nhpi": 2291,
+        "some_other": 10674,
+        "two_plus": 66462,
+        "other": 0
       },
       "income": 62268,
       "population_rank": 36
@@ -1309,16 +1453,18 @@
       "abbr": "NE",
       "fips": "31",
       "population": {
-        "2020": 3926546,
-        "2021": 3928506,
-        "2022": 3936120,
-        "2023": 3956758
+        "2020": 1963273,
+        "2021": 1964253,
+        "2022": 1968060,
+        "2023": 1978379
       },
       "growth_pct": 0.8,
-      "births_2023": 48390,
-      "deaths_2023": 36992,
-      "intl_migration_2023": 10882,
-      "domestic_migration_2023": -1668,
+      "births_2023": 24195,
+      "deaths_2023": 18496,
+      "natural_change_2023": 5699,
+      "intl_migration_2023": 5441,
+      "domestic_migration_2023": -834,
+      "net_migration_2023": 4607,
       "age": {
         "total": 1978379,
         "under_18": 478594,
@@ -1334,8 +1480,10 @@
         "hispanic": 255448,
         "asian": 47946,
         "aian": 9800,
-        "two_plus": 6038,
-        "other": 86751
+        "nhpi": 236,
+        "some_other": 6038,
+        "two_plus": 86751,
+        "other": 0
       },
       "income": 74590,
       "population_rank": 37
@@ -1345,16 +1493,18 @@
       "abbr": "ID",
       "fips": "16",
       "population": {
-        "2020": 3698678,
-        "2021": 3809074,
-        "2022": 3877992,
-        "2023": 3929452
+        "2020": 1849339,
+        "2021": 1904537,
+        "2022": 1938996,
+        "2023": 1964726
       },
       "growth_pct": 6.2,
-      "births_2023": 44912,
-      "deaths_2023": 33634,
-      "intl_migration_2023": 9328,
-      "domestic_migration_2023": 30778,
+      "births_2023": 22456,
+      "deaths_2023": 16817,
+      "natural_change_2023": 5639,
+      "intl_migration_2023": 4664,
+      "domestic_migration_2023": 15389,
+      "net_migration_2023": 20053,
       "age": {
         "total": 1964726,
         "under_18": 466391,
@@ -1370,8 +1520,10 @@
         "hispanic": 271657,
         "asian": 25871,
         "aian": 13613,
-        "two_plus": 14745,
-        "other": 80191
+        "nhpi": 3508,
+        "some_other": 14745,
+        "two_plus": 80191,
+        "other": 0
       },
       "income": 74942,
       "population_rank": 38
@@ -1381,16 +1533,18 @@
       "abbr": "WV",
       "fips": "54",
       "population": {
-        "2020": 3583124,
-        "2021": 3570498,
-        "2022": 3548070,
-        "2023": 3540142
+        "2020": 1791562,
+        "2021": 1785249,
+        "2022": 1774035,
+        "2023": 1770071
       },
       "growth_pct": -1.2,
-      "births_2023": 34526,
-      "deaths_2023": 51858,
-      "intl_migration_2023": 2202,
-      "domestic_migration_2023": 7190,
+      "births_2023": 17263,
+      "deaths_2023": 25929,
+      "natural_change_2023": -8666,
+      "intl_migration_2023": 1101,
+      "domestic_migration_2023": 3595,
+      "net_migration_2023": 4696,
       "age": {
         "total": 1770071,
         "under_18": 351642,
@@ -1406,8 +1560,10 @@
         "hispanic": 37837,
         "asian": 12482,
         "aian": 1508,
-        "two_plus": 7304,
-        "other": 71888
+        "nhpi": 193,
+        "some_other": 7304,
+        "two_plus": 71888,
+        "other": 0
       },
       "income": 55948,
       "population_rank": 39
@@ -1417,16 +1573,18 @@
       "abbr": "HI",
       "fips": "15",
       "population": {
-        "2020": 2902362,
-        "2021": 2893490,
-        "2022": 2878798,
-        "2023": 2870276
+        "2020": 1451181,
+        "2021": 1446745,
+        "2022": 1439399,
+        "2023": 1435138
       },
       "growth_pct": -1.1,
-      "births_2023": 30334,
-      "deaths_2023": 25624,
-      "intl_migration_2023": 9254,
-      "domestic_migration_2023": -22386,
+      "births_2023": 15167,
+      "deaths_2023": 12812,
+      "natural_change_2023": 2355,
+      "intl_migration_2023": 4627,
+      "domestic_migration_2023": -11193,
+      "net_migration_2023": -6566,
       "age": {
         "total": 1435138,
         "under_18": 293887,
@@ -1442,8 +1600,10 @@
         "hispanic": 145111,
         "asian": 518063,
         "aian": 1035,
-        "two_plus": 6768,
-        "other": 313768
+        "nhpi": 128099,
+        "some_other": 6768,
+        "two_plus": 313768,
+        "other": 0
       },
       "income": 95322,
       "population_rank": 40
@@ -1453,16 +1613,18 @@
       "abbr": "NH",
       "fips": "33",
       "population": {
-        "2020": 2757404,
-        "2021": 2774988,
-        "2022": 2798006,
-        "2023": 2804108
+        "2020": 1378702,
+        "2021": 1387494,
+        "2022": 1399003,
+        "2023": 1402054
       },
       "growth_pct": 1.7,
-      "births_2023": 24310,
-      "deaths_2023": 28528,
-      "intl_migration_2023": 1718,
-      "domestic_migration_2023": 8596,
+      "births_2023": 12155,
+      "deaths_2023": 14264,
+      "natural_change_2023": -2109,
+      "intl_migration_2023": 859,
+      "domestic_migration_2023": 4298,
+      "net_migration_2023": 5157,
       "age": {
         "total": 1402054,
         "under_18": 250715,
@@ -1478,8 +1640,10 @@
         "hispanic": 65450,
         "asian": 35910,
         "aian": 1614,
-        "two_plus": 6610,
-        "other": 60238
+        "nhpi": 163,
+        "some_other": 6610,
+        "two_plus": 60238,
+        "other": 0
       },
       "income": 96838,
       "population_rank": 41
@@ -1489,16 +1653,18 @@
       "abbr": "ME",
       "fips": "23",
       "population": {
-        "2020": 2729034,
-        "2021": 2757574,
-        "2022": 2778676,
-        "2023": 2791444
+        "2020": 1364517,
+        "2021": 1378787,
+        "2022": 1389338,
+        "2023": 1395722
       },
       "growth_pct": 2.3,
-      "births_2023": 23890,
-      "deaths_2023": 33996,
-      "intl_migration_2023": 4418,
-      "domestic_migration_2023": 18432,
+      "births_2023": 11945,
+      "deaths_2023": 16998,
+      "natural_change_2023": -5053,
+      "intl_migration_2023": 2209,
+      "domestic_migration_2023": 9216,
+      "net_migration_2023": 11425,
       "age": {
         "total": 1395722,
         "under_18": 245778,
@@ -1514,8 +1680,10 @@
         "hispanic": 31184,
         "asian": 15299,
         "aian": 4716,
-        "two_plus": 3401,
-        "other": 66704
+        "nhpi": 697,
+        "some_other": 3401,
+        "two_plus": 66704,
+        "other": 0
       },
       "income": 73733,
       "population_rank": 42
@@ -1525,16 +1693,18 @@
       "abbr": "MT",
       "fips": "30",
       "population": {
-        "2020": 2174422,
-        "2021": 2212732,
-        "2022": 2245756,
-        "2023": 2265624
+        "2020": 1087211,
+        "2021": 1106366,
+        "2022": 1122878,
+        "2023": 1132812
       },
       "growth_pct": 4.2,
-      "births_2023": 22412,
-      "deaths_2023": 22754,
-      "intl_migration_2023": 1218,
-      "domestic_migration_2023": 18970,
+      "births_2023": 11206,
+      "deaths_2023": 11377,
+      "natural_change_2023": -171,
+      "intl_migration_2023": 609,
+      "domestic_migration_2023": 9485,
+      "net_migration_2023": 10094,
       "age": {
         "total": 1132812,
         "under_18": 235562,
@@ -1550,8 +1720,10 @@
         "hispanic": 52520,
         "asian": 8913,
         "aian": 61134,
-        "two_plus": 4958,
-        "other": 56558
+        "nhpi": 327,
+        "some_other": 4958,
+        "two_plus": 56558,
+        "other": 0
       },
       "income": 70804,
       "population_rank": 43
@@ -1561,16 +1733,18 @@
       "abbr": "RI",
       "fips": "44",
       "population": {
-        "2020": 2192888,
-        "2021": 2194184,
-        "2022": 2187684,
-        "2023": 2191924
+        "2020": 1096444,
+        "2021": 1097092,
+        "2022": 1093842,
+        "2023": 1095962
       },
       "growth_pct": -0.0,
-      "births_2023": 20012,
-      "deaths_2023": 20868,
-      "intl_migration_2023": 11554,
-      "domestic_migration_2023": -6448,
+      "births_2023": 10006,
+      "deaths_2023": 10434,
+      "natural_change_2023": -428,
+      "intl_migration_2023": 5777,
+      "domestic_migration_2023": -3224,
+      "net_migration_2023": 2553,
       "age": {
         "total": 1095962,
         "under_18": 203257,
@@ -1586,8 +1760,10 @@
         "hispanic": 197405,
         "asian": 36275,
         "aian": 1223,
-        "two_plus": 5620,
-        "other": 60434
+        "nhpi": 67,
+        "some_other": 5620,
+        "two_plus": 60434,
+        "other": 0
       },
       "income": 84972,
       "population_rank": 44
@@ -1597,16 +1773,18 @@
       "abbr": "DE",
       "fips": "10",
       "population": {
-        "2020": 1983724,
-        "2021": 2009762,
-        "2022": 2038918,
-        "2023": 2063780
+        "2020": 991862,
+        "2021": 1004881,
+        "2022": 1019459,
+        "2023": 1031890
       },
       "growth_pct": 4.0,
-      "births_2023": 21450,
-      "deaths_2023": 21794,
-      "intl_migration_2023": 4554,
-      "domestic_migration_2023": 20640,
+      "births_2023": 10725,
+      "deaths_2023": 10897,
+      "natural_change_2023": -172,
+      "intl_migration_2023": 2277,
+      "domestic_migration_2023": 10320,
+      "net_migration_2023": 12597,
       "age": {
         "total": 1031890,
         "under_18": 211925,
@@ -1622,8 +1800,10 @@
         "hispanic": 114623,
         "asian": 44352,
         "aian": 1127,
-        "two_plus": 4095,
-        "other": 44812
+        "nhpi": 70,
+        "some_other": 4095,
+        "two_plus": 44812,
+        "other": 0
       },
       "income": 81361,
       "population_rank": 45
@@ -1633,16 +1813,18 @@
       "abbr": "SD",
       "fips": "46",
       "population": {
-        "2020": 1775704,
-        "2021": 1792598,
-        "2022": 1819738,
-        "2023": 1838636
+        "2020": 887852,
+        "2021": 896299,
+        "2022": 909869,
+        "2023": 919318
       },
       "growth_pct": 3.5,
-      "births_2023": 22738,
-      "deaths_2023": 17112,
-      "intl_migration_2023": 3576,
-      "domestic_migration_2023": 9624,
+      "births_2023": 11369,
+      "deaths_2023": 8556,
+      "natural_change_2023": 2813,
+      "intl_migration_2023": 1788,
+      "domestic_migration_2023": 4812,
+      "net_migration_2023": 6600,
       "age": {
         "total": 919318,
         "under_18": 218807,
@@ -1658,8 +1840,10 @@
         "hispanic": 46519,
         "asian": 13882,
         "aian": 66719,
-        "two_plus": 2803,
-        "other": 38006
+        "nhpi": 299,
+        "some_other": 2803,
+        "two_plus": 38006,
+        "other": 0
       },
       "income": 71810,
       "population_rank": 46
@@ -1669,16 +1853,18 @@
       "abbr": "ND",
       "fips": "38",
       "population": {
-        "2020": 1559126,
-        "2021": 1555964,
-        "2022": 1557824,
-        "2023": 1567852
+        "2020": 779563,
+        "2021": 777982,
+        "2022": 778912,
+        "2023": 783926
       },
       "growth_pct": 0.6,
-      "births_2023": 19298,
-      "deaths_2023": 13890,
-      "intl_migration_2023": 4596,
-      "domestic_migration_2023": -18,
+      "births_2023": 9649,
+      "deaths_2023": 6945,
+      "natural_change_2023": 2704,
+      "intl_migration_2023": 2298,
+      "domestic_migration_2023": -9,
+      "net_migration_2023": 2289,
       "age": {
         "total": 783926,
         "under_18": 179600,
@@ -1694,8 +1880,10 @@
         "hispanic": 38229,
         "asian": 11485,
         "aian": 33645,
-        "two_plus": 2138,
-        "other": 34749
+        "nhpi": 1664,
+        "some_other": 2138,
+        "two_plus": 34749,
+        "other": 0
       },
       "income": 76525,
       "population_rank": 47
@@ -1705,16 +1893,18 @@
       "abbr": "AK",
       "fips": "02",
       "population": {
-        "2020": 1465928,
-        "2021": 1469846,
-        "2022": 1466552,
-        "2023": 1466812
+        "2020": 732964,
+        "2021": 734923,
+        "2022": 733276,
+        "2023": 733406
       },
       "growth_pct": 0.1,
-      "births_2023": 18532,
-      "deaths_2023": 11162,
-      "intl_migration_2023": 4008,
-      "domestic_migration_2023": -11086,
+      "births_2023": 9266,
+      "deaths_2023": 5581,
+      "natural_change_2023": 3685,
+      "intl_migration_2023": 2004,
+      "domestic_migration_2023": -5543,
+      "net_migration_2023": -3539,
       "age": {
         "total": 733406,
         "under_18": 174366,
@@ -1730,8 +1920,10 @@
         "hispanic": 54860,
         "asian": 42909,
         "aian": 95480,
-        "two_plus": 4149,
-        "other": 82205
+        "nhpi": 10646,
+        "some_other": 4149,
+        "two_plus": 82205,
+        "other": 0
       },
       "income": 86631,
       "population_rank": 48
@@ -1741,16 +1933,18 @@
       "abbr": "DC",
       "fips": "11",
       "population": {
-        "2020": 1341678,
-        "2021": 1338074,
-        "2022": 1341898,
-        "2023": 1357944
+        "2020": 670839,
+        "2021": 669037,
+        "2022": 670949,
+        "2023": 678972
       },
       "growth_pct": 1.2,
-      "births_2023": 15254,
-      "deaths_2023": 10040,
-      "intl_migration_2023": 13938,
-      "domestic_migration_2023": -3018,
+      "births_2023": 7627,
+      "deaths_2023": 5020,
+      "natural_change_2023": 2607,
+      "intl_migration_2023": 6969,
+      "domestic_migration_2023": -1509,
+      "net_migration_2023": 5460,
       "age": {
         "total": 678972,
         "under_18": 126526,
@@ -1766,8 +1960,10 @@
         "hispanic": 81458,
         "asian": 27977,
         "aian": 668,
-        "two_plus": 4895,
-        "other": 38517
+        "nhpi": 538,
+        "some_other": 4895,
+        "two_plus": 38517,
+        "other": 0
       },
       "income": 108210,
       "population_rank": 49
@@ -1777,16 +1973,18 @@
       "abbr": "VT",
       "fips": "50",
       "population": {
-        "2020": 1285872,
-        "2021": 1294186,
-        "2022": 1294220,
-        "2023": 1294928
+        "2020": 642936,
+        "2021": 647093,
+        "2022": 647110,
+        "2023": 647464
       },
       "growth_pct": 0.7,
-      "births_2023": 10144,
-      "deaths_2023": 13752,
-      "intl_migration_2023": 2624,
-      "domestic_migration_2023": 1688,
+      "births_2023": 5072,
+      "deaths_2023": 6876,
+      "natural_change_2023": -1804,
+      "intl_migration_2023": 1312,
+      "domestic_migration_2023": 844,
+      "net_migration_2023": 2156,
       "age": {
         "total": 647464,
         "under_18": 114826,
@@ -1802,8 +2000,10 @@
         "hispanic": 16128,
         "asian": 11029,
         "aian": 1147,
-        "two_plus": 4275,
-        "other": 29124
+        "nhpi": 142,
+        "some_other": 4275,
+        "two_plus": 29124,
+        "other": 0
       },
       "income": 81211,
       "population_rank": 50
@@ -1813,16 +2013,18 @@
       "abbr": "WY",
       "fips": "56",
       "population": {
-        "2020": 1155328,
-        "2021": 1159096,
-        "2022": 1163258,
-        "2023": 1168114
+        "2020": 577664,
+        "2021": 579548,
+        "2022": 581629,
+        "2023": 584057
       },
       "growth_pct": 1.1,
-      "births_2023": 11764,
-      "deaths_2023": 11558,
-      "intl_migration_2023": 644,
-      "domestic_migration_2023": 4032,
+      "births_2023": 5882,
+      "deaths_2023": 5779,
+      "natural_change_2023": 103,
+      "intl_migration_2023": 322,
+      "domestic_migration_2023": 2016,
+      "net_migration_2023": 2338,
       "age": {
         "total": 584057,
         "under_18": 129965,
@@ -1838,8 +2040,10 @@
         "hispanic": 62799,
         "asian": 4575,
         "aian": 9334,
-        "two_plus": 3458,
-        "other": 25359
+        "nhpi": 96,
+        "some_other": 3458,
+        "two_plus": 25359,
+        "other": 0
       },
       "income": 72415,
       "population_rank": 51

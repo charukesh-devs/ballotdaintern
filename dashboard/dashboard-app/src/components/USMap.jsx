@@ -4,7 +4,22 @@ import * as topojson from 'topojson-client'
 
 const SMALL_STATES = new Set(['09', '10', '11', '24', '25', '33', '34', '44', '50'])
 
-export default function USMap({ states, selectedState, onSelect, tooltip, setTooltip }) {
+const DEFAULT_COLORS = ['#e6f1fb', '#c5dff5', '#94c8eb', '#6baed6', '#378add', '#1a5bd6', '#0c447c']
+
+/**
+ * Generic choropleth map. Which value colors each state (and how it's
+ * formatted/labeled) is entirely driven by `metric`, so any module can
+ * reuse this component without touching this file.
+ *
+ * metric shape:
+ *   {
+ *     getValue: (stateRecord) => number,
+ *     format: (value) => string,
+ *     label: string,          // shown in the tooltip, e.g. "Population"
+ *     colors: string[],       // optional, defaults to the blue scale below
+ *   }
+ */
+export default function USMap({ states, metric, selectedState, onSelect, tooltip, setTooltip }) {
   const svgRef = useRef(null)
   const [topoData, setTopoData] = useState(null)
 
@@ -28,10 +43,11 @@ export default function USMap({ states, selectedState, onSelect, tooltip, setToo
     const projection = d3.geoAlbersUsa().fitSize([width, height], topojson.feature(topoData, topoData.objects.nation))
     const path = d3.geoPath().projection(projection)
 
-    const pops = Object.values(states).map(s => s.population['2023'])
+    const getValue = metric.getValue
+    const values = Object.values(states).map(getValue).filter(v => Number.isFinite(v))
     const colorScale = d3.scaleQuantize()
-      .domain([d3.min(pops), d3.max(pops)])
-      .range(['#e6f1fb', '#c5dff5', '#94c8eb', '#6baed6', '#378add', '#1a5bd6', '#0c447c'])
+      .domain([d3.min(values), d3.max(values)])
+      .range(metric.colors && metric.colors.length ? metric.colors : DEFAULT_COLORS)
 
     const g = svg.append('g')
     const statesGeo = topojson.feature(topoData, topoData.objects.states)
@@ -44,7 +60,8 @@ export default function USMap({ states, selectedState, onSelect, tooltip, setToo
       .attr('fill', d => {
         const fips = String(d.id).padStart(2, '0')
         const s = states[fips]
-        return s ? colorScale(s.population['2023']) : '#eee'
+        const v = s ? getValue(s) : null
+        return Number.isFinite(v) ? colorScale(v) : '#eee'
       })
       .attr('stroke', d => {
         const fips = String(d.id).padStart(2, '0')
@@ -64,7 +81,7 @@ export default function USMap({ states, selectedState, onSelect, tooltip, setToo
           x: e.clientX,
           y: e.clientY,
           name: s.name,
-          pop: s.population['2023'],
+          value: getValue(s),
         })
       })
       .on('mousemove', function (e) {
@@ -94,9 +111,11 @@ export default function USMap({ states, selectedState, onSelect, tooltip, setToo
         const fips = String(d.id).padStart(2, '0')
         const s = states[fips]
         if (!s) return '#666'
-        const pop = s.population['2023']
         if (fips === selectedState) return '#fff'
-        return pop > 15_000_000 ? '#fff' : '#444'
+        const v = getValue(s)
+        const domain = colorScale.domain()
+        const isDark = Number.isFinite(v) && v > domain[0] + (domain[1] - domain[0]) * 0.65
+        return isDark ? '#fff' : '#444'
       })
       .attr('font-size', d => {
         const fips = String(d.id).padStart(2, '0')
@@ -108,7 +127,7 @@ export default function USMap({ states, selectedState, onSelect, tooltip, setToo
       .style('text-shadow', '0 1px 3px rgba(0,0,0,0.25)')
       .text(d => states[String(d.id).padStart(2, '0')]?.abbr || '')
 
-  }, [topoData, states, selectedState, onSelect, setTooltip])
+  }, [topoData, states, metric, selectedState, onSelect, setTooltip])
 
   return (
     <div style={{ position: 'relative' }}>
@@ -116,7 +135,7 @@ export default function USMap({ states, selectedState, onSelect, tooltip, setToo
       {tooltip && (
         <div className="tooltip-box" style={{ left: tooltip.x + 12, top: tooltip.y - 10 }}>
           <div className="tt-name">{tooltip.name}</div>
-          <div className="tt-pop">Population: {tooltip.pop.toLocaleString()}</div>
+          <div className="tt-pop">{metric.label}: {metric.format ? metric.format(tooltip.value) : tooltip.value}</div>
         </div>
       )}
     </div>

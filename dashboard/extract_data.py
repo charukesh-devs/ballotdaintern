@@ -49,8 +49,10 @@ def extract():
     race_raw = pd.read_excel(WB, sheet_name="ACS_b03002", skiprows=11)
     income_raw = pd.read_excel(WB, sheet_name="ACS_b19013", skiprows=11)
 
-    # Aggregate PEP county -> state
+    # Aggregate PEP county -> state (filter to county rows only, SUMLEV 50)
     pep["State_FIPS"] = pep["State_FIPS"].astype(str).str.zfill(2)
+    if "Summary_Level" in pep.columns:
+        pep = pep[pep["Summary_Level"] == 50]
     state_pep = pep.groupby("State_FIPS").agg({
         "Pop_Estimate_2020": "sum",
         "Pop_Estimate_2021": "sum",
@@ -103,8 +105,10 @@ def extract():
             "growth_pct": growth,
             "births_2023": safe_int(row["Births_2023"]),
             "deaths_2023": safe_int(row["Deaths_2023"]),
+            "natural_change_2023": safe_int(row["Births_2023"]) - safe_int(row["Deaths_2023"]),
             "intl_migration_2023": safe_int(row["Intl_Migration_2023"]),
             "domestic_migration_2023": safe_int(row["Domestic_Migration_2023"]),
+            "net_migration_2023": safe_int(row["Domestic_Migration_2023"]) + safe_int(row["Intl_Migration_2023"]),
             "age": {},
             "race": {},
             "income": 0,
@@ -180,11 +184,9 @@ def extract():
         aian = safe_int(row.get("B03002_005", 0))
         asian = safe_int(row.get("B03002_006", 0))
         nhpi = safe_int(row.get("B03002_007", 0))
-        two_plus = safe_int(row.get("B03002_008", 0))
+        some_other = safe_int(row.get("B03002_008", 0))
+        two_plus = safe_int(row.get("B03002_009", 0))
         hispanic = safe_int(row.get("B03002_012", 0))
-        other = total - white - black - aian - asian - nhpi - two_plus - hispanic
-        if other < 0:
-            other = 0
 
         states[fips]["race"] = {
             "total": total,
@@ -193,8 +195,10 @@ def extract():
             "hispanic": hispanic,
             "asian": asian,
             "aian": aian,
+            "nhpi": nhpi,
+            "some_other": some_other,
             "two_plus": two_plus,
-            "other": other,
+            "other": 0,
         }
 
     # Add income data

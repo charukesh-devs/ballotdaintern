@@ -1,23 +1,27 @@
 import { useState } from 'react'
 
-const COLUMNS = [
-  { key: 'population_rank', label: '#', format: v => v },
-  { key: 'name', label: 'State', format: (v, s) => <><span className="abbr-badge">{s.abbr}</span>{v}</> },
-  { key: 'population', label: 'Population', format: (v) => v['2023'].toLocaleString(), sort: (s) => s.population['2023'] },
-  { key: 'growth_pct', label: 'Growth', format: (v) => `${v >= 0 ? '+' : ''}${v}%`, sort: (s) => s.growth_pct },
-  { key: 'income', label: 'Median Income', format: (v) => `$${v.toLocaleString()}` },
-  { key: 'under_18', label: 'Under 18', format: (v, s) => `${((v / s.age.total) * 100).toFixed(1)}%`, sort: (s) => s.age.under_18 / s.age.total },
-  { key: '65_plus', label: '65+', format: (v, s) => `${((v / s.age.total) * 100).toFixed(1)}%`, sort: (s) => s.age['65_plus'] / s.age.total },
-]
-
-export default function StateRanking({ stateList, onSelect }) {
-  const [sortCol, setSortCol] = useState('population')
+/**
+ * Generic sortable "all states" table. Each module supplies its own
+ * `columns` (see modules/registry.js) so this file never needs to know
+ * about population, income, or any other domain-specific field.
+ *
+ * columns: [{
+ *   key: string,                       // unique column key
+ *   label: string,                     // header text
+ *   getValue: (state) => any,          // raw value for display
+ *   format: (value, state) => node,    // how to render it (optional, defaults to String(value))
+ *   sortValue: (state) => number|string, // value used for sorting (optional, defaults to getValue)
+ * }]
+ */
+export default function StateRanking({ stateList, columns, onSelect, title }) {
+  const [sortCol, setSortCol] = useState(columns[0]?.key)
   const [sortDir, setSortDir] = useState('desc')
 
+  const activeCol = columns.find(c => c.key === sortCol) || columns[0]
+
   const sorted = [...stateList].sort((a, b) => {
-    const col = COLUMNS.find(c => c.key === sortCol)
-    const va = col?.sort ? col.sort(a) : a[sortCol]
-    const vb = col?.sort ? col.sort(b) : b[sortCol]
+    const va = activeCol.sortValue ? activeCol.sortValue(a) : activeCol.getValue(a)
+    const vb = activeCol.sortValue ? activeCol.sortValue(b) : activeCol.getValue(b)
     if (typeof va === 'string') return sortDir === 'asc' ? va.localeCompare(vb) : vb.localeCompare(va)
     return sortDir === 'asc' ? va - vb : vb - va
   })
@@ -34,12 +38,12 @@ export default function StateRanking({ stateList, onSelect }) {
   return (
     <div className="ranking-section">
       <div className="ranking-card">
-        <h3>All States — Sorted by {COLUMNS.find(c => c.key === sortCol)?.label}</h3>
+        <h3>{title || `All States — Sorted by ${activeCol.label}`}</h3>
         <div style={{ overflowX: 'auto' }}>
           <table className="ranking-table">
             <thead>
               <tr>
-                {COLUMNS.map(col => (
+                {columns.map(col => (
                   <th
                     key={col.key}
                     className={sortCol === col.key ? 'sorted' : ''}
@@ -53,11 +57,14 @@ export default function StateRanking({ stateList, onSelect }) {
             <tbody>
               {sorted.map((s) => (
                 <tr key={s.fips} onClick={() => onSelect(s.fips)}>
-                  {COLUMNS.map(col => (
-                    <td key={col.key} className={col.key === 'name' ? 'state-col' : ''}>
-                      {col.format(s[col.key], s)}
-                    </td>
-                  ))}
+                  {columns.map(col => {
+                    const v = col.getValue(s)
+                    return (
+                      <td key={col.key} className={col.key === 'name' ? 'state-col' : ''}>
+                        {col.format ? col.format(v, s) : String(v)}
+                      </td>
+                    )
+                  })}
                 </tr>
               ))}
             </tbody>
