@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>America250 Data Dashboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <i class="fas fa-flag-usa"></i>
+            <h1>America250 <span>Data Warehouse</span></h1>
+        </div>
+        <div class="header-right">
+            <div class="metric-filter">
+                <button class="filter-btn active" data-metric="population">
+                    <i class="fas fa-users"></i> Population
+                </button>
+                <button class="filter-btn" data-metric="gdp">
+                    <i class="fas fa-dollar-sign"></i> GDP
+                </button>
+                <button class="filter-btn" data-metric="housing">
+                    <i class="fas fa-home"></i> Housing
+                </button>
+            </div>
+            <button class="refresh-btn" onclick="refreshData()">
+                <i class="fas fa-sync-alt"></i> Refresh Data
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="top-section">
+            <div class="map-container">
+                <div id="map"></div>
+                <div class="map-legend">
+                    <span class="legend-label">Low</span>
+                    <div class="legend-gradient"></div>
+                    <span class="legend-label">High</span>
+                </div>
+            </div>
+            <div class="side-panel" id="sidePanel">
+                <div class="panel-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Click a state on the map to view details</p>
+                </div>
+                <div class="panel-content hidden" id="panelContent">
+                    <div class="panel-header">
+                        <h2 id="stateName">--</h2>
+                        <button class="close-btn" id="closePanel"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="panel-stats">
+                        <div class="stat-card">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <span class="stat-label">Population</span>
+                                <span class="stat-value" id="statePop">--</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-dollar-sign"></i>
+                            <div>
+                                <span class="stat-label">GDP (Billions)</span>
+                                <span class="stat-value" id="stateGdp">--</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-home"></i>
+                            <div>
+                                <span class="stat-label">Housing Index</span>
+                                <span class="stat-value" id="stateHousing">--</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-info-circle"></i>
+                            <div>
+                                <span class="stat-label">Status</span>
+                                <span class="stat-value" id="stateStatus">--</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-chart">
+                        <canvas id="stateChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-section">
+            <div class="charts-row">
+                <div class="chart-card">
+                    <h3><i class="fas fa-chart-bar"></i> Top 10 States by <span id="chartTitle1">Population</span></h3>
+                    <canvas id="barChart"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h3><i class="fas fa-chart-pie"></i> National Distribution</h3>
+                    <canvas id="pieChart"></canvas>
+                </div>
+            </div>
+
+            <div class="table-section">
+                <div class="table-header">
+                    <h3><i class="fas fa-table"></i> All States Data</h3>
+                    <input type="text" id="searchInput" placeholder="Search states..." />
+                </div>
+                <div class="table-wrapper">
+                    <table id="dataTable">
+                        <thead>
+                            <tr>
+                                <th data-sort="rank"># <i class="fas fa-sort"></i></th>
+                                <th data-sort="state">State <i class="fas fa-sort"></i></th>
+                                <th data-sort="population">Population <i class="fas fa-sort"></i></th>
+                                <th data-sort="gdp">GDP (B) <i class="fas fa-sort"></i></th>
+                                <th data-sort="housing">Housing Index <i class="fas fa-sort"></i></th>
+                                <th data-sort="status">Status <i class="fas fa-sort"></i></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>America250 Data Dashboard &copy; 2026 | Data sources: Census, BEA, FHFA</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="us-states.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
