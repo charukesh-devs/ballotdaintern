@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-07-28T05:46:14.130Z",
-  "elapsed": "0.6s",
+  "timestamp": "2026-07-29T06:09:17.703Z",
+  "elapsed": "0.5s",
   "overallPass": false,
   "results": [
     {
       "name": "Repository Health",
       "script": "verify_repository.mjs",
-      "passed": false,
+      "passed": true,
       "elapsed": "0.1s",
-      "output": "=== Repository Health Check ===\n\n--- .gitignore ---\n  ok  Covers: raw/\n  ok  Covers: processed/\n  ok  Covers: node_modules/\n  ok  Covers: dist/\n  ok  Covers: logs/\n\n--- package.json ---\n  info  Name: dashboard-app\n  info  Scripts: dev, build, lint, preview, verify, verify:quick\n  WARN  node_modules not installed - run: npm install\n\n--- Secrets Scan ---\n\n--- Directory Structure ---\n  ok  scripts/ (7 entries)\n  info  raw/ (not found - will be created as needed)\n  info  processed/ (not found - will be created as needed)\n  info  logs/ (not found - will be created as needed)\n  info  core/ (not found - will be created as needed)\n  ok  dashboard/ (4 entries)\n\n--- Dashboard ---\n  ok  src/modules/ (5 entries)\n  ok  src/components/ (11 entries)\n  ok  verify/ (9 entries)\n  ok  templates/ (4 entries)\n  ok  public/ (5 entries)\n\n--- Summary ---\nIssues: 1\n1 ISSUE(S) FOUND\n\n"
+      "output": "=== Repository Health Check ===\n\n--- .gitignore ---\n  ok  Covers: raw/\n  ok  Covers: processed/\n  ok  Covers: node_modules/\n  ok  Covers: dist/\n  ok  Covers: logs/\n\n--- package.json ---\n  info  Name: dashboard-app\n  info  Scripts: dev, build, lint, preview, verify, verify:quick\n  ok  node_modules installed (61 packages)\n\n--- Secrets Scan ---\n  ok  No secrets found in source files\n\n--- Directory Structure ---\n  ok  scripts/ (7 entries)\n  info  raw/ (not found - will be created as needed)\n  info  processed/ (not found - will be created as needed)\n  info  logs/ (not found - will be created as needed)\n  info  core/ (not found - will be created as needed)\n  ok  dashboard/ (9 entries)\n\n--- Dashboard ---\n  ok  src/modules/ (6 entries)\n  ok  src/components/ (11 entries)\n  ok  verify/ (9 entries)\n  ok  templates/ (4 entries)\n  ok  public/ (6 entries)\n\n--- Summary ---\nIssues: 0\nREPOSITORY HEALTHY\n"
     },
     {
       "name": "Raw Data Integrity",
@@ -22,14 +22,14 @@
       "script": "verify_metadata.mjs",
       "passed": false,
       "elapsed": "0.1s",
-      "output": "=== Module Metadata Verification ===\n\n--- demographics ---\n  WARN  raw/demographics/ directory does not exist\n\n--- economy ---\n  WARN  Missing recommended field: trend\n  WARN  raw/economy/ directory does not exist\n\n--- Summary ---\nIssues: 3\n3 ISSUE(S) FOUND\n\n"
+      "output": "=== Module Metadata Verification ===\n\n--- demographics ---\n  WARN  raw/demographics/ directory does not exist\n\n--- economy ---\n  WARN  raw/economy/ directory does not exist\n\n--- geography ---\n  WARN  raw/geography/ directory does not exist\n\n--- Summary ---\nIssues: 3\n3 ISSUE(S) FOUND\n\n"
     },
     {
       "name": "Module Accessors",
       "script": "verify_modules.mjs",
       "passed": true,
       "elapsed": "0.1s",
-      "output": "\n=== module: demographics ===\n  ok  mapMetric.getValue on all states\n  ok  mapMetric.format\n  ok  summary(states)\n  ok  panel.hero.getValue + format\n  ok  panel.badge.getValue\n  ok  panel.rankBadge.getValue\n  ok  quickStats[\"National Rank\"]\n  ok  quickStats[\"Median Income\"]\n  ok  quickStats[\"Births (2023)\"]\n  ok  section[\"Population Growth\"] (timeseries)\n  ok  section[\"Migration (2023)\"] (flow)\n  ok  section[\"Age Distribution\"] (bars)\n  ok  section[\"Race & Ethnicity\"] (categories)\n  ok  ranking[\"rank\"]\n  ok  ranking[\"name\"]\n  ok  ranking[\"population\"]\n  ok  ranking[\"growth\"]\n  ok  ranking[\"income\"]\n  ok  ranking[\"under18\"]\n  ok  ranking[\"65plus\"]\n  ok  trend accessors\n  ok  ALL states panel accessors (no throw)\n\n=== module: economy ===\n  ok  mapMetric.getValue on all states\n  ok  mapMetric.format\n  ok  summary(states)\n  ok  panel.hero.getValue + format\n  ok  panel.badge.getValue\n  ok  panel.rankBadge.getValue\n  ok  quickStats[\"GDP Rank\"]\n  ok  quickStats[\"GDP (2024)\"]\n  ok  quickStats[\"Labor Force\"]\n  ok  section[\"Unemployment Rate\"] (timeseries)\n  ok  section[\"Trade (2024, $M)\"] (flow)\n  ok  section[\"Regional CPI\"] (timeseries)\n  ok  section[\"Employment by Sector\"] (categories)\n  ok  ranking[\"rank\"]\n  ok  ranking[\"name\"]\n  ok  ranking[\"gdp\"]\n  ok  ranking[\"growth\"]\n  ok  ranking[\"unemployment\"]\n  ok  ranking[\"labor\"]\n  ok  ALL states panel accessors (no throw)\n\n--- Summary ---\nModules checked: 2\nTotal checks: 42\nALL CHECKS PASSED\n"
+      "output": "\n=== module: demographics ===\n  ok  mapMetric.getValue on all states\n  ok  mapMetric.format\n  ok  summary(states)\n  ok  panel.hero.getValue + format\n  ok  panel.badge.getValue\n  ok  panel.rankBadge.getValue\n  ok  quickStats[\"National Rank\"]\n  ok  quickStats[\"Median Income\"]\n  ok  quickStats[\"Births (2023)\"]\n  ok  section[\"Population Growth\"] (timeseries)\n  ok  section[\"Migration (2023)\"] (flow)\n  ok  section[\"Age Distribution\"] (bars)\n  ok  section[\"Race & Ethnicity\"] (categories)\n  ok  ranking[\"rank\"]\n  ok  ranking[\"name\"]\n  ok  ranking[\"population\"]\n  ok  ranking[\"growth\"]\n  ok  ranking[\"income\"]\n  ok  ranking[\"under18\"]\n  ok  ranking[\"65plus\"]\n  ok  trend accessors\n  ok  ALL states panel accessors (no throw)\n\n=== module: economy ===\n  ok  mapMetric.getValue on all states\n  ok  mapMetric.format\n  ok  summary(states)\n  ok  panel.hero.getValue + format\n  ok  panel.badge.getValue\n  ok  panel.rankBadge.getValue\n  ok  quickStats[\"GDP Rank\"]\n  ok  quickStats[\"Per Capita Income\"]\n  ok  quickStats[\"Unemployment\"]\n  ok  section[\"GDP by Year ($M)\"] (timeseries)\n  ok  section[\"Unemployment Rate\"] (timeseries)\n  ok  section[\"Per Capita Income ($)\"] (timeseries)\n  ok  section[\"Personal Income ($M)\"] (timeseries)\n  ok  ranking[\"rank\"]\n  ok  ranking[\"name\"]\n  ok  ranking[\"gdp\"]\n  ok  ranking[\"growth\"]\n  ok  ranking[\"percapita\"]\n  ok  ranking[\"unemployment\"]\n  ok  trend accessors\n  ok  ALL states panel accessors (no throw)\n\n=== module: geography ===\n  ok  mapMetric.getValue on all states\n  ok  mapMetric.format\n  ok  summary(states)\n  ok  panel.hero.getValue + format\n  ok  panel.badge.getValue\n  ok  panel.rankBadge.getValue\n  ok  quickStats[\"Region\"]\n  ok  quickStats[\"Area\"]\n  ok  quickStats[\"Pop. Density\"]\n  ok  section[\"Climate\"] (categories)\n  ok  section[\"Air Quality (2020–2024)\"] (bars)\n  ok  section[\"Elevation Profile\"] (bars)\n  ok  section[\"Land Cover & Parks\"] (flow)\n  ok  ranking[\"rank\"]\n  ok  ranking[\"name\"]\n  ok  ranking[\"elevation\"]\n  ok  ranking[\"temp\"]\n  ok  ranking["
     },
     {
       "name": "Checksums",
@@ -43,7 +43,7 @@
       "script": "verify_sources.mjs",
       "passed": true,
       "elapsed": "0.1s",
-      "output": "=== Source Validation ===\n\n--- demographics ---\n  info  Source: Data: U.S. Census Bureau — PEP 2020–2023 & ACS 1-Year 2023...\n  info  Data sources: 2 declared\n    - U.S. Census Bureau PEP Population Estimates 2020-2023\n    - U.S. Census Bureau ACS 1-Year Estimates 2023\n\n--- economy ---\n  info  Source: Sample data for template demo — swap in BLS/BEA via scripts/download_economy.py...\n  info  Data sources: 1 declared\n    - SAMPLE DATA — for demonstrating the module template only. Swap in real U.S. Bureau of Labor Statistics (BLS) and Bureau of Economic Analysis (BEA) data via scripts/download_economy.py + clean_economy.py.\n\n--- Summary ---\nIssues: 0\nALL SOURCES VALID\n"
+      "output": "=== Source Validation ===\n\n--- demographics ---\n  info  Source: Data: U.S. Census Bureau — PEP 2020–2023 & ACS 1-Year 2023...\n  info  Data sources: 2 declared\n    - U.S. Census Bureau PEP Population Estimates 2020-2023\n    - U.S. Census Bureau ACS 1-Year Estimates 2023\n\n--- economy ---\n  info  Source: Data: U.S. Bureau of Economic Analysis (BEA) & Bureau of Labor Statistics (BLS)...\n  info  Data sources: 3 declared\n    - U.S. Bureau of Economic Analysis (BEA) — GDP & Personal Income\n    - U.S. Bureau of Labor Statistics (BLS) — Unemployment Rate\n    - National CPI, Employment by Industry from workbook\n\n--- geography ---\n  info  Source: Data: EPA, USGS, NOAA, NPS, USDA Forest Service...\n  info  Data sources: 5 declared\n    - EPA\n    - USGS\n    - NOAA\n    - NPS\n    - USDA Forest Service\n\n--- Summary ---\nIssues: 0\nALL SOURCES VALID\n"
     },
     {
       "name": "Duplicate Detection",
