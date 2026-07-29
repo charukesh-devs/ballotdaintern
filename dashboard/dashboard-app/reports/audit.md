@@ -1,14 +1,14 @@
 # America250 Data Warehouse — Audit Report
 
-**Generated:** 2026-07-28T05:46:14.131Z
-**Elapsed:** 0.6s
+**Generated:** 2026-07-29T06:09:17.704Z
+**Elapsed:** 0.5s
 **Overall:** ❌ FAIL
 
 ## Results
 
 | Verifier | Status | Time |
 |----------|--------|------|
-| Repository Health | ❌ FAIL | 0.1s |
+| Repository Health | ✅ PASS | 0.1s |
 | Raw Data Integrity | ✅ PASS | 0.1s |
 | Module Metadata | ❌ FAIL | 0.1s |
 | Module Accessors | ✅ PASS | 0.1s |
@@ -34,9 +34,10 @@
 --- package.json ---
   info  Name: dashboard-app
   info  Scripts: dev, build, lint, preview, verify, verify:quick
-  WARN  node_modules not installed - run: npm install
+  ok  node_modules installed (61 packages)
 
 --- Secrets Scan ---
+  ok  No secrets found in source files
 
 --- Directory Structure ---
   ok  scripts/ (7 entries)
@@ -44,19 +45,18 @@
   info  processed/ (not found - will be created as needed)
   info  logs/ (not found - will be created as needed)
   info  core/ (not found - will be created as needed)
-  ok  dashboard/ (4 entries)
+  ok  dashboard/ (9 entries)
 
 --- Dashboard ---
-  ok  src/modules/ (5 entries)
+  ok  src/modules/ (6 entries)
   ok  src/components/ (11 entries)
   ok  verify/ (9 entries)
   ok  templates/ (4 entries)
-  ok  public/ (5 entries)
+  ok  public/ (6 entries)
 
 --- Summary ---
-Issues: 1
-1 ISSUE(S) FOUND
-
+Issues: 0
+REPOSITORY HEALTHY
 
 ```
 
@@ -78,8 +78,10 @@ No raw/ directory found. Skipping.
   WARN  raw/demographics/ directory does not exist
 
 --- economy ---
-  WARN  Missing recommended field: trend
   WARN  raw/economy/ directory does not exist
+
+--- geography ---
+  WARN  raw/geography/ directory does not exist
 
 --- Summary ---
 Issues: 3
@@ -124,25 +126,40 @@ Issues: 3
   ok  panel.badge.getValue
   ok  panel.rankBadge.getValue
   ok  quickStats["GDP Rank"]
-  ok  quickStats["GDP (2024)"]
-  ok  quickStats["Labor Force"]
+  ok  quickStats["Per Capita Income"]
+  ok  quickStats["Unemployment"]
+  ok  section["GDP by Year ($M)"] (timeseries)
   ok  section["Unemployment Rate"] (timeseries)
-  ok  section["Trade (2024, $M)"] (flow)
-  ok  section["Regional CPI"] (timeseries)
-  ok  section["Employment by Sector"] (categories)
+  ok  section["Per Capita Income ($)"] (timeseries)
+  ok  section["Personal Income ($M)"] (timeseries)
   ok  ranking["rank"]
   ok  ranking["name"]
   ok  ranking["gdp"]
   ok  ranking["growth"]
+  ok  ranking["percapita"]
   ok  ranking["unemployment"]
-  ok  ranking["labor"]
+  ok  trend accessors
   ok  ALL states panel accessors (no throw)
 
---- Summary ---
-Modules checked: 2
-Total checks: 42
-ALL CHECKS PASSED
-
+=== module: geography ===
+  ok  mapMetric.getValue on all states
+  ok  mapMetric.format
+  ok  summary(states)
+  ok  panel.hero.getValue + format
+  ok  panel.badge.getValue
+  ok  panel.rankBadge.getValue
+  ok  quickStats["Region"]
+  ok  quickStats["Area"]
+  ok  quickStats["Pop. Density"]
+  ok  section["Climate"] (categories)
+  ok  section["Air Quality (2020–2024)"] (bars)
+  ok  section["Elevation Profile"] (bars)
+  ok  section["Land Cover & Parks"] (flow)
+  ok  ranking["rank"]
+  ok  ranking["name"]
+  ok  ranking["elevation"]
+  ok  ranking["temp"]
+  ok  ranking[
 ```
 
 ### Checksums
@@ -166,9 +183,20 @@ No raw/ directory found. Skipping.
     - U.S. Census Bureau ACS 1-Year Estimates 2023
 
 --- economy ---
-  info  Source: Sample data for template demo — swap in BLS/BEA via scripts/download_economy.py...
-  info  Data sources: 1 declared
-    - SAMPLE DATA — for demonstrating the module template only. Swap in real U.S. Bureau of Labor Statistics (BLS) and Bureau of Economic Analysis (BEA) data via scripts/download_economy.py + clean_economy.py.
+  info  Source: Data: U.S. Bureau of Economic Analysis (BEA) & Bureau of Labor Statistics (BLS)...
+  info  Data sources: 3 declared
+    - U.S. Bureau of Economic Analysis (BEA) — GDP & Personal Income
+    - U.S. Bureau of Labor Statistics (BLS) — Unemployment Rate
+    - National CPI, Employment by Industry from workbook
+
+--- geography ---
+  info  Source: Data: EPA, USGS, NOAA, NPS, USDA Forest Service...
+  info  Data sources: 5 declared
+    - EPA
+    - USGS
+    - NOAA
+    - NPS
+    - USDA Forest Service
 
 --- Summary ---
 Issues: 0
